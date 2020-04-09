@@ -16,7 +16,9 @@ module.exports = {
         bg: 'var(--color-bg)',
         font: 'var(--color-font)',
         lead: 'var(--color-lead)',
-        heading: 'var(--color-heading)'
+        heading: 'var(--color-heading)',
+        footerBg: 'var(--color-footer-bg)',
+        footerFont: 'var(--color-footer-font)',
       }
     },
     spacing: {

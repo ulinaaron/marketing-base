@@ -4,3 +4,7 @@
 body {
     @apply text-lg leading-normal bg-pref-bg text-pref-font;
 }
+
+.footer {
+    @apply bg-pref-footerBg text-pref-footerFont;
+}

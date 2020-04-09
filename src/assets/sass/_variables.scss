@@ -44,14 +44,17 @@
     --color-font: var(--color-scale-700);
     --color-lead: var(--color-scale-600);
     --color-meta: var(--color-scale-500);
-    --color-heading: var(--color-secondary-dark);
-
+    --color-heading: var(--color-scale-800);
+    --color-footer-bg: var(--color-secondary-dark);
+    --color-footer-font: var(--color-scale-100);
 }
 
 [data-theme="dark"] {
     --color-bg: var(--color-scale-900);
-    --color-font: var(--color-scale-200);
+    --color-font: var(--color-scale-400);
     --color-lead: var(--color-scale-500);
     --color-meta: var(--color-scale-500);
-    --color-heading: var(--color-secondary-light);
+    --color-heading: var(--color-scale-100);
+    --color-footer-bg: var(--color-scale-700);
+    --color-footer-font: var(--color-scale-100);
 }
