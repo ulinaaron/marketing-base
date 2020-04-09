@@ -600,12 +600,24 @@ video {
 :root {
   --color-dark: #000;
   --color-light: #fff;
-  --color-primary-light: #33a1ff;
-  --color-primary-base: #008aff;
-  --color-primary-dark: #006ecc;
-  --color-secondary-light: #8b33ff;
-  --color-secondary-base: #6E00FF;
-  --color-secondary-dark: #5800cc;
+  --color-primary-100: #faf5ff;
+  --color-primary-200: #e9d8fd;
+  --color-primary-300: #d6bcfa;
+  --color-primary-400: #b794f4;
+  --color-primary-500: #9f7aea;
+  --color-primary-600: #805ad5;
+  --color-primary-700: #6b46c1;
+  --color-primary-800: #553c9a;
+  --color-primary-900: #44337a;
+  --color-secondary-100: #fff5f7;
+  --color-secondary-200: #fed7e2;
+  --color-secondary-300: #fbb6ce;
+  --color-secondary-400: #f687b3;
+  --color-secondary-500: #ed64a6;
+  --color-secondary-600: #d53f8c;
+  --color-secondary-700: #b83280;
+  --color-secondary-800: #97266d;
+  --color-secondary-900: #702459;
   --color-tertiary-light: #241e6f;
   --color-tertiary-base: #161447;
   --color-tertiary-dark: #0A0820;
@@ -630,22 +642,24 @@ video {
   --color-scale-700: #4a5568;
   --color-scale-800: #2d3748;
   --color-scale-900: #1a202c;
+  --color-brand: var(--color-primary-700);
   --color-bg: var(--color-light);
   --color-font: var(--color-scale-700);
   --color-lead: var(--color-scale-600);
   --color-meta: var(--color-scale-500);
   --color-heading: var(--color-scale-800);
-  --color-footer-bg: var(--color-secondary-dark);
-  --color-footer-font: var(--color-scale-100);
+  --color-footer-bg: var(--color-primary-100);
+  --color-footer-font: var(--color-scale-700);
 }
 
 [data-theme=dark] {
+  --color-brand: var(--color-primary-400);
   --color-bg: var(--color-scale-900);
   --color-font: var(--color-scale-400);
   --color-lead: var(--color-scale-500);
   --color-meta: var(--color-scale-500);
   --color-heading: var(--color-scale-100);
-  --color-footer-bg: var(--color-scale-700);
+  --color-footer-bg: var(--color-primary-900);
   --color-footer-font: var(--color-scale-100);
 }
 
@@ -674,6 +688,11 @@ body {
   line-height: 1.5;
   background-color: var(--color-bg);
   color: var(--color-font);
+}
+
+.brand {
+  font-size: 1.125rem;
+  color: var(--color-brand);
 }
 
 .footer {
@@ -1376,6 +1395,10 @@ input:checked + .slider:before {
   background-color: transparent;
 }
 
+.bg-pref-brand{
+  background-color: var(--color-brand);
+}
+
 .bg-pref-bg{
   background-color: var(--color-bg);
 }
@@ -1404,6 +1427,10 @@ input:checked + .slider:before {
   background-color: transparent;
 }
 
+.hover\:bg-pref-brand:hover{
+  background-color: var(--color-brand);
+}
+
 .hover\:bg-pref-bg:hover{
   background-color: var(--color-bg);
 }
@@ -1430,6 +1457,10 @@ input:checked + .slider:before {
 
 .focus\:bg-transparent:focus{
   background-color: transparent;
+}
+
+.focus\:bg-pref-brand:focus{
+  background-color: var(--color-brand);
 }
 
 .focus\:bg-pref-bg:focus{
@@ -1540,6 +1571,10 @@ input:checked + .slider:before {
   border-color: transparent;
 }
 
+.border-pref-brand{
+  border-color: var(--color-brand);
+}
+
 .border-pref-bg{
   border-color: var(--color-bg);
 }
@@ -1568,6 +1603,10 @@ input:checked + .slider:before {
   border-color: transparent;
 }
 
+.hover\:border-pref-brand:hover{
+  border-color: var(--color-brand);
+}
+
 .hover\:border-pref-bg:hover{
   border-color: var(--color-bg);
 }
@@ -1594,6 +1633,10 @@ input:checked + .slider:before {
 
 .focus\:border-transparent:focus{
   border-color: transparent;
+}
+
+.focus\:border-pref-brand:focus{
+  border-color: var(--color-brand);
 }
 
 .focus\:border-pref-bg:focus{
@@ -4482,6 +4525,26 @@ input:checked + .slider:before {
   color: transparent;
 }
 
+.placeholder-pref-brand::-webkit-input-placeholder{
+  color: var(--color-brand);
+}
+
+.placeholder-pref-brand::-moz-placeholder{
+  color: var(--color-brand);
+}
+
+.placeholder-pref-brand:-ms-input-placeholder{
+  color: var(--color-brand);
+}
+
+.placeholder-pref-brand::-ms-input-placeholder{
+  color: var(--color-brand);
+}
+
+.placeholder-pref-brand::placeholder{
+  color: var(--color-brand);
+}
+
 .placeholder-pref-bg::-webkit-input-placeholder{
   color: var(--color-bg);
 }
@@ -4620,6 +4683,26 @@ input:checked + .slider:before {
 
 .focus\:placeholder-transparent:focus::placeholder{
   color: transparent;
+}
+
+.focus\:placeholder-pref-brand:focus::-webkit-input-placeholder{
+  color: var(--color-brand);
+}
+
+.focus\:placeholder-pref-brand:focus::-moz-placeholder{
+  color: var(--color-brand);
+}
+
+.focus\:placeholder-pref-brand:focus:-ms-input-placeholder{
+  color: var(--color-brand);
+}
+
+.focus\:placeholder-pref-brand:focus::-ms-input-placeholder{
+  color: var(--color-brand);
+}
+
+.focus\:placeholder-pref-brand:focus::placeholder{
+  color: var(--color-brand);
 }
 
 .focus\:placeholder-pref-bg:focus::-webkit-input-placeholder{
@@ -4997,6 +5080,10 @@ input:checked + .slider:before {
   color: transparent;
 }
 
+.text-pref-brand{
+  color: var(--color-brand);
+}
+
 .text-pref-bg{
   color: var(--color-bg);
 }
@@ -5023,6 +5110,10 @@ input:checked + .slider:before {
 
 .hover\:text-transparent:hover{
   color: transparent;
+}
+
+.hover\:text-pref-brand:hover{
+  color: var(--color-brand);
 }
 
 .hover\:text-pref-bg:hover{
@@ -5053,6 +5144,10 @@ input:checked + .slider:before {
   color: transparent;
 }
 
+.focus\:text-pref-brand:focus{
+  color: var(--color-brand);
+}
+
 .focus\:text-pref-bg:focus{
   color: var(--color-bg);
 }
@@ -5079,6 +5174,10 @@ input:checked + .slider:before {
 
 .active\:text-transparent:active{
   color: transparent;
+}
+
+.active\:text-pref-brand:active{
+  color: var(--color-brand);
 }
 
 .active\:text-pref-bg:active{
@@ -8040,6 +8139,10 @@ input:checked + .slider:before {
     background-color: transparent;
   }
 
+  .sm\:bg-pref-brand{
+    background-color: var(--color-brand);
+  }
+
   .sm\:bg-pref-bg{
     background-color: var(--color-bg);
   }
@@ -8068,6 +8171,10 @@ input:checked + .slider:before {
     background-color: transparent;
   }
 
+  .sm\:hover\:bg-pref-brand:hover{
+    background-color: var(--color-brand);
+  }
+
   .sm\:hover\:bg-pref-bg:hover{
     background-color: var(--color-bg);
   }
@@ -8094,6 +8201,10 @@ input:checked + .slider:before {
 
   .sm\:focus\:bg-transparent:focus{
     background-color: transparent;
+  }
+
+  .sm\:focus\:bg-pref-brand:focus{
+    background-color: var(--color-brand);
   }
 
   .sm\:focus\:bg-pref-bg:focus{
@@ -8204,6 +8315,10 @@ input:checked + .slider:before {
     border-color: transparent;
   }
 
+  .sm\:border-pref-brand{
+    border-color: var(--color-brand);
+  }
+
   .sm\:border-pref-bg{
     border-color: var(--color-bg);
   }
@@ -8232,6 +8347,10 @@ input:checked + .slider:before {
     border-color: transparent;
   }
 
+  .sm\:hover\:border-pref-brand:hover{
+    border-color: var(--color-brand);
+  }
+
   .sm\:hover\:border-pref-bg:hover{
     border-color: var(--color-bg);
   }
@@ -8258,6 +8377,10 @@ input:checked + .slider:before {
 
   .sm\:focus\:border-transparent:focus{
     border-color: transparent;
+  }
+
+  .sm\:focus\:border-pref-brand:focus{
+    border-color: var(--color-brand);
   }
 
   .sm\:focus\:border-pref-bg:focus{
@@ -11146,6 +11269,26 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .sm\:placeholder-pref-brand::-webkit-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .sm\:placeholder-pref-brand::-moz-placeholder{
+    color: var(--color-brand);
+  }
+
+  .sm\:placeholder-pref-brand:-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .sm\:placeholder-pref-brand::-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .sm\:placeholder-pref-brand::placeholder{
+    color: var(--color-brand);
+  }
+
   .sm\:placeholder-pref-bg::-webkit-input-placeholder{
     color: var(--color-bg);
   }
@@ -11284,6 +11427,26 @@ input:checked + .slider:before {
 
   .sm\:focus\:placeholder-transparent:focus::placeholder{
     color: transparent;
+  }
+
+  .sm\:focus\:placeholder-pref-brand:focus::-webkit-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .sm\:focus\:placeholder-pref-brand:focus::-moz-placeholder{
+    color: var(--color-brand);
+  }
+
+  .sm\:focus\:placeholder-pref-brand:focus:-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .sm\:focus\:placeholder-pref-brand:focus::-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .sm\:focus\:placeholder-pref-brand:focus::placeholder{
+    color: var(--color-brand);
   }
 
   .sm\:focus\:placeholder-pref-bg:focus::-webkit-input-placeholder{
@@ -11661,6 +11824,10 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .sm\:text-pref-brand{
+    color: var(--color-brand);
+  }
+
   .sm\:text-pref-bg{
     color: var(--color-bg);
   }
@@ -11687,6 +11854,10 @@ input:checked + .slider:before {
 
   .sm\:hover\:text-transparent:hover{
     color: transparent;
+  }
+
+  .sm\:hover\:text-pref-brand:hover{
+    color: var(--color-brand);
   }
 
   .sm\:hover\:text-pref-bg:hover{
@@ -11717,6 +11888,10 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .sm\:focus\:text-pref-brand:focus{
+    color: var(--color-brand);
+  }
+
   .sm\:focus\:text-pref-bg:focus{
     color: var(--color-bg);
   }
@@ -11743,6 +11918,10 @@ input:checked + .slider:before {
 
   .sm\:active\:text-transparent:active{
     color: transparent;
+  }
+
+  .sm\:active\:text-pref-brand:active{
+    color: var(--color-brand);
   }
 
   .sm\:active\:text-pref-bg:active{
@@ -14705,6 +14884,10 @@ input:checked + .slider:before {
     background-color: transparent;
   }
 
+  .md\:bg-pref-brand{
+    background-color: var(--color-brand);
+  }
+
   .md\:bg-pref-bg{
     background-color: var(--color-bg);
   }
@@ -14733,6 +14916,10 @@ input:checked + .slider:before {
     background-color: transparent;
   }
 
+  .md\:hover\:bg-pref-brand:hover{
+    background-color: var(--color-brand);
+  }
+
   .md\:hover\:bg-pref-bg:hover{
     background-color: var(--color-bg);
   }
@@ -14759,6 +14946,10 @@ input:checked + .slider:before {
 
   .md\:focus\:bg-transparent:focus{
     background-color: transparent;
+  }
+
+  .md\:focus\:bg-pref-brand:focus{
+    background-color: var(--color-brand);
   }
 
   .md\:focus\:bg-pref-bg:focus{
@@ -14869,6 +15060,10 @@ input:checked + .slider:before {
     border-color: transparent;
   }
 
+  .md\:border-pref-brand{
+    border-color: var(--color-brand);
+  }
+
   .md\:border-pref-bg{
     border-color: var(--color-bg);
   }
@@ -14897,6 +15092,10 @@ input:checked + .slider:before {
     border-color: transparent;
   }
 
+  .md\:hover\:border-pref-brand:hover{
+    border-color: var(--color-brand);
+  }
+
   .md\:hover\:border-pref-bg:hover{
     border-color: var(--color-bg);
   }
@@ -14923,6 +15122,10 @@ input:checked + .slider:before {
 
   .md\:focus\:border-transparent:focus{
     border-color: transparent;
+  }
+
+  .md\:focus\:border-pref-brand:focus{
+    border-color: var(--color-brand);
   }
 
   .md\:focus\:border-pref-bg:focus{
@@ -17811,6 +18014,26 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .md\:placeholder-pref-brand::-webkit-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .md\:placeholder-pref-brand::-moz-placeholder{
+    color: var(--color-brand);
+  }
+
+  .md\:placeholder-pref-brand:-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .md\:placeholder-pref-brand::-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .md\:placeholder-pref-brand::placeholder{
+    color: var(--color-brand);
+  }
+
   .md\:placeholder-pref-bg::-webkit-input-placeholder{
     color: var(--color-bg);
   }
@@ -17949,6 +18172,26 @@ input:checked + .slider:before {
 
   .md\:focus\:placeholder-transparent:focus::placeholder{
     color: transparent;
+  }
+
+  .md\:focus\:placeholder-pref-brand:focus::-webkit-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .md\:focus\:placeholder-pref-brand:focus::-moz-placeholder{
+    color: var(--color-brand);
+  }
+
+  .md\:focus\:placeholder-pref-brand:focus:-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .md\:focus\:placeholder-pref-brand:focus::-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .md\:focus\:placeholder-pref-brand:focus::placeholder{
+    color: var(--color-brand);
   }
 
   .md\:focus\:placeholder-pref-bg:focus::-webkit-input-placeholder{
@@ -18326,6 +18569,10 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .md\:text-pref-brand{
+    color: var(--color-brand);
+  }
+
   .md\:text-pref-bg{
     color: var(--color-bg);
   }
@@ -18352,6 +18599,10 @@ input:checked + .slider:before {
 
   .md\:hover\:text-transparent:hover{
     color: transparent;
+  }
+
+  .md\:hover\:text-pref-brand:hover{
+    color: var(--color-brand);
   }
 
   .md\:hover\:text-pref-bg:hover{
@@ -18382,6 +18633,10 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .md\:focus\:text-pref-brand:focus{
+    color: var(--color-brand);
+  }
+
   .md\:focus\:text-pref-bg:focus{
     color: var(--color-bg);
   }
@@ -18408,6 +18663,10 @@ input:checked + .slider:before {
 
   .md\:active\:text-transparent:active{
     color: transparent;
+  }
+
+  .md\:active\:text-pref-brand:active{
+    color: var(--color-brand);
   }
 
   .md\:active\:text-pref-bg:active{
@@ -21370,6 +21629,10 @@ input:checked + .slider:before {
     background-color: transparent;
   }
 
+  .lg\:bg-pref-brand{
+    background-color: var(--color-brand);
+  }
+
   .lg\:bg-pref-bg{
     background-color: var(--color-bg);
   }
@@ -21398,6 +21661,10 @@ input:checked + .slider:before {
     background-color: transparent;
   }
 
+  .lg\:hover\:bg-pref-brand:hover{
+    background-color: var(--color-brand);
+  }
+
   .lg\:hover\:bg-pref-bg:hover{
     background-color: var(--color-bg);
   }
@@ -21424,6 +21691,10 @@ input:checked + .slider:before {
 
   .lg\:focus\:bg-transparent:focus{
     background-color: transparent;
+  }
+
+  .lg\:focus\:bg-pref-brand:focus{
+    background-color: var(--color-brand);
   }
 
   .lg\:focus\:bg-pref-bg:focus{
@@ -21534,6 +21805,10 @@ input:checked + .slider:before {
     border-color: transparent;
   }
 
+  .lg\:border-pref-brand{
+    border-color: var(--color-brand);
+  }
+
   .lg\:border-pref-bg{
     border-color: var(--color-bg);
   }
@@ -21562,6 +21837,10 @@ input:checked + .slider:before {
     border-color: transparent;
   }
 
+  .lg\:hover\:border-pref-brand:hover{
+    border-color: var(--color-brand);
+  }
+
   .lg\:hover\:border-pref-bg:hover{
     border-color: var(--color-bg);
   }
@@ -21588,6 +21867,10 @@ input:checked + .slider:before {
 
   .lg\:focus\:border-transparent:focus{
     border-color: transparent;
+  }
+
+  .lg\:focus\:border-pref-brand:focus{
+    border-color: var(--color-brand);
   }
 
   .lg\:focus\:border-pref-bg:focus{
@@ -24476,6 +24759,26 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .lg\:placeholder-pref-brand::-webkit-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .lg\:placeholder-pref-brand::-moz-placeholder{
+    color: var(--color-brand);
+  }
+
+  .lg\:placeholder-pref-brand:-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .lg\:placeholder-pref-brand::-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .lg\:placeholder-pref-brand::placeholder{
+    color: var(--color-brand);
+  }
+
   .lg\:placeholder-pref-bg::-webkit-input-placeholder{
     color: var(--color-bg);
   }
@@ -24614,6 +24917,26 @@ input:checked + .slider:before {
 
   .lg\:focus\:placeholder-transparent:focus::placeholder{
     color: transparent;
+  }
+
+  .lg\:focus\:placeholder-pref-brand:focus::-webkit-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .lg\:focus\:placeholder-pref-brand:focus::-moz-placeholder{
+    color: var(--color-brand);
+  }
+
+  .lg\:focus\:placeholder-pref-brand:focus:-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .lg\:focus\:placeholder-pref-brand:focus::-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .lg\:focus\:placeholder-pref-brand:focus::placeholder{
+    color: var(--color-brand);
   }
 
   .lg\:focus\:placeholder-pref-bg:focus::-webkit-input-placeholder{
@@ -24991,6 +25314,10 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .lg\:text-pref-brand{
+    color: var(--color-brand);
+  }
+
   .lg\:text-pref-bg{
     color: var(--color-bg);
   }
@@ -25017,6 +25344,10 @@ input:checked + .slider:before {
 
   .lg\:hover\:text-transparent:hover{
     color: transparent;
+  }
+
+  .lg\:hover\:text-pref-brand:hover{
+    color: var(--color-brand);
   }
 
   .lg\:hover\:text-pref-bg:hover{
@@ -25047,6 +25378,10 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .lg\:focus\:text-pref-brand:focus{
+    color: var(--color-brand);
+  }
+
   .lg\:focus\:text-pref-bg:focus{
     color: var(--color-bg);
   }
@@ -25073,6 +25408,10 @@ input:checked + .slider:before {
 
   .lg\:active\:text-transparent:active{
     color: transparent;
+  }
+
+  .lg\:active\:text-pref-brand:active{
+    color: var(--color-brand);
   }
 
   .lg\:active\:text-pref-bg:active{
@@ -28035,6 +28374,10 @@ input:checked + .slider:before {
     background-color: transparent;
   }
 
+  .xl\:bg-pref-brand{
+    background-color: var(--color-brand);
+  }
+
   .xl\:bg-pref-bg{
     background-color: var(--color-bg);
   }
@@ -28063,6 +28406,10 @@ input:checked + .slider:before {
     background-color: transparent;
   }
 
+  .xl\:hover\:bg-pref-brand:hover{
+    background-color: var(--color-brand);
+  }
+
   .xl\:hover\:bg-pref-bg:hover{
     background-color: var(--color-bg);
   }
@@ -28089,6 +28436,10 @@ input:checked + .slider:before {
 
   .xl\:focus\:bg-transparent:focus{
     background-color: transparent;
+  }
+
+  .xl\:focus\:bg-pref-brand:focus{
+    background-color: var(--color-brand);
   }
 
   .xl\:focus\:bg-pref-bg:focus{
@@ -28199,6 +28550,10 @@ input:checked + .slider:before {
     border-color: transparent;
   }
 
+  .xl\:border-pref-brand{
+    border-color: var(--color-brand);
+  }
+
   .xl\:border-pref-bg{
     border-color: var(--color-bg);
   }
@@ -28227,6 +28582,10 @@ input:checked + .slider:before {
     border-color: transparent;
   }
 
+  .xl\:hover\:border-pref-brand:hover{
+    border-color: var(--color-brand);
+  }
+
   .xl\:hover\:border-pref-bg:hover{
     border-color: var(--color-bg);
   }
@@ -28253,6 +28612,10 @@ input:checked + .slider:before {
 
   .xl\:focus\:border-transparent:focus{
     border-color: transparent;
+  }
+
+  .xl\:focus\:border-pref-brand:focus{
+    border-color: var(--color-brand);
   }
 
   .xl\:focus\:border-pref-bg:focus{
@@ -31141,6 +31504,26 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .xl\:placeholder-pref-brand::-webkit-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .xl\:placeholder-pref-brand::-moz-placeholder{
+    color: var(--color-brand);
+  }
+
+  .xl\:placeholder-pref-brand:-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .xl\:placeholder-pref-brand::-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .xl\:placeholder-pref-brand::placeholder{
+    color: var(--color-brand);
+  }
+
   .xl\:placeholder-pref-bg::-webkit-input-placeholder{
     color: var(--color-bg);
   }
@@ -31279,6 +31662,26 @@ input:checked + .slider:before {
 
   .xl\:focus\:placeholder-transparent:focus::placeholder{
     color: transparent;
+  }
+
+  .xl\:focus\:placeholder-pref-brand:focus::-webkit-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .xl\:focus\:placeholder-pref-brand:focus::-moz-placeholder{
+    color: var(--color-brand);
+  }
+
+  .xl\:focus\:placeholder-pref-brand:focus:-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .xl\:focus\:placeholder-pref-brand:focus::-ms-input-placeholder{
+    color: var(--color-brand);
+  }
+
+  .xl\:focus\:placeholder-pref-brand:focus::placeholder{
+    color: var(--color-brand);
   }
 
   .xl\:focus\:placeholder-pref-bg:focus::-webkit-input-placeholder{
@@ -31656,6 +32059,10 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .xl\:text-pref-brand{
+    color: var(--color-brand);
+  }
+
   .xl\:text-pref-bg{
     color: var(--color-bg);
   }
@@ -31682,6 +32089,10 @@ input:checked + .slider:before {
 
   .xl\:hover\:text-transparent:hover{
     color: transparent;
+  }
+
+  .xl\:hover\:text-pref-brand:hover{
+    color: var(--color-brand);
   }
 
   .xl\:hover\:text-pref-bg:hover{
@@ -31712,6 +32123,10 @@ input:checked + .slider:before {
     color: transparent;
   }
 
+  .xl\:focus\:text-pref-brand:focus{
+    color: var(--color-brand);
+  }
+
   .xl\:focus\:text-pref-bg:focus{
     color: var(--color-bg);
   }
@@ -31738,6 +32153,10 @@ input:checked + .slider:before {
 
   .xl\:active\:text-transparent:active{
     color: transparent;
+  }
+
+  .xl\:active\:text-pref-brand:active{
+    color: var(--color-brand);
   }
 
   .xl\:active\:text-pref-bg:active{

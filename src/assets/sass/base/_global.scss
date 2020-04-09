@@ -5,6 +5,10 @@ body {
     @apply text-lg leading-normal bg-pref-bg text-pref-font;
 }
 
+.brand {
+    @apply text-lg text-pref-brand;
+}
+
 .footer {
     @apply bg-pref-footerBg text-pref-footerFont;
 }

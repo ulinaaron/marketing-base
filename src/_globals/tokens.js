@@ -13,6 +13,7 @@ module.exports = {
       transparent: 'transparent',
 
       pref: {
+        brand: 'var(--color-brand)',
         bg: 'var(--color-bg)',
         font: 'var(--color-font)',
         lead: 'var(--color-lead)',
