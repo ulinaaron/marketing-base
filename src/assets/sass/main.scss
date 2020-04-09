@@ -4,18 +4,16 @@
 // Import Tailwind preflight
 @tailwind base;
 
+@import 'variables';
 
 // Import our custom base styles
 @import 'base/all';
 
-
 // Import Tailwind components
 @tailwind components;
 
-
 // Import our custom component styles
 @import 'components/all';
-
 
 // Import Tailwind utilities
 // TailwindCSS recommends leaving utilities till last to ensure they aren't overwritten.

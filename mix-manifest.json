@@ -1,5 +1,5 @@
 {
     "/static/js/main.js": "/static/js/main.js",
-    "/static/css/main.css": "/static/css/main.css",
-    "/src/_globals/tokens.js": "/src/_globals/tokens.js"
+    "/src/_globals/tokens.js": "/src/_globals/tokens.js",
+    "/static/css/main.css": "/static/css/main.css"
 }

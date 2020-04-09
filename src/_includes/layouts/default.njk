@@ -11,6 +11,8 @@
         <meta name="robots" content="index,follow" />
     {% endif %}
 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     {# if your site's entire CSS comes in under 14kb, you may want to inline in the head #}
     {# include main.css if in development mode #}
     {% if helpers.environment === "development" %}
@@ -26,6 +28,8 @@
     {% else %}
         <script src="/static/js/main.min.js" defer></script>
     {% endif %}
+    
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
     {# include social meta tags #}
     {% include "components/social-meta.njk" %}
@@ -37,7 +41,7 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 </head>
 
-<body {% if body_class %} id="{{ body_class }}"{% endif %} class="text-lg leading-normal text-purple-900">
+<body {% if body_class %} id="{{ body_class }}"{% endif %}>
 
     <a class="sr-only" href="#main">Skip to content</a>
 
