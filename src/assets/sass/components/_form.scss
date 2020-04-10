@@ -31,10 +31,10 @@
 
     .input,
     .textarea {
-        @apply border rounded p-3 w-full transition-all duration-300 ease-out;
+        @apply bg-pref-inputBase text-pref-inputSupport border border-pref-inputBorder rounded p-3 w-full transition-all duration-300 ease-out;
 
         &:focus {
-            @apply outline-none;
+            @apply border-pref-linkHover outline-none;
         }
     }
 

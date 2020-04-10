@@ -14,12 +14,26 @@ module.exports = {
 
       pref: {
         brand: 'var(--color-brand)',
-        bg: 'var(--color-bg)',
-        font: 'var(--color-font)',
+        base: 'var(--color-base)',
+        support: 'var(--color-support)',
         lead: 'var(--color-lead)',
         heading: 'var(--color-heading)',
-        footerBg: 'var(--color-footer-bg)',
-        footerFont: 'var(--color-footer-font)',
+        footerBase: 'var(--color-footer-base)',
+        footerSupport: 'var(--color-footer-support)',
+
+        link: 'var(--color-link)',
+        linkSupport: 'var(--color-link-support)',
+        linkHover: 'var(--color-link-hover)',
+        linkSupportHover: 'var(--color-link-support-hover)',
+
+        inputBase: 'var(--color-input-base)',
+        inputBorder: 'var(--color-input-border)',
+        inputSupport: 'var(--color-input-support)',
+
+        buttonPrimaryBase: 'var(--color-button-primary-base)',
+        buttonPrimarySupport: 'var(--color-button-primary-support)',
+        buttonPrimaryBaseHover: 'var(--color-button-primary-base-hover)',
+        buttonPrimarySupportHover: 'var(--color-button-primary-support-hover)'
       }
     },
     spacing: {
@@ -136,14 +150,14 @@ module.exports = {
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',
-      base: '1rem',
-      lg: '1.125rem',
-      xl: '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '4xl': '2.25rem',
-      '5xl': '3rem',
-      '6xl': '4rem',
+      base: '1.1rem',
+      lg: '1.25rem',
+      xl: '1.4rem',
+      '2xl': '1.6rem',
+      '3xl': '1.95rem',
+      '4xl': '2.5rem',
+      '5xl': '3.6rem',
+      '6xl': '4.2rem',
       'xxs': '0.65rem',
     },
     fontWeight: {
@@ -300,6 +314,13 @@ module.exports = {
       '40': '40',
       '50': '50',
     },
+    extend: {
+      transitionDuration: {
+        '0': '0ms',
+        '2000': '2000ms',
+        '4000': '4000ms',
+      }
+    }
   },
   variants: {
     alignContent: ['responsive'],

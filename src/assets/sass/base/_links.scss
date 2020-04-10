@@ -2,13 +2,14 @@
 //==========  Links ==========//
 
 a {
-    @apply no-underline transition-all duration-300 ease-out;
+    @apply text-pref-link no-underline transition-all duration-300 ease-out;
 
     &:not([class]) {
         border-bottom-width: 2px;
-        border-color: #eb5286;
+        @apply border-pref-linkSupport;
 
         &:hover {
+            @apply text-pref-linkHover;
         }
     }
 }

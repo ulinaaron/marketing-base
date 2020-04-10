@@ -52,23 +52,51 @@
     --color-scale-800: #2d3748;
     --color-scale-900: #1a202c;
 
-    --color-brand: var(--color-primary-700);
-    --color-bg: var(--color-light);
-    --color-font: var(--color-scale-700);
+    --color-brand: var(--color-primary-500);
+    --color-base: var(--color-light); // Body BG
+    --color-support: var(--color-scale-700); // Body Font
     --color-lead: var(--color-scale-600);
     --color-meta: var(--color-scale-500);
     --color-heading: var(--color-scale-800);
-    --color-footer-bg: var(--color-primary-100);
-    --color-footer-font: var(--color-scale-700);
+    --color-footer-base: var(--color-primary-100); // Footer BG
+    --color-footer-support: var(--color-scale-700); //  Footer Text
+
+    --color-link: var(--color-scale-900);
+    --color-link-support: var(--color-primary-600);
+    --color-link-hover: var(--color-primary-600);
+    --color-link-support-hover: var(--color-scale-200);
+
+    --color-input-base: var(--color-scale-200);
+    --color-input-border: var(--color-scale-400);
+    --color-input-support: var(--color-scale-600);
+
+    --color-button-primary-base: var(--color-primary-200);
+    --color-button-primary-support: var(--color-scale-700);
+    --color-button-primary-base-hover: var(--color-primary-400);
+    --color-button-primary-support-hover: var(--color-scale-700);
 }
 
 [data-theme="dark"] {
     --color-brand: var(--color-primary-400);
-    --color-bg: var(--color-scale-900);
-    --color-font: var(--color-scale-400);
+    --color-base: var(--color-scale-900); // Body Bg
+    --color-support: var(--color-scale-400); // Body Font
     --color-lead: var(--color-scale-500);
     --color-meta: var(--color-scale-500);
     --color-heading: var(--color-scale-100);
-    --color-footer-bg: var(--color-primary-900);
-    --color-footer-font: var(--color-scale-100);
+    --color-footer-base: var(--color-primary-900);
+    --color-footer-support: var(--color-scale-100);
+
+    --color-link: var(--color-scale-200);
+    --color-link-support: var(--color-primary-300);
+    --color-link-hover: var(--color-primary-300);
+    --color-link-support-hover: var(--color-scale-200);
+
+    --color-input-base: var(--color-scale-800);
+    --color-input-border: var(--color-scale-600);
+    --color-input-support: var(--color-scale-500);
+
+    --color-button-primary-base: var(--color-primary-800);
+    --color-button-primary-support: var(--color-light);
+    --color-button-primary-base-hover: var(--color-primary-500);
+    --color-button-primary-support-hover: var(--color-light);
 }
