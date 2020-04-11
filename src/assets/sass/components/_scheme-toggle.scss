@@ -1,5 +1,5 @@
 /*Simple css to style it like a toggle switch*/
-.theme-switch-wrapper {
+.scheme-toggle {
   display: flex;
   align-items: center;
 
@@ -7,22 +7,21 @@
     margin-left: 10px;
     font-size: 1rem;
   }
-}
 
-.switch-mode {
-  @apply mr-2;
-  @apply transition duration-300;
-}
+  &__mode {
+    @apply mr-2 transition duration-300;
+  }
 
-.theme-switch {
-  display: inline-block;
-  height: 24px;
-  position: relative;
-  width: 40px;
-}
+  &__control {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 40px;
 
-.theme-switch input {
-  display:none;
+    input {
+      display:none;
+    }
+  }
 }
 
 .slider {

@@ -1,89 +1,22 @@
 <nav id="nav" class="hidden nav md:flex">
 
-    <ul class="flex flex-col items-center text-base menu md:flex-row list-reset">
+    <ul class="menu">
 
         {% for item in navigation.main %}
 
-        <li class="mb-4 level-1 md:mr-4 md:mb-0">
+        <li class="menu__item">
 
-            <a href="{{ item.url | safe }}" class="link font-bold text-white hover:text-pink-500 active:text-pink-500 {% if page.url == item.url %}active text-pink-500{% endif %}
+            <a href="{{ item.url | safe }}" class="menu__item__link {% if page.url == item.url %}active text-pref-support{% endif %}
             "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
 
         </li>
 
         {% endfor %}
 
-        <li class="mb-4 level-1 md:ml-8 md:mb-0">
+        <li class="menu__item">
 
-            <div class="theme-switch-wrapper" x-data="themeSwitch()" x-init="themeSwitchInit()">
-                <div class="switch-mode">
-                    <div x-show="isLight()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                    </div>
-                    <div x-show="isDark()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                    </div>
-                </div>
-                <label class="theme-switch" for="checkbox" >
-                    <input type="checkbox" id="checkbox" @click="open()"/>
-                    <div class="slider round"></div>
-                </label>
-            </div>
-
-            <script>
-                function themeSwitch() {
-                    return {
-                        clicked: 0,
-                        on: false,
-                        themeSwitchInit() {
-                            let currentTheme = localStorage.getItem('theme');
-                            let toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"');
-                            
-                            if (currentTheme) {
-                                document.documentElement.setAttribute('data-theme', currentTheme);
-                            
-                                if (currentTheme === 'dark') {
-                                    this.isDark();
-                                    toggleSwitch.checked = true;
-
-                                    return this.on = true;
-                                }
-                            }
-                        },
-                        open() {
-                            this.clicked++;
-                            
-                            if (this.clicked%2==0) {
-                                this.setLight();
-                                this.isLight();
-                            } else {
-                                this.setDark();
-                                this.isDark();
-                            }
-
-                            console.log(this.clicked);
-                        },
-                        setLight() {
-                            document.documentElement.setAttribute('data-theme', 'light');
-                            localStorage.setItem('theme', 'light');
-
-                            return this.on = false;
-                        },
-                        setDark() {
-                            document.documentElement.setAttribute('data-theme', 'dark');
-                            localStorage.setItem('theme', 'dark');
-
-                            return this.on = true;
-                        },
-                        isLight() {
-                            return this.on === false;
-                        },
-                        isDark() { 
-                            return this.on === true;
-                        }
-                    }
-                }
-            </script>
+	        {% include 'components/scheme-toggle.njk' %}
+            
         </li>
 
     </ul>

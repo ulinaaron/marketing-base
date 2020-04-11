@@ -61,6 +61,12 @@
     --color-footer-base: var(--color-primary-100); // Footer BG
     --color-footer-support: var(--color-scale-700); //  Footer Text
 
+
+    --color-menu: var(--color-scale-900);
+    --color-menu-support: var(--color-primary-600);
+    --color-menu-hover: var(--color-primary-600);
+    --color-menu-support-hover: var(--color-scale-200);
+
     --color-link: var(--color-scale-900);
     --color-link-support: var(--color-primary-600);
     --color-link-hover: var(--color-primary-600);
@@ -76,7 +82,7 @@
     --color-button-primary-support-hover: var(--color-scale-700);
 }
 
-[data-theme="dark"] {
+[data-scheme="dark"] {
     --color-brand: var(--color-primary-400);
     --color-base: var(--color-scale-900); // Body Bg
     --color-support: var(--color-scale-400); // Body Font
@@ -85,6 +91,11 @@
     --color-heading: var(--color-scale-100);
     --color-footer-base: var(--color-primary-900);
     --color-footer-support: var(--color-scale-100);
+
+    --color-menu: var(--color-scale-200);
+    --color-menu-support: var(--color-primary-300);
+    --color-menu-hover: var(--color-primary-300);
+    --color-menu-support-hover: var(--color-scale-200);
 
     --color-link: var(--color-scale-200);
     --color-link-support: var(--color-primary-300);

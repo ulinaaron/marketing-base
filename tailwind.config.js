@@ -21,6 +21,11 @@ module.exports = {
         footerBase: 'var(--color-footer-base)',
         footerSupport: 'var(--color-footer-support)',
 
+        menu: 'var(--color-menu)',
+        menuSupport: 'var(--color-menu-support)',
+        menuHover: 'var(--color-menu-hover)',
+        menuSupportHover: 'var(--color-menu-support-hover)',
+
         link: 'var(--color-link)',
         linkSupport: 'var(--color-link-support)',
         linkHover: 'var(--color-link-hover)',

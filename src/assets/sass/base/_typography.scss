@@ -35,5 +35,18 @@ h6 { @apply text-xl; }
 
 }
 
+a {
+    @apply text-pref-link no-underline transition-all duration-300 ease-out;
+
+    &:not([class]) {
+        border-bottom-width: 2px;
+        @apply border-pref-linkSupport;
+
+        &:hover {
+            @apply text-pref-linkHover;
+        }
+    }
+}
+
 
 

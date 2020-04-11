@@ -97,7 +97,9 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_mobile_nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @modules/mobile-nav */ "./src/assets/js/modules/mobile-nav/index.js");
 /* harmony import */ var _modules_lazyload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @modules/lazyload */ "./src/assets/js/modules/lazyload/index.js");
+/* harmony import */ var _modules_theme_switch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @modules/theme-switch */ "./src/assets/js/modules/theme-switch/index.js");
 // Import local modules
+
 
 
 
@@ -183,6 +185,20 @@ var MobileNav = function MobileNav() {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (MobileNav);
+
+/***/ }),
+
+/***/ "./src/assets/js/modules/theme-switch/index.js":
+/*!*****************************************************!*\
+  !*** ./src/assets/js/modules/theme-switch/index.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var themeSwitch = {}();
+/* harmony default export */ __webpack_exports__["default"] = (themeSwitch);
 
 /***/ }),
 
