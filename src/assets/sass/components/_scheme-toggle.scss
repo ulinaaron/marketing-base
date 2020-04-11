@@ -1,12 +1,6 @@
 /*Simple css to style it like a toggle switch*/
 .scheme-toggle {
-  display: flex;
-  align-items: center;
-
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
+  @apply flex items-center;
 
   &__mode {
     @apply mr-2 transition duration-300;
@@ -22,40 +16,36 @@
       display:none;
     }
   }
+
+  input:checked + .scheme-toggle__control__toggle {
+    background-color: var(--color-scale-500);
+  }
+
+  input:checked + .scheme-toggle__control__toggle:before {
+    transform: translateX(16px);
+  }
+
+  .scheme-toggle__control__toggle {
+    @apply bg-pref-support duration-300;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 34px;
+  }
+
+  .scheme-toggle__control__toggle:before {
+    @apply bg-pref-base duration-300;
+    bottom: 4px;
+    content: "";
+    height: 16px;
+    left: 4px;
+    position: absolute;
+    width: 16px;
+    border-radius: 50%;
+
+  }
 }
 
-.slider {
-  @apply bg-pref-support duration-300;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.slider:before {
-  @apply bg-pref-base duration-300;
-  bottom: 4px;
-  content: "";
-  height: 16px;
-  left: 4px;
-  position: absolute;
-  width: 16px;
-}
-
-input:checked + .slider {
-  background-color: var(--color-scale-500);
-}
-
-input:checked + .slider:before {
-  transform: translateX(16px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}

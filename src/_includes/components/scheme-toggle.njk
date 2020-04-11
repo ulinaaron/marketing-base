@@ -8,8 +8,8 @@
         </div>
     </div>
     <label class="scheme-toggle__control" for="checkbox" >
-        <input type="checkbox" id="checkbox" @click="open()"/>
-        <div class="slider round"></div>
+        <input class="scheme-toggle__control__input" type="checkbox" id="checkbox" @click="open()"/>
+        <div class="scheme-toggle__control__toggle"></div>
     </label>
 </div>
 
@@ -20,16 +20,17 @@
             toggle: false,
             schemeToggleInit() {
                 let currentScheme = localStorage.getItem('scheme');
-                let controlInput = document.querySelector('.scheme-toggle__control input[type="checkbox"');
+                let controlInput = document.querySelector('.scheme-toggle__control__input');
                 
                 if (currentScheme) {
                     document.documentElement.setAttribute('data-scheme', currentScheme);
                 
                     if (currentScheme === 'dark') {
                         this.isDark();
+                        this.clicked++;
                         controlInput.checked = true;
 
-                        return this.on = true;
+                        return this.toggle = true;
                     }
                 }
             },

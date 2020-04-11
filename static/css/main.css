@@ -1408,11 +1408,6 @@ a:not([class]):hover {
   align-items: center;
 }
 
-.scheme-toggle em {
-  margin-left: 10px;
-  font-size: 1rem;
-}
-
 .scheme-toggle__mode {
   margin-right: 0.5rem;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
@@ -1430,7 +1425,15 @@ a:not([class]):hover {
   display: none;
 }
 
-.slider {
+.scheme-toggle input:checked + .scheme-toggle__control__toggle {
+  background-color: var(--color-scale-500);
+}
+
+.scheme-toggle input:checked + .scheme-toggle__control__toggle:before {
+  transform: translateX(16px);
+}
+
+.scheme-toggle .scheme-toggle__control__toggle {
   background-color: var(--color-support);
   transition-duration: 300ms;
   bottom: 0;
@@ -1439,9 +1442,10 @@ a:not([class]):hover {
   position: absolute;
   right: 0;
   top: 0;
+  border-radius: 34px;
 }
 
-.slider:before {
+.scheme-toggle .scheme-toggle__control__toggle:before {
   background-color: var(--color-base);
   transition-duration: 300ms;
   bottom: 4px;
@@ -1450,21 +1454,6 @@ a:not([class]):hover {
   left: 4px;
   position: absolute;
   width: 16px;
-}
-
-input:checked + .slider {
-  background-color: var(--color-scale-500);
-}
-
-input:checked + .slider:before {
-  transform: translateX(16px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
   border-radius: 50%;
 }
 
