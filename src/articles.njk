@@ -1,9 +1,9 @@
 ---
 layout: default
-meta_title: Blog
-meta_description: Blog page description
-body_class: blog
-title: Blog
+meta_title: Articles
+meta_description: Articles page description
+body_class: articles
+title: Articles
 ---
 
 <main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
@@ -16,7 +16,7 @@ title: Blog
 
             {% for post in collections.blog %}
 
-                <article class="w-full mx-4 mb-8 overflow-hidden bg-gray-800 rounded-lg shadow-xl article-card">
+                <article class="w-full mx-4 mb-8 overflow-hidden rounded-lg shadow-xl bg-pref-cardBase article-card">
 
                     {# featured post image & category #}
                     {% if post.data.featured_image %}
@@ -58,9 +58,9 @@ title: Blog
 
                     <div class="p-8">
 
-                        <h2 class="mb-6 text-2xl"><a class="block text-purple-100 hover:text-pink-500" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                        <h2 class="mb-6 text-2xl"><a class="block text-pref-cardHeading hover:text-pref-cardSupport" href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
-                        <div class="mb-4 text-sm text-gray-400 md:flex">
+                        <div class="mb-4 text-lg text-pref-cardMeta md:flex">
 
                             <p class="author">By {{ site.author.name }}</p>
 

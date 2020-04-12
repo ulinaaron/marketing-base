@@ -17,9 +17,15 @@ module.exports = {
         base: 'var(--color-base)',
         support: 'var(--color-support)',
         lead: 'var(--color-lead)',
+        meta: 'var(--color-meta)',
         heading: 'var(--color-heading)',
         footerBase: 'var(--color-footer-base)',
         footerSupport: 'var(--color-footer-support)',
+
+        cardBase: 'var(--color-card-base)',
+        cardSupport: 'var(--color-card-support)',
+        cardMeta: 'var(--color-card-meta)',
+        cardHeading: 'var(--color-card-heading)',
 
         menu: 'var(--color-menu)',
         menuSupport: 'var(--color-menu-support)',

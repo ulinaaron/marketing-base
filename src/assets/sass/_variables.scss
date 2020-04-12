@@ -61,6 +61,10 @@
     --color-footer-base: var(--color-primary-100); // Footer BG
     --color-footer-support: var(--color-scale-700); //  Footer Text
 
+    --color-card-base: var(--color-scale-100); // Card BG
+    --color-card-support: var(--color-primary-500); // Card Font
+    --color-card-meta: var(--color-scale-700);
+    --color-card-heading: var(--color-scale-800);
 
     --color-menu: var(--color-scale-900);
     --color-menu-support: var(--color-primary-600);
@@ -91,6 +95,11 @@
     --color-heading: var(--color-scale-100);
     --color-footer-base: var(--color-primary-900);
     --color-footer-support: var(--color-scale-100);
+
+    --color-card-base: var(--color-scale-800); // Card BG
+    --color-card-support: var(--color-primary-500); // Card Font
+    --color-card-meta: var(--color-scale-300);
+    --color-card-heading: var(--color-scale-200);
 
     --color-menu: var(--color-scale-200);
     --color-menu-support: var(--color-primary-300);
