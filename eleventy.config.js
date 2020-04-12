@@ -41,6 +41,24 @@ module.exports = eleventyConfig => {
 
     })
 
+    eleventyConfig.addCollection('work', collection => {
+
+        const works = collection.getFilteredByTag('work')
+
+        for( let i = 0; i < works.length; i++ ) {
+
+            const prevPost = works[i - 1]
+            const nextPost = works[i + 1]
+
+            works[i].data["prevPost"] = prevPost
+            works[i].data["nextPost"] = nextPost
+
+        }
+
+        return works.reverse()
+
+    })
+
     // Layout aliases
     eleventyConfig.addLayoutAlias('default', 'layouts/default.njk')
     eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
