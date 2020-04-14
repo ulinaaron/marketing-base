@@ -42,13 +42,13 @@ title: Work
 
                             </ul>
 
-                            <figure>
+                            <figure style="background-color: {{ post.data.bg_color }};" class="p-20">
 
                                 {# the 'data-lazy' attribute will lazy load your images in #}
                                 {# the js uses the new Intersection Observer API, see ../modules/lazyload #}
                                 {# it's not fully supported in some browsers, so proceed with caution! #}
                                 {# the srcset attribute would be a nice addtion here as well...in a future update maybe :) #}
-                                <img data-lazy="{{ post.data.featured_image }}" class="block" alt="{{ post.data.image_caption }}">
+                                <img data-lazy="{{ post.data.featured_image }}" class="block object-contain" alt="{{ post.data.image_caption }}">
 
                             </figure>
 

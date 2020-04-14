@@ -4,16 +4,12 @@
 
         {% for item in navigation.main %}
 
-        {# Don't show Articles on production yet #}
-        {% if helpers.environment !== "development" and item.label !== 'Articles' %}
-
         <li class="menu__item">
 
             <a href="{{ item.url | safe }}" class="menu__item__link {% if page.url == item.url %}active text-pref-support{% endif %}
             "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
 
         </li>
-        {% endif %}
 
         {% endfor %}
 

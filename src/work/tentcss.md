@@ -1,9 +1,10 @@
 ---
 title: TentCSS
 date: 2018-09-30
-featured_image: /static/images/blog/post-1.jpg
+featured_image: /static/images/work/tentcss.png
 image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: A meeting is a gathering of two or more people that has been convened for the purpose of achieving a common goal through verbal interaction.
+bg_color: '#3d9970'
 tags:
     - work
 ---
