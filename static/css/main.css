@@ -742,43 +742,6 @@ body {
   color: var(--color-footer-support);
 }
 
-.item {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.item__title {
-  margin-bottom: 0.5rem;
-}
-
-.item__role {
-  font-size: 1.25rem;
-}
-
-.item__time {
-  font-size: 1.25rem;
-  font-style: italic;
-}
-
-.skill-list {
-  margin-bottom: 2rem;
-}
-
-.skill-list__item {
-  display: inline-block;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  margin-right: 0.5rem;
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: var(--color-base);
-  border-radius: 9999px;
-  background-color: var(--color-support);
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: Dosis, sans-serif;
   font-weight: 300;
@@ -1463,6 +1426,44 @@ a:not([class]):hover {
   position: absolute;
   width: 16px;
   border-radius: 50%;
+}
+
+.experience-item {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.experience-item__title {
+  margin-bottom: 0.5rem;
+}
+
+.experience-item__role {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.experience-item__time {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.skill-list {
+  margin-bottom: 2rem;
+}
+
+.skill-list__item {
+  display: inline-block;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--color-base);
+  border-radius: 9999px;
+  background-color: var(--color-support);
 }
 
 .sr-only{

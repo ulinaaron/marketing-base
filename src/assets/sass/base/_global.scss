@@ -12,25 +12,3 @@ body {
 .footer {
     @apply bg-pref-footerBase text-pref-footerSupport;
 }
-
-.item {
-    @apply my-8; 
-    
-    &__title {
-      @apply mb-2;
-    }
-    &__role {
-      @apply text-lg;
-    }
-    &__time {
-      @apply text-lg italic;
-    }
-}
-
-
-.skill-list {
-    @apply mb-8;
-    &__item {
-        @apply inline-block px-3 py-1 mr-2 text-lg mb-2 font-semibold text-pref-base rounded-full bg-pref-support;
-    }
-}
