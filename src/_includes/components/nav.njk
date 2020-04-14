@@ -5,7 +5,7 @@
         {% for item in navigation.main %}
 
         {# Don't show Articles on production yet #}
-        {% if helpers.environment !== "development" and item.label == 'Articles' %}
+        {% if helpers.environment !== "development" and item.label !== 'Articles' %}
 
         <li class="menu__item">
 
