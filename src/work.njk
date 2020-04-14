@@ -60,6 +60,8 @@ title: Work
 
                         <h2 class="mb-6 text-2xl"><a class="block text-pref-cardHeading hover:text-pref-cardSupport" href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
+                        
+
                         <div class="mb-4 text-lg text-pref-cardMeta md:flex">
 
                             <p class="author">By {{ site.author.name }}</p>
@@ -70,6 +72,10 @@ title: Work
                                 {{ post.date | dateDisplay }}
                             </time>
 
+                        </div>
+
+                        <div class="w-2/3">
+                            {{ post.data.excerpt | safe }}
                         </div>
 
                     </div>

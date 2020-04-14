@@ -16,7 +16,8 @@
     "social_links": {
         "facebook": "https://www.facebook.com/ulinaaron",
         "twitter": "https://twitter.com/ulinaaron",
-        "linkedin": "https://www.linkedin.com/aaronmazade"
+        "linkedin": "https://www.linkedin.com/aaronmazade",
+        "github": "https://github.com/ulinaaron"
     },
     "address": {
         "street": "123 Fake Street",
@@ -28,6 +29,6 @@
     "contact": {
         "phone": "123 456 789",
         "mobile": "(+44) 1234 5678",
-        "email": "hello@maxpower.com"
+        "email": "ulinaaron@gmail.com"
     }
 }
