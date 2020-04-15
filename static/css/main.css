@@ -722,7 +722,7 @@ video {
 }
 
 body {
-  font-family: Cormorant Garamond, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
   background-color: var(--color-base);
@@ -2943,7 +2943,7 @@ code {
 }
 
 .font-primary{
-  font-family: Cormorant Garamond, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .font-secondary{
@@ -11299,7 +11299,7 @@ code {
   }
 
   .sm\:font-primary{
-    font-family: Cormorant Garamond, sans-serif;
+    font-family: Montserrat, sans-serif;
   }
 
   .sm\:font-secondary{
@@ -19656,7 +19656,7 @@ code {
   }
 
   .md\:font-primary{
-    font-family: Cormorant Garamond, sans-serif;
+    font-family: Montserrat, sans-serif;
   }
 
   .md\:font-secondary{
@@ -28013,7 +28013,7 @@ code {
   }
 
   .lg\:font-primary{
-    font-family: Cormorant Garamond, sans-serif;
+    font-family: Montserrat, sans-serif;
   }
 
   .lg\:font-secondary{
@@ -36370,7 +36370,7 @@ code {
   }
 
   .xl\:font-primary{
-    font-family: Cormorant Garamond, sans-serif;
+    font-family: Montserrat, sans-serif;
   }
 
   .xl\:font-secondary{

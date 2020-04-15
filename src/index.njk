@@ -72,59 +72,132 @@ title: Hey, I'm Aaron.
 
     </section>
 
+    <!-- Work Section -->
+    <section class="pt-20">
+        <h2>My Work</h2>
+        <div class="flex-wrap items-stretch flex-1 -mx-4 posts lg:flex">
+
+            {% for post in collections.work %}
+                <div class="items-stretch flex-1 w-full px-4 md:w-1/2">
+                    <article class="mb-8 overflow-hidden article-card">
+
+                        {# featured post image & category #}
+                        {% if post.data.featured_image %}
+
+                            <a class="relative block overflow-hidden featured-image-link" href="{{ post.url }}">
+
+                                {# category link #}
+                                <ul class="absolute bottom-0 left-0 z-10 flex p-8">
+
+                                    {% for item in post.data.tags %}
+
+                                        {%- if item != "work" -%}
+
+                                            <li class="mr-2">
+
+                                                <span class="inline-block px-4 py-2 text-sm font-bold rounded text-pref-cardBase bg-pref-cardMeta">{{ item | capitalize }}</span>
+
+                                            </li>
+
+                                        {%- endif -%}
+
+                                    {% endfor %}
+
+                                </ul>
+
+                                <figure style="background-color: {{ post.data.bg_color }};" class="p-10 rounded-lg shadow-xl bg-pref-cardBase ">
+
+                                    {# the 'data-lazy' attribute will lazy load your images in #}
+                                    {# the js uses the new Intersection Observer API, see ../modules/lazyload #}
+                                    {# it's not fully supported in some browsers, so proceed with caution! #}
+                                    {# the srcset attribute would be a nice addtion here as well...in a future update maybe :) #}
+                                    <img data-lazy="{{ post.data.featured_image }}" class="block object-contain w-full h-48" alt="{{ post.data.image_caption }}">
+
+                                </figure>
+
+                            </a>
+
+                        {% endif %}
+
+                        <div class="p-4">
+
+                            <div class="flex flex-row flex-wrap">
+                                <div class="w-full">
+                                    <h2 class="mb-0 text-3xl text-center"><a class="block text-pref-cardHeading hover:text-pref-cardSupport" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </article>
+                </div>
+
+            {% endfor %}
+
+        </div>
+    </section>
+    <!-- End Work Section -->
+
+
+    <!-- Process Section -->
     <section class="flex-1 pt-20 column centre content" aria-label="Process">
 
         <h2>Process</h2>
-        <p class="lead">The methodologies and tools I bring to a project.</p>
+        <p class="lead">The methodologies, tools, and disciplines I bring to a project as a generalist.</p>
 
         <div class="flex flex-row flex-wrap -mx-4 text-lg">
             <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <h4>Discover</h4>
+                <h4 class="mb-0">Discover</h4>
 
-                <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
+                <ul class="flex-1 w-2/3 p-4 mx-auto md:w-full">
                     <li>Business Goals &amp; Requirements</li>
-                    <li>User Research</li>
+                    <li>Research</li>
                 </ul>
             </div>
             <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <h4>Define</h4>
+                <h4 class="mb-0">Define</h4>
 
-                <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
-                    <li>Business Goals &amp; Requirements</li>
-                    <li>User Research</li>
+                <ul class="flex-1 w-2/3 p-4 mx-auto md:w-full">
+                    <li>Project Brief</li>
+                    <li>User Experience</li>
+                    <li>Information Architecture</li>
                 </ul>
             </div>
             <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <h4>Sprint</h4>
+                <h4 class="mb-0">Sprint</h4>
 
-                <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
-                    <li>Business Goals &amp; Requirements</li>
-                    <li>User Research</li>
+                <ul class="flex-1 w-2/3 p-4 mx-auto md:w-full">
+                    <li>Iterations</li>
+                    <li>Lo/Hi Fidelity</li>
+                    <li>Validation</li>
                 </ul>
             </div>
             <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <h4>Ship</h4>
+                <h4 class="mb-0">Ship</h4>
 
-                <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
-                    <li>Business Goals &amp; Requirements</li>
-                    <li>User Research</li>
+                <ul class="flex-1 w-2/3 p-4 mx-auto md:w-full">
+                    <li>Code Integration </li>
+                    <li>Release Planning</li>
+                    <li>Documentation</li>
                 </ul>
             </div>
             <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <h4>Measure</h4>
+                <h4 class="mb-0">Measure</h4>
 
-                <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
-                    <li>Business Goals &amp; Requirements</li>
-                    <li>User Research</li>
+                <ul class="flex-1 w-2/3 p-4 mx-auto md:w-full">
+                    <li>Feedback Management</li>
+                    <li>Business Metrics</li>
                 </ul>
             </div>
         </div>
 
-        <h3 class="mt-10 text-xl text-center">Applied Methods & Tools</h3>
+        <h3 class="mt-10 text-xl font-bold text-center">Applied Methods & Tools</h3>
 
         <div class="flex flex-row flex-wrap -mx-4 text-lg">
             <div class="flex items-stretch w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
+                <ul class="w-2/3 p-4 mx-auto rounded-lg shadow-md md:w-full bg-pref-cardBaserounded-lg bg-pref-cardBase">
                     <li>User Interviews</li>
                     <li>Expert Interviews</li>
                     <li>Competitive Analysis</li>
@@ -132,7 +205,7 @@ title: Hey, I'm Aaron.
                 </ul>
             </div>
             <div class="flex items-stretch w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
+                <ul class="w-2/3 p-4 mx-auto rounded-lg shadow-md md:w-full bg-pref-cardBaserounded-lg bg-pref-cardBase">
                     <li>User Flows</li>
                     <li>User Stories</li>
                     <li>Journey Mapping</li>
@@ -141,7 +214,7 @@ title: Hey, I'm Aaron.
                 </ul>
             </div>
             <div class="flex items-stretch w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
+                <ul class="w-2/3 p-4 mx-auto rounded-lg shadow-md md:w-full bg-pref-cardBaserounded-lg bg-pref-cardBase">
                     <li>Sketches</li>
                     <li>Wireframes</li>
                     <li>Low/High Fidelity Prototypes</li>
@@ -149,14 +222,14 @@ title: Hey, I'm Aaron.
                 </ul>
             </div>
             <div class="flex items-stretch w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
+                <ul class="w-2/3 p-4 mx-auto rounded-lg shadow-md md:w-full bg-pref-cardBaserounded-lg bg-pref-cardBase">
                     <li>DevOps Tools</li>
                     <li>Asset Optimization</li>
                     <li>Design System Management</li>
                 </ul>
             </div>
             <div class="flex items-stretch w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
+                <ul class="w-2/3 p-4 mx-auto rounded-lg shadow-md md:w-full bg-pref-cardBaserounded-lg bg-pref-cardBase">
                     <li>Usability Testing</li>
                     <li>A/B Testing</li>
                     <li>Analytic Review</li>
@@ -164,11 +237,40 @@ title: Hey, I'm Aaron.
                 </ul>
             </div>
         </div>
+
+        <h3 class="mt-10 text-xl font-bold text-center">My Generalist Deciplines</h3>
+
+        <div class="flex flex-row flex-wrap -mx-6 text-lg">
+            <div class="w-full px-6 mb-6 md:w-1/2">
+                <h4>Strategy</h4>
+
+                <p>I always like to look before I leap. Ask a ton of the right questions to make sure we're accomplishing a solution that meets the problem. Plan smart, but plan to adapt and grow along the way. </p>
+
+            </div>
+            <div class="w-full px-6 mb-6 md:w-1/2">
+                <h4>Experience Design</h4>
+
+                I find it of the upmost importance to understand the audience for which we are trying to build solutions for. That is why along with business requirements and goals the customers are constantly used to measure success.
+            </div>
+            <div class="w-full px-6 mb-6 md:w-1/2">
+                <h4>Visual Design</h4>
+
+                Hand-in-hand with experience design, I believe in creating solutions that are as elegant as they are functional for their audience. The visual design should not overtake the usability nor should it make it forgettable. 
+            </div>
+            <div class="w-full px-6 mb-6 md:w-1/2">
+                <h4>Development</h4>
+
+                Develop with the appropriate technologies for the business in mind while making them performant for the usability. I like to integrate design into code that can be systemized and easily maintained for other developers along with being understood by content editors.
+            </div>
+        </div>
     </section>
+    <!-- End Process Section -->
+    <!-- Connect Section -->
     <section class="flex-1 pt-20 column centre content" aria-label="Contact">
-    <h2>Connect With Me</h2>
-    Please use my <a href="/contact">contact</a> page to find all the ways I can be reached.
+        <h2>Connect With Me</h2>
+        Please use my <a href="/contact">contact</a> page to find all the ways I can be reached.
     </section>
+    <!-- End Connect Section -->
 
 </main>
 

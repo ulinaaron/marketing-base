@@ -16,7 +16,7 @@ title: Work
 
             {% for post in collections.work %}
 
-                <article class="w-full mx-4 mb-8 overflow-hidden rounded-lg shadow-xl bg-pref-cardBase article-card">
+                <article class="w-full mb-8 overflow-hidden article-card">
 
                     {# featured post image & category #}
                     {% if post.data.featured_image %}
@@ -42,7 +42,7 @@ title: Work
 
                             </ul>
 
-                            <figure style="background-color: {{ post.data.bg_color }};" class="p-20">
+                            <figure style="background-color: {{ post.data.bg_color }};" class="p-20 rounded-lg shadow-xl md:mx-4 bg-pref-cardBase ">
 
                                 {# the 'data-lazy' attribute will lazy load your images in #}
                                 {# the js uses the new Intersection Observer API, see ../modules/lazyload #}
@@ -58,12 +58,12 @@ title: Work
 
                     <div class="p-8">
 
-                        <div class="flex flex-row">
-                            <div class="w-1/3">
-                                <h2 class="mb-6 text-3xl"><a class="block text-pref-cardHeading hover:text-pref-cardSupport" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                        <div class="flex flex-row flex-wrap">
+                            <div class="w-full md:w-1/3">
+                                <h2 class="mb-6 text-3xl font-bold"><a class="block text-pref-cardHeading hover:text-pref-cardSupport" href="{{ post.url }}">{{ post.data.title }}</a></h2>
                             </div>
 
-                            <div class="w-2/3">
+                            <div class="w-full md:w-2/3">
                                 {{ post.data.excerpt | safe }}
                             </div>
                         </div>

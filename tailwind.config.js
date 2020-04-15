@@ -142,7 +142,7 @@ module.exports = {
     },
     fontFamily: {
       primary: [
-        'Cormorant Garamond',
+        'Montserrat',
         'sans-serif',
       ],
       secondary: [
