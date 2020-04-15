@@ -150,12 +150,8 @@ module.exports = {
         'sans-serif',
       ],
       mono: [
-        'Menlo',
-        'Monaco',
-        'Consolas',
-        '"Liberation Mono"',
-        '"Courier New"',
-        'monospace',
+        'Dosis',
+        'sans-serif',
       ],
     },
     fontSize: {

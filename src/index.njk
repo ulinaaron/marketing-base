@@ -13,13 +13,13 @@ title: Hey, I'm Aaron.
     <section class="flex-1 column centre content" aria-label="Summary">
 
         <div class="mb-20 border-b-4 bg-pref-hero border-pref-meta">
-            <div class="flex flex-row items-center -mx-8">
+            <div class="flex flex-row flex-wrap items-end -mx-8 lg:items-center">
             
-                <div class="w-1/2 px-8">
+                <div class="w-full px-8 text-center md:w-1/2 md:text-left">
                     <h1 class="page-title">{{ title }}</h1>
                     <p class="lead">A designer and developer crafting refreshing, user-centric web thingamajigs.</p>
                 </div>
-                <div class="w-1/2 px-8">
+                <div class="w-full px-8 md:w-1/2">
                     <div class="hero-photos" x-data="schemeImages()" x-init="schemeImagesInit()">
                         <img x-show="isLight()" src="/static/images/hero_photo_light.png" alt="A graphically altered photo of myself.">
                         <img x-show="isDark()" src="/static/images/hero_photo_dark.png" alt="A graphically altered photo of myself.">
@@ -77,8 +77,8 @@ title: Hey, I'm Aaron.
         <h2>Process</h2>
         <p class="lead">The methodologies and tools I bring to a project.</p>
 
-        <div class="flex flex-row -mx-4 text-lg">
-            <div class="w-1/5 px-2 text-center">
+        <div class="flex flex-row flex-wrap -mx-4 text-lg">
+            <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
                 <h4>Discover</h4>
 
                 <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
@@ -86,7 +86,7 @@ title: Hey, I'm Aaron.
                     <li>User Research</li>
                 </ul>
             </div>
-            <div class="w-1/5 px-2 text-center">
+            <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
                 <h4>Define</h4>
 
                 <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
@@ -94,7 +94,7 @@ title: Hey, I'm Aaron.
                     <li>User Research</li>
                 </ul>
             </div>
-            <div class="w-1/5 px-2 text-center">
+            <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
                 <h4>Sprint</h4>
 
                 <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
@@ -102,7 +102,7 @@ title: Hey, I'm Aaron.
                     <li>User Research</li>
                 </ul>
             </div>
-            <div class="w-1/5 px-2 text-center">
+            <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
                 <h4>Ship</h4>
 
                 <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
@@ -110,7 +110,7 @@ title: Hey, I'm Aaron.
                     <li>User Research</li>
                 </ul>
             </div>
-            <div class="w-1/5 px-2 text-center">
+            <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
                 <h4>Measure</h4>
 
                 <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
@@ -122,8 +122,8 @@ title: Hey, I'm Aaron.
 
         <h3 class="mt-10 text-xl text-center">Applied Methods & Tools</h3>
 
-        <div class="flex flex-row -mx-4 text-lg">
-            <div class="flex items-stretch w-1/5 px-2 text-center">
+        <div class="flex flex-row flex-wrap -mx-4 text-lg">
+            <div class="flex items-stretch w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
                 <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
                     <li>User Interviews</li>
                     <li>Expert Interviews</li>
@@ -131,7 +131,7 @@ title: Hey, I'm Aaron.
                     <li>Affinity Mapping</li>
                 </ul>
             </div>
-            <div class="flex items-stretch w-1/5 px-2 text-center">
+            <div class="flex items-stretch w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
                 <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
                     <li>User Flows</li>
                     <li>User Stories</li>
@@ -140,7 +140,7 @@ title: Hey, I'm Aaron.
                     <li>Personas</li>
                 </ul>
             </div>
-            <div class="flex items-stretch w-1/5 px-2 text-center">
+            <div class="flex items-stretch w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
                 <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
                     <li>Sketches</li>
                     <li>Wireframes</li>
@@ -148,14 +148,14 @@ title: Hey, I'm Aaron.
                     <li>Develop Prototypes</li>
                 </ul>
             </div>
-            <div class="flex items-stretch w-1/5 px-2 text-center">
+            <div class="flex items-stretch w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
                 <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
                     <li>DevOps Tools</li>
                     <li>Asset Optimization</li>
                     <li>Design System Management</li>
                 </ul>
             </div>
-            <div class="flex items-stretch w-1/5 px-2 text-center">
+            <div class="flex items-stretch w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
                 <ul class="w-full p-4 rounded-lg shadow-md bg-pref-cardBaserounded-lg bg-pref-cardBase">
                     <li>Usability Testing</li>
                     <li>A/B Testing</li>

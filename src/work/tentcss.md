@@ -3,20 +3,22 @@ title: TentCSS
 date: 2018-09-30
 featured_image: /static/images/work/tentcss.png
 image_caption: Photo by Dylan Gillis on Unsplash
-excerpt: A meeting is a gathering of two or more people that has been convened for the purpose of achieving a common goal through verbal interaction.
+tagline: A CSS Utility framework
+excerpt: This was a passion project of mine to create a minimalistic CSS framework. Additionally I wanted the framework to adhere to the BEM methodology which I found to be missing from large-scale UI frameworks.
+year: 2017
+roles: 
+    - Product Owner
+    - Developer
 bg_color: '#3d9970'
 tags:
     - work
 ---
 
-A meeting is a gathering of two or more people that has been convened for the purpose of achieving a common goal through verbal interaction.
+### The Problem
 
-Such as sharing information or reaching an agreement. Meetings may occur face-to-face or virtually, as mediated by communications technology, such as a telephone conference call, a skyped conference call or a video conference.
+As a developer, I found frameworks such as Bootstrap and Zurb Foundation to be too heavy handed for many of my own projects. Often to offset this weight I would employ a CSS reset stylesheet and continue to only create the CSS styles I needed at the time. While this approach worked, it was ineffective to scale and often had many repeat commonalities from project to project. You can only create `.button` so many times to were the properities are only subtly different.
 
-One can distinguish a meeting from other gatherings, such as a chance encounter (not convened), a sports game or a concert (verbal interaction is incidental), a party or the company of friends (no common goal is to be achieved) and a demonstration (whose common goal is achieved mainly through the number of demonstrators present, not through verbal interaction).
+Additonally I could not find many frameworks that adhered to the BEM methodology (Block, Element Modifier). Bootstrap also did not have a way to easily modify class names to fit any sort of methodology.
 
-## Meeting planners
+### The Plan
 
-Meeting planners and other meeting professionals may use the term “meeting” to denote an event booked at a hotel, convention center or any other venue dedicated to such gatherings.
-
-In this sense, the term meeting covers a lecture, seminar, conference, congress, exhibition or trade show, training course, or a team-building session and kick-off event.

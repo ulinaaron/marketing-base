@@ -561,7 +561,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Dosis, sans-serif;
 }
 
 /**
@@ -785,7 +785,7 @@ h6 {
   margin-bottom: 2rem;
 }
 
-.content .lead {
+.lead {
   font-size: 1.6rem;
   margin-bottom: 2.5rem;
   font-weight: 300;
@@ -794,7 +794,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
-  .content .lead {
+  .lead {
     font-size: 1.95rem;
   }
 }
@@ -814,6 +814,12 @@ a:not([class]) {
 
 a:not([class]):hover {
   color: var(--color-link-hover);
+}
+
+code {
+  background-color: var(--color-card-base);
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .container{
@@ -2945,7 +2951,7 @@ a:not([class]):hover {
 }
 
 .font-mono{
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Dosis, sans-serif;
 }
 
 .font-hairline{
@@ -11301,7 +11307,7 @@ a:not([class]):hover {
   }
 
   .sm\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Dosis, sans-serif;
   }
 
   .sm\:font-hairline{
@@ -19658,7 +19664,7 @@ a:not([class]):hover {
   }
 
   .md\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Dosis, sans-serif;
   }
 
   .md\:font-hairline{
@@ -28015,7 +28021,7 @@ a:not([class]):hover {
   }
 
   .lg\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Dosis, sans-serif;
   }
 
   .lg\:font-hairline{
@@ -36372,7 +36378,7 @@ a:not([class]):hover {
   }
 
   .xl\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Dosis, sans-serif;
   }
 
   .xl\:font-hairline{

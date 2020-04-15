@@ -4,7 +4,11 @@ date: 2018-09-30
 featured_image: /static/images/work/cfc.png
 bg_color: '#11b3e8'
 image_caption: Photo by Dylan Gillis on Unsplash
-excerpt: A meeting is a gathering of two or more people that has been convened for the purpose of achieving a common goal through verbal interaction.
+excerpt: A Grand Rapids based non-profit, Community Food Club, needed marketing materials created that told their story. The project was submitted and accepted to the 2018 Weekend For Good event in Grand Rapids. I was chosen to lead a team of six through the 3 day sprint.
+roles: 
+    - Project Lead
+    - Design Lead
+    - Development Lead
 tags:
     - work
 ---
