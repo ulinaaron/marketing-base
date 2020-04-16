@@ -48,7 +48,7 @@ title: Articles
                                 {# the js uses the new Intersection Observer API, see ../modules/lazyload #}
                                 {# it's not fully supported in some browsers, so proceed with caution! #}
                                 {# the srcset attribute would be a nice addtion here as well...in a future update maybe :) #}
-                                <img data-lazy="{{ post.data.featured_image }}" class="block" alt="{{ post.data.image_caption }}">
+                                <img data-lazy="{{ post.data.featured_image }}" class="block rounded-lg shadow-xl bg-pref-cardBase" alt="{{ post.data.image_caption }}">
 
                             </figure>
 
@@ -56,18 +56,18 @@ title: Articles
 
                     {% endif %}
 
-                    <div class="p-8">
+                    <div class="p-8 border-b border-pref-meta">
 
                         <h2 class="mb-6 text-3xl font-bold"><a class="block text-pref-cardHeading hover:text-pref-cardSupport" href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
                         
                         <div class="flex flex-row">
-                            <div>
-                                <div class="mb-4 text-lg text-pref-cardMeta md:flex">
+                            <div class="w-2/3">
+                                <div class="flex text-sm text-pref-cardMeta">
 
                                     <p class="author">By {{ site.author.name }}</p>
 
-                                    <p class="hidden px-2 md:block">—</p>
+                                    <p class="hidden px-2 sm:block">—</p>
 
                                     <time datetime="{{ post.date }}">
                                         {{ post.date | dateDisplay }}
@@ -76,8 +76,8 @@ title: Articles
                                 </div>
 
                             </div>
-                            <div>
-                                <a class="inline-block mt-10 text-right border-b-2 text-pref-cardHeading hover:text-pref-cardSupport border-pref-cardSupport" href="{{ post.url }}">Read More</a>
+                            <div class="w-1/3 text-right">
+                                <a class="inline-block text-sm text-right border-b-2 text-pref-cardHeading hover:text-pref-cardSupport border-pref-cardSupport" href="{{ post.url }}">Read More</a>
                             </div>
                         </div>
 

@@ -1337,7 +1337,7 @@ code {
 }
 
 .form .row label:after {
-  font-size: 0.1rem;
+  font-size: 1rem;
 }
 
 .form .row.required label:after {
@@ -6952,7 +6952,7 @@ code {
 }
 
 .text-sm{
-  font-size: 0.1rem;
+  font-size: 1rem;
 }
 
 .text-base{
@@ -15308,7 +15308,7 @@ code {
   }
 
   .sm\:text-sm{
-    font-size: 0.1rem;
+    font-size: 1rem;
   }
 
   .sm\:text-base{
@@ -23665,7 +23665,7 @@ code {
   }
 
   .md\:text-sm{
-    font-size: 0.1rem;
+    font-size: 1rem;
   }
 
   .md\:text-base{
@@ -32022,7 +32022,7 @@ code {
   }
 
   .lg\:text-sm{
-    font-size: 0.1rem;
+    font-size: 1rem;
   }
 
   .lg\:text-base{
@@ -40379,7 +40379,7 @@ code {
   }
 
   .xl\:text-sm{
-    font-size: 0.1rem;
+    font-size: 1rem;
   }
 
   .xl\:text-base{
