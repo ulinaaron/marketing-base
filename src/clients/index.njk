@@ -1,0 +1,47 @@
+---
+layout: default
+meta_title: Clients
+meta_description: About page description
+body_class: clients
+title: Clients
+---
+
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
+
+    <article id="container-centre" class="flex-1 column centre">
+
+        <header>
+            <h1 class="page-title">{{ title }}</h1>
+        </header>
+
+        <div class="content">
+            <h2>Log in</h2>
+            <form name="login" class="form">
+                <div class="message"></div>
+                <p>
+                    <label>Email<br/><input class="input" type="email" name="email" required/></label>
+                </p>
+                <p>
+                    <label>Password<br/><input class="input" type="password" name="password" required/></label>
+                </p>
+                <button class="inline-block px-6 py-4 font-bold rounded text-light text-pref-buttonPrimarySupport bg-pref-buttonPrimaryBase hover:bg-pref-buttonPrimaryBaseHover" type="submit">Log in</button>
+            </form>
+
+
+             <!-- Add a menu:
+   Log in / Sign up - when the user is not logged in
+   Username / Log out - when the user is logged in
+  -->
+  <div data-netlify-identity-menu></div>
+
+  <!-- Add a simpler button:
+    Simple button that will open the modal.
+  -->
+  <div data-netlify-identity-button>Login with Netlify Identity</div>
+        </div>
+
+    </article>
+
+</main>
