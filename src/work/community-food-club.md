@@ -3,7 +3,7 @@ title: Community Food Club
 date: 2018-09-30
 featured_image: /static/images/work/cfc.png
 bg_color: '#11b3e8'
-image_caption: Photo by Dylan Gillis on Unsplash
+image_caption: Laptop mockup of Community Food Club website.
 excerpt: A Grand Rapids based non-profit, Community Food Club, needed marketing materials created that told their story. The project was submitted and accepted to the 2018 Weekend For Good event in Grand Rapids. I was chosen to lead a team of six through the 3 day sprint.
 roles: 
     - Project Lead

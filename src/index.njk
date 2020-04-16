@@ -1,14 +1,14 @@
 ---
 layout: default
 meta_title: Home
-meta_description: Skeleventy is a beautiful, powerful skeleton boilerplate built with Eleventy and TailwindCSS
+meta_description: A designer and developer crafting refreshing, user-centric web thingamajigs.
 body_class: home
 title: Hey, I'm Aaron.
 ---
 
 
 
-<main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
+<main id="main" class="flex flex-col flex-1 py-10 overflow-x-hidden main inner lg:py-20 focus:outline-none" tabindex="-1">
 
     <section class="flex-1 column centre content" aria-label="Summary">
 
@@ -74,7 +74,8 @@ title: Hey, I'm Aaron.
 
     <!-- Work Section -->
     <section class="pt-20">
-        <h2>My Work</h2>
+        <h2 class="text-center md:text-left">My Work</h2>
+        <p class="text-center md:text-left lead">Case studies that intersect business goals and human behavior.</p>
         <div class="flex-wrap items-stretch flex-1 -mx-4 posts lg:flex">
 
             {% for post in collections.work %}
@@ -144,12 +145,12 @@ title: Hey, I'm Aaron.
     <!-- Process Section -->
     <section class="flex-1 pt-20 column centre content" aria-label="Process">
 
-        <h2>Process</h2>
-        <p class="lead">The methodologies, tools, and disciplines I bring to a project as a generalist.</p>
+        <h2 class="text-center md:text-left">Process</h2>
+        <p class="text-center md:text-left lead">The methodologies, tools, and disciplines I bring to a project as a generalist.</p>
 
         <div class="flex flex-row flex-wrap -mx-4 text-lg">
             <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <h4 class="mb-0">Discover</h4>
+                <h4 class="inline-block pb-4 mb-0 border-b md:block border-pref-meta">Discover</h4>
 
                 <ul class="flex-1 w-2/3 p-4 mx-auto md:w-full">
                     <li>Business Goals &amp; Requirements</li>
@@ -157,7 +158,7 @@ title: Hey, I'm Aaron.
                 </ul>
             </div>
             <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <h4 class="mb-0">Define</h4>
+                <h4 class="inline-block pb-4 mb-0 border-b md:block border-pref-meta">Define</h4>
 
                 <ul class="flex-1 w-2/3 p-4 mx-auto md:w-full">
                     <li>Project Brief</li>
@@ -166,7 +167,7 @@ title: Hey, I'm Aaron.
                 </ul>
             </div>
             <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <h4 class="mb-0">Sprint</h4>
+                <h4 class="inline-block pb-4 mb-0 border-b md:block border-pref-meta">Sprint</h4>
 
                 <ul class="flex-1 w-2/3 p-4 mx-auto md:w-full">
                     <li>Iterations</li>
@@ -175,7 +176,7 @@ title: Hey, I'm Aaron.
                 </ul>
             </div>
             <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <h4 class="mb-0">Ship</h4>
+                <h4 class="inline-block pb-4 mb-0 border-b md:block border-pref-meta">Ship</h4>
 
                 <ul class="flex-1 w-2/3 p-4 mx-auto md:w-full">
                     <li>Code Integration </li>
@@ -184,7 +185,7 @@ title: Hey, I'm Aaron.
                 </ul>
             </div>
             <div class="w-full px-2 mb-6 text-center md:mb-0 md:w-1/5">
-                <h4 class="mb-0">Measure</h4>
+                <h4 class="inline-block pb-4 mb-0 border-b md:block border-pref-meta">Measure</h4>
 
                 <ul class="flex-1 w-2/3 p-4 mx-auto md:w-full">
                     <li>Feedback Management</li>
@@ -241,34 +242,34 @@ title: Hey, I'm Aaron.
         <h3 class="mt-10 text-xl font-bold text-center">My Generalist Deciplines</h3>
 
         <div class="flex flex-row flex-wrap -mx-6 text-lg">
-            <div class="w-full px-6 mb-6 md:w-1/2">
+            <div class="w-full px-6 mb-6 text-center md:w-1/2 md:text-left">
                 <h4>Strategy</h4>
 
                 <p>I always like to look before I leap. Ask a ton of the right questions to make sure we're accomplishing a solution that meets the problem. Plan smart, but plan to adapt and grow along the way. </p>
 
             </div>
-            <div class="w-full px-6 mb-6 md:w-1/2">
+            <div class="w-full px-6 mb-6 text-center md:w-1/2 md:text-left">
                 <h4>Experience Design</h4>
 
-                I find it of the upmost importance to understand the audience for which we are trying to build solutions for. That is why along with business requirements and goals the customers are constantly used to measure success.
+                <p>I find it of the upmost importance to understand the audience for which we are trying to build solutions for. That is why along with business requirements and goals the customers are constantly used to measure success.</p>
             </div>
-            <div class="w-full px-6 mb-6 md:w-1/2">
+            <div class="w-full px-6 mb-6 text-center md:w-1/2 md:text-left">
                 <h4>Visual Design</h4>
 
-                Hand-in-hand with experience design, I believe in creating solutions that are as elegant as they are functional for their audience. The visual design should not overtake the usability nor should it make it forgettable. 
+                <p>Hand-in-hand with experience design, I believe in creating solutions that are as elegant as they are functional for their audience. The visual design should not overtake the usability nor should it make it forgettable.</p>
             </div>
-            <div class="w-full px-6 mb-6 md:w-1/2">
+            <div class="w-full px-6 mb-6 text-center md:w-1/2 md:text-left">
                 <h4>Development</h4>
 
-                Develop with the appropriate technologies for the business in mind while making them performant for the usability. I like to integrate design into code that can be systemized and easily maintained for other developers along with being understood by content editors.
+                <p>Develop with the appropriate technologies for the business in mind while making them performant for the usability. I like to integrate design into code that can be systemized and easily maintained for other developers along with being understood by content editors.</p>
             </div>
         </div>
     </section>
     <!-- End Process Section -->
     <!-- Connect Section -->
-    <section class="flex-1 pt-20 column centre content" aria-label="Contact">
+    <section class="flex-1 pt-20 text-center md:text-left content" aria-label="Contact">
         <h2>Connect With Me</h2>
-        Please use my <a href="/contact">contact</a> page to find all the ways I can be reached.
+        <p class="mb-0">Please use my <a href="/contact">contact</a> page to find all the ways I can be reached.</p>
     </section>
     <!-- End Connect Section -->
 

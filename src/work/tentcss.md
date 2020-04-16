@@ -2,7 +2,7 @@
 title: TentCSS
 date: 2018-09-30
 featured_image: /static/images/work/tentcss.png
-image_caption: Photo by Dylan Gillis on Unsplash
+image_caption: Laptop mockup of TentCSS website.
 tagline: A CSS Utility framework
 excerpt: This was a passion project of mine to create a minimalistic CSS framework. Additionally I wanted the framework to adhere to the BEM methodology which I found to be missing from large-scale UI frameworks.
 year: 2017

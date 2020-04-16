@@ -46,7 +46,10 @@
 
     <a class="sr-only" href="#main">Skip to content</a>
 
-    <div id="wrapper" class="relative flex flex-col min-h-screen pb-16 wrapper md:pb-0">
+    {# include mobile nav #}
+    {% include "components/mobile-nav.njk" %}
+
+    <div id="wrapper" class="relative flex flex-col min-h-screen pt-16 wrapper md:pt-0">
 
         {# include header #}
         {% include "components/header.njk" %}
@@ -58,9 +61,6 @@
         {% include "components/footer.njk" %}
 
     </div>
-
-    {# include mobile nav #}
-    {% include "components/mobile-nav.njk" %}
 
 </body>
 </html>
