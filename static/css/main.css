@@ -1439,15 +1439,16 @@ code {
 
 .experience-item__title {
   margin-bottom: 0.5rem;
+  font-size: 1.8rem;
 }
 
 .experience-item__role {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 0;
 }
 
 .experience-item__time {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-style: italic;
 }
 
@@ -1462,7 +1463,7 @@ code {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-right: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
   color: var(--color-base);
