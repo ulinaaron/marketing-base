@@ -32,11 +32,7 @@ h6 { @apply text-xl; }
 }
 
 .lead {
-    @apply text-2xl mb-10 font-light leading-snug text-pref-lead;
-
-    @screen md {
-        @apply text-3xl;
-    }
+    @apply text-lg mb-10 font-light leading-snug text-pref-lead;
 }
 
 a {

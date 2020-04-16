@@ -723,15 +723,14 @@ video {
 
 body {
   font-family: Montserrat, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   background-color: var(--color-base);
   color: var(--color-support);
-  transition-duration: 200ms;
 }
 
 .brand {
-  font-size: 1.95rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--color-brand);
   font-family: Dosis, sans-serif;
@@ -753,31 +752,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4.2rem;
+  font-size: 4.4rem;
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.8rem;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h4 {
-  font-size: 1.95rem;
+  font-size: 2.5rem;
 }
 
 h5 {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 h6 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .page-title {
-  font-size: 4.2rem;
+  font-size: 4.4rem;
   font-weight: 600;
 }
 
@@ -791,17 +790,11 @@ h6 {
 }
 
 .lead {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-bottom: 2.5rem;
   font-weight: 300;
   line-height: 1.375;
   color: var(--color-lead);
-}
-
-@media (min-width: 768px) {
-  .lead {
-    font-size: 1.95rem;
-  }
 }
 
 a {
@@ -1344,7 +1337,7 @@ code {
 }
 
 .form .row label:after {
-  font-size: 0.875rem;
+  font-size: 0.1rem;
 }
 
 .form .row.required label:after {
@@ -1449,12 +1442,12 @@ code {
 }
 
 .experience-item__role {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 0;
 }
 
 .experience-item__time {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-style: italic;
 }
 
@@ -1469,7 +1462,7 @@ code {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-right: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
   color: var(--color-base);
@@ -6955,47 +6948,47 @@ code {
 }
 
 .text-xs{
-  font-size: 0.75rem;
-}
-
-.text-sm{
   font-size: 0.875rem;
 }
 
-.text-base{
-  font-size: 1.1rem;
+.text-sm{
+  font-size: 0.1rem;
 }
 
-.text-lg{
+.text-base{
   font-size: 1.25rem;
 }
 
+.text-lg{
+  font-size: 1.5rem;
+}
+
 .text-xl{
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .text-2xl{
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .text-3xl{
-  font-size: 1.95rem;
-}
-
-.text-4xl{
   font-size: 2.5rem;
 }
 
+.text-4xl{
+  font-size: 3rem;
+}
+
 .text-5xl{
-  font-size: 3.6rem;
+  font-size: 3.8rem;
 }
 
 .text-6xl{
-  font-size: 4.2rem;
+  font-size: 4.4rem;
 }
 
 .text-xxs{
-  font-size: 0.65rem;
+  font-size: 0.6rem;
 }
 
 .italic{
@@ -15311,47 +15304,47 @@ code {
   }
 
   .sm\:text-xs{
-    font-size: 0.75rem;
-  }
-
-  .sm\:text-sm{
     font-size: 0.875rem;
   }
 
-  .sm\:text-base{
-    font-size: 1.1rem;
+  .sm\:text-sm{
+    font-size: 0.1rem;
   }
 
-  .sm\:text-lg{
+  .sm\:text-base{
     font-size: 1.25rem;
   }
 
+  .sm\:text-lg{
+    font-size: 1.5rem;
+  }
+
   .sm\:text-xl{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .sm\:text-2xl{
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .sm\:text-3xl{
-    font-size: 1.95rem;
-  }
-
-  .sm\:text-4xl{
     font-size: 2.5rem;
   }
 
+  .sm\:text-4xl{
+    font-size: 3rem;
+  }
+
   .sm\:text-5xl{
-    font-size: 3.6rem;
+    font-size: 3.8rem;
   }
 
   .sm\:text-6xl{
-    font-size: 4.2rem;
+    font-size: 4.4rem;
   }
 
   .sm\:text-xxs{
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   .sm\:italic{
@@ -23668,47 +23661,47 @@ code {
   }
 
   .md\:text-xs{
-    font-size: 0.75rem;
-  }
-
-  .md\:text-sm{
     font-size: 0.875rem;
   }
 
-  .md\:text-base{
-    font-size: 1.1rem;
+  .md\:text-sm{
+    font-size: 0.1rem;
   }
 
-  .md\:text-lg{
+  .md\:text-base{
     font-size: 1.25rem;
   }
 
+  .md\:text-lg{
+    font-size: 1.5rem;
+  }
+
   .md\:text-xl{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .md\:text-2xl{
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .md\:text-3xl{
-    font-size: 1.95rem;
-  }
-
-  .md\:text-4xl{
     font-size: 2.5rem;
   }
 
+  .md\:text-4xl{
+    font-size: 3rem;
+  }
+
   .md\:text-5xl{
-    font-size: 3.6rem;
+    font-size: 3.8rem;
   }
 
   .md\:text-6xl{
-    font-size: 4.2rem;
+    font-size: 4.4rem;
   }
 
   .md\:text-xxs{
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   .md\:italic{
@@ -32025,47 +32018,47 @@ code {
   }
 
   .lg\:text-xs{
-    font-size: 0.75rem;
-  }
-
-  .lg\:text-sm{
     font-size: 0.875rem;
   }
 
-  .lg\:text-base{
-    font-size: 1.1rem;
+  .lg\:text-sm{
+    font-size: 0.1rem;
   }
 
-  .lg\:text-lg{
+  .lg\:text-base{
     font-size: 1.25rem;
   }
 
+  .lg\:text-lg{
+    font-size: 1.5rem;
+  }
+
   .lg\:text-xl{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .lg\:text-2xl{
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .lg\:text-3xl{
-    font-size: 1.95rem;
-  }
-
-  .lg\:text-4xl{
     font-size: 2.5rem;
   }
 
+  .lg\:text-4xl{
+    font-size: 3rem;
+  }
+
   .lg\:text-5xl{
-    font-size: 3.6rem;
+    font-size: 3.8rem;
   }
 
   .lg\:text-6xl{
-    font-size: 4.2rem;
+    font-size: 4.4rem;
   }
 
   .lg\:text-xxs{
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   .lg\:italic{
@@ -40382,47 +40375,47 @@ code {
   }
 
   .xl\:text-xs{
-    font-size: 0.75rem;
-  }
-
-  .xl\:text-sm{
     font-size: 0.875rem;
   }
 
-  .xl\:text-base{
-    font-size: 1.1rem;
+  .xl\:text-sm{
+    font-size: 0.1rem;
   }
 
-  .xl\:text-lg{
+  .xl\:text-base{
     font-size: 1.25rem;
   }
 
+  .xl\:text-lg{
+    font-size: 1.5rem;
+  }
+
   .xl\:text-xl{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .xl\:text-2xl{
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .xl\:text-3xl{
-    font-size: 1.95rem;
-  }
-
-  .xl\:text-4xl{
     font-size: 2.5rem;
   }
 
+  .xl\:text-4xl{
+    font-size: 3rem;
+  }
+
   .xl\:text-5xl{
-    font-size: 3.6rem;
+    font-size: 3.8rem;
   }
 
   .xl\:text-6xl{
-    font-size: 4.2rem;
+    font-size: 4.4rem;
   }
 
   .xl\:text-xxs{
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   .xl\:italic{
