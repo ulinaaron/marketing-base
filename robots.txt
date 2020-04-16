@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /clients/*/
 
-Sitemap: https://skeleventy.netlify.com/sitemap.xml
+Sitemap: https://aaronmazade.netlify.app/sitemap.xml
