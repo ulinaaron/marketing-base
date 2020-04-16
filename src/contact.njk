@@ -22,10 +22,13 @@ title: Reach Out
 
             <p>Say hi, using this super personable form below:</p>
 
-            <form class="form" netlify>
+            <form name="contact" class="form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
 
                 {# this form doesn't work - it's just a nice boilerplate to get you up and running #}
                 {# uses HTML5 validation #}
+                <div class="hidden row">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </div>
 
                 {# if you add a class of 'required' to the row, you'll see the label will change to (required) #}
                 {# opinionated form UX - but it's nice and quick to see at glance what fields are required/optional #}
