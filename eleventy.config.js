@@ -68,6 +68,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy("static/js")
     eleventyConfig.addPassthroughCopy("static/images")
     eleventyConfig.addPassthroughCopy("static/robots.txt")
+    eleventyConfig.addPassthroughCopy("static/_redirects")
 
     return {
         templateFormats: ["md", "njk"],
