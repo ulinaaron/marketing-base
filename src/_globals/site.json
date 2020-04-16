@@ -5,13 +5,13 @@
         "name": "Aaron Mazade",
         "email": "ulinaaron",
         "handle": "@ulinaaron",
-        "avatar": "/images/blog/author.jpg"
+        "avatar": "/static/images/blog/author.jpg"
     },
     "images": {
-        "logo": "/images/logo/logo.svg",
-        "favicon": "/images/favicon.ico",
-        "twitter": "/images/meta/twitter.jpg",
-        "og": "/images/meta/og.jpg"
+        "logo": "/static/images/logo/logo.svg",
+        "favicon": "/static/images/favicon.ico",
+        "twitter": "/static/images/meta/twitter.jpg",
+        "og": "/static/images/meta/og.jpg"
     },
     "social_links": {
         "facebook": "https://www.facebook.com/ulinaaron",
