@@ -16,7 +16,7 @@ title: Articles
 
             {% for post in collections.blog %}
 
-                <article class="w-full mb-8 overflow-hidden rounded-lg shadow-xl md:mx-4 bg-pref-cardBase article-card">
+                <article class="w-full mb-8 overflow-hidden article-card">
 
                     {# featured post image & category #}
                     {% if post.data.featured_image %}
@@ -58,18 +58,27 @@ title: Articles
 
                     <div class="p-8">
 
-                        <h2 class="mb-6 text-2xl"><a class="block text-pref-cardHeading hover:text-pref-cardSupport" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                        <h2 class="mb-6 text-3xl font-bold"><a class="block text-pref-cardHeading hover:text-pref-cardSupport" href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
-                        <div class="mb-4 text-lg text-pref-cardMeta md:flex">
+                        
+                        <div class="flex flex-row">
+                            <div>
+                                <div class="mb-4 text-lg text-pref-cardMeta md:flex">
 
-                            <p class="author">By {{ site.author.name }}</p>
+                                    <p class="author">By {{ site.author.name }}</p>
 
-                            <p class="hidden px-2 md:block">—</p>
+                                    <p class="hidden px-2 md:block">—</p>
 
-                            <time datetime="{{ post.date }}">
-                                {{ post.date | dateDisplay }}
-                            </time>
+                                    <time datetime="{{ post.date }}">
+                                        {{ post.date | dateDisplay }}
+                                    </time>
 
+                                </div>
+
+                            </div>
+                            <div>
+                                <a class="inline-block mt-10 text-right border-b-2 text-pref-cardHeading hover:text-pref-cardSupport border-pref-cardSupport" href="{{ post.url }}">Read More</a>
+                            </div>
                         </div>
 
                     </div>

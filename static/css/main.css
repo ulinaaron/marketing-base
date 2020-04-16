@@ -785,6 +785,11 @@ h6 {
   margin-bottom: 2rem;
 }
 
+.content ul {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
 .lead {
   font-size: 1.6rem;
   margin-bottom: 2.5rem;
