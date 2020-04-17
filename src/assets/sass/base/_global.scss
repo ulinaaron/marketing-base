@@ -18,7 +18,10 @@ body {
         @apply shadow-lg;
 
         @screen md {
-           
        } 
+    }
+
+    figure img {
+        @apply shadow-none;
     }
 }

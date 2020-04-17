@@ -780,6 +780,10 @@ body {
 @media (min-width: 768px) {
 }
 
+.work-post figure img {
+  box-shadow: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Dosis, sans-serif;
   font-weight: 300;
