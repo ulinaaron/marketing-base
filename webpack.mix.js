@@ -47,12 +47,13 @@ mix
         enabled: mix.inProduction(),
         paths: {
             base: 'https://aaronmazade.netlify.app/',
-            templates: './critical/',
-            suffix: '_critical.min'
+            templates: './static/critical/',
+            suffix: ''
         },
         urls: [
-            { url: 'https://aaronmazade.netlify.app/', template: 'index' },
-            { url: 'https://aaronmazade.netlify.app/articles', template: 'articles' },
+            { url: 'index', template: 'index' },
+            { url: 'about', template: 'about' },
+            { url: 'articles', template: 'articles' },
         ],
         options: {
             minify: true,
