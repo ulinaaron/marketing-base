@@ -28,8 +28,6 @@ mix
             }
         }
     })
-
-    .copy('tailwind.config.js', 'src/_globals/tokens.js')
     
     // Concatenate & Compile Javascript
     .js(paths.javascript.source, paths.javascript.dest)
@@ -43,22 +41,6 @@ mix
         processCssUrls: false,
         postCss: [tailwindcss('tailwind.config.js')]
     })
-    // .criticalCss({
-    //     enabled: mix.inProduction(),
-    //     paths: {
-    //         base: 'https://aaronmazade.netlify.app/',
-    //         templates: './static/critical/',
-    //         suffix: ''
-    //     },
-    //     urls: [
-    //         { url: 'index', template: 'index' },
-    //         { url: 'about', template: 'about' },
-    //         { url: 'articles', template: 'articles' },
-    //     ],
-    //     options: {
-    //         minify: true,
-    //     },
-    // })
 
     // Production only
     if ( mix.inProduction() )
@@ -84,6 +66,8 @@ mix
                     'h3',
                     'h4',
                     'p',
+                    'pre',
+                    'code',
                     'blockquote',
                     'breadcrumbs',
                     'content',
