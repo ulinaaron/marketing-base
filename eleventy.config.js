@@ -23,21 +23,21 @@ module.exports = eleventyConfig => {
     })
 
     // Collections
-    eleventyConfig.addCollection('blog', collection => {
+    eleventyConfig.addCollection('article', collection => {
 
-        const blogs = collection.getFilteredByTag('blog')
+        const articles = collection.getFilteredByTag('article')
 
-        for( let i = 0; i < blogs.length; i++ ) {
+        for( let i = 0; i < articles.length; i++ ) {
 
-            const prevPost = blogs[i - 1]
-            const nextPost = blogs[i + 1]
+            const prevPost = articles[i - 1]
+            const nextPost = articles[i + 1]
 
-            blogs[i].data["prevPost"] = prevPost
-            blogs[i].data["nextPost"] = nextPost
+            articles[i].data["prevPost"] = prevPost
+            articles[i].data["nextPost"] = nextPost
 
         }
 
-        return blogs.reverse()
+        return articles.reverse()
 
     })
 

@@ -1,6 +1,6 @@
 ---
 title: Portfolio Upgrade, A Go!
-status: publish
+hidden: true
 date: 2020-04-17
 featured_image: 
 image_caption: Photo by Dylan Gillis on Unsplash
