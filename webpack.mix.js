@@ -2,6 +2,7 @@
 let mix = require('laravel-mix')
 let tailwindcss = require('tailwindcss')
 require('laravel-mix-purgecss')
+require('laravel-mix-criticalcss');
 
 // Paths
 const paths = {
@@ -41,6 +42,20 @@ mix
     .options({
         processCssUrls: false,
         postCss: [tailwindcss('tailwind.config.js')]
+    })
+    .criticalCss({
+        enabled: mix.inProduction(),
+        paths: {
+            base: 'https://aaronmazade.netlify.app/',
+            // templates: './where-critical-css-file-needs-to-be-written/',
+            suffix: '_critical.min'
+        },
+        urls: [
+            { url: 'blog', template: 'blog' },
+        ],
+        options: {
+            minify: true,
+        },
     })
 
     // Production only
