@@ -8,8 +8,8 @@
         "avatar": "/static/images/blog/author.jpg"
     },
     "images": {
-        "logo": "/static/images/logo/logo.svg",
-        "favicon": "/static/images/favicon.ico",
+        "logo": "/static/images/favicon.png",
+        "favicon": "/static/images/favicon.png",
         "twitter": "/static/images/meta/twitter.png",
         "og": "/static/images/meta/og.png"
     },
