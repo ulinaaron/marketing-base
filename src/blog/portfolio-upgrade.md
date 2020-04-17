@@ -28,3 +28,5 @@ I choose to start with the 11ty boilerplate, Skeleventy. Particularly because it
 
 Is has been important to me to make sure sites I create are ultra performant. 
 
+![alt text](/static/images/blog/portfolio-upgrade/benchmark.png "Benchmark scores for homepage")
+
