@@ -10,8 +10,8 @@
     "images": {
         "logo": "/static/images/logo/logo.svg",
         "favicon": "/static/images/favicon.ico",
-        "twitter": "/static/images/meta/twitter.jpg",
-        "og": "/static/images/meta/og.jpg"
+        "twitter": "/static/images/meta/twitter.png",
+        "og": "/static/images/meta/og.png"
     },
     "social_links": {
         "facebook": "https://www.facebook.com/ulinaaron",
