@@ -43,22 +43,22 @@ mix
         processCssUrls: false,
         postCss: [tailwindcss('tailwind.config.js')]
     })
-    .criticalCss({
-        enabled: mix.inProduction(),
-        paths: {
-            base: 'https://aaronmazade.netlify.app/',
-            templates: './static/critical/',
-            suffix: ''
-        },
-        urls: [
-            { url: 'index', template: 'index' },
-            { url: 'about', template: 'about' },
-            { url: 'articles', template: 'articles' },
-        ],
-        options: {
-            minify: true,
-        },
-    })
+    // .criticalCss({
+    //     enabled: mix.inProduction(),
+    //     paths: {
+    //         base: 'https://aaronmazade.netlify.app/',
+    //         templates: './static/critical/',
+    //         suffix: ''
+    //     },
+    //     urls: [
+    //         { url: 'index', template: 'index' },
+    //         { url: 'about', template: 'about' },
+    //         { url: 'articles', template: 'articles' },
+    //     ],
+    //     options: {
+    //         minify: true,
+    //     },
+    // })
 
     // Production only
     if ( mix.inProduction() )
