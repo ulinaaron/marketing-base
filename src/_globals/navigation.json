@@ -9,10 +9,6 @@
             "url": "/work/"
         },
         {
-            "label": "Articles",
-            "url": "/articles/"
-        },
-        {
             "label": "Contact",
             "url": "/contact/"
         }

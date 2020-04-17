@@ -12,3 +12,13 @@ body {
 .footer {
     @apply bg-pref-footerBase text-pref-footerSupport;
 }
+
+.work-post {
+    img {
+        @apply shadow-lg;
+
+        @screen md {
+           
+       } 
+    }
+}
