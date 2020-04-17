@@ -1,7 +1,7 @@
 ---
 layout: default
 meta_title: Work
-meta_description: Work page description
+meta_description: Projects I am proud of.
 body_class: work
 title: Work
 ---
@@ -24,6 +24,7 @@ title: Work
                         <a class="relative block overflow-hidden featured-image-link" href="{{ post.url }}">
 
                             {# category link #}
+                            {% if post.data.tags %}
                             <ul class="absolute bottom-0 left-0 z-10 flex p-8">
 
                                 {% for item in post.data.tags %}
@@ -41,6 +42,7 @@ title: Work
                                 {% endfor %}
 
                             </ul>
+                            {% endif %}
 
                             <figure style="background-color: {{ post.data.bg_color }};" class="p-20 rounded-lg shadow-xl md:mx-4 bg-pref-cardBase">
 

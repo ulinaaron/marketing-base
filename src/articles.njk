@@ -1,7 +1,7 @@
 ---
 layout: default
 meta_title: Articles
-meta_description: Articles page description
+meta_description: Assortment of my writings.
 body_class: articles
 hidden: true
 title: Articles
@@ -25,6 +25,7 @@ title: Articles
                         <a class="relative block overflow-hidden featured-image-link" href="{{ post.url }}">
 
                             {# category link #}
+                            {% if post.data.tags %}
                             <ul class="absolute bottom-0 left-0 z-10 flex p-8">
 
                                 {% for item in post.data.tags %}
@@ -42,6 +43,7 @@ title: Articles
                                 {% endfor %}
 
                             </ul>
+                            {% endif %}
 
                             <figure>
 
