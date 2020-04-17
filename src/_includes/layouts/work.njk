@@ -3,7 +3,7 @@ layout: default
 ---
 
 {# a post layout #}
-<main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
+<main id="main" class="flex flex-col flex-1 py-10 work-post main inner lg:py-20 focus:outline-none" tabindex="-1">
 
     <article id="container-centre" class="flex-1 column centre">
 
@@ -19,7 +19,7 @@ layout: default
 
                 <figure class="mt-10 md:mt-20">
 
-                    <img data-lazy="{{ featured_image }}" alt="{{ image_caption }}">
+                    <img data-lazy="{{ featured_image }}" alt="{{ post.data.feature_image_alt }}">
 
                     {% if image_caption %}
 
@@ -37,7 +37,7 @@ layout: default
 
         <div class="content post md:px-16">
 
-            <section class="pb-10 mb-10 border-b-2 md:px-40 border-pref-meta">
+            <section class="pb-10 mb-10 border-b md:px-20 border-pref-meta">
                 <div class="flex flex-row">
                 
                     <div class="w-2/3">
@@ -68,32 +68,11 @@ layout: default
 
             {{ content | safe }}
 
-            {# category links list #}
-            {% if tags %}
-
-                <ul class="flex pt-4 list-none">
-
-                    {% for item in tags %}
-
-                        {%- if item != "blog" -%}
-
-                            <li class="mr-2">
-                                <a class="inline-block px-3 py-2 text-xs font-semibold text-white bg-blue-500 rounded hover:text-white hover:bg-pink-500" href="/category/{{ item }}">{{ item | capitalize }}</a>
-                            </li>
-
-                        {%- endif -%}
-
-                    {% endfor %}
-
-                </ul>
-
-            {% endif %}
-
         </div>
 
         <div class="mt-16 md:px-16">
 
-            <div class="flex justify-between pt-12 mt-16 border-t border-gray-700">
+            <div class="flex justify-between pt-12 mt-16 border-t border-pref-meta">
                 {% if prevPost %}<p class="text-sm text-gray-500"><span>Previous:</span> <a href="{{ prevPost.url }}">{{ prevPost.data.title }}</a></p>{% endif %}
                 {% if nextPost %}<p class="text-sm text-gray-500"><span>Next:</span> <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></p>{% endif %}
             </div>

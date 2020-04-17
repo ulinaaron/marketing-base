@@ -16,3 +16,26 @@
 .inner {
     @apply w-full max-w-5xl ml-auto mr-auto px-4;
 }
+
+
+// Code Style
+pre {
+    @apply bg-pref-cardBase p-4 shadow-lg;
+    white-space: pre-wrap;
+
+    @screen md {
+        @apply p-10 -mx-10;
+    }
+
+    code {
+        @apply bg-transparent text-pref-support font-mono text-sm;
+
+        @screen md {
+            @apply text-xs;
+        }
+    }
+}
+
+pre + p {
+    @apply mt-10
+}

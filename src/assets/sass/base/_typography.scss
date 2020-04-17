@@ -26,7 +26,11 @@ h6 { @apply text-xl; }
     }
 
     ul {
-        @apply list-inside list-disc;
+        @apply list-inside list-disc mb-6;
+
+        li {
+            @apply mb-2
+        }
     }
 
 }

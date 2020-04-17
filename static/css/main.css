@@ -561,7 +561,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Dosis, sans-serif;
+  font-family: Consolas, Menlo, Courier, monospace;
 }
 
 /**
@@ -721,6 +721,38 @@ video {
   padding-right: 1rem;
 }
 
+pre {
+  background-color: var(--color-card-base);
+  padding: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  white-space: pre-wrap;
+}
+
+@media (min-width: 768px) {
+  pre {
+    padding: 2.5rem;
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+  }
+}
+
+pre code {
+  background-color: transparent;
+  color: var(--color-support);
+  font-family: Consolas, Menlo, Courier, monospace;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  pre code {
+    font-size: 0.875rem;
+  }
+}
+
+pre + p {
+  margin-top: 2.5rem;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
@@ -787,6 +819,11 @@ h6 {
 .content ul {
   list-style-position: inside;
   list-style-type: disc;
+  margin-bottom: 1.5rem;
+}
+
+.content ul li {
+  margin-bottom: 0.5rem;
 }
 
 .lead {
@@ -2950,7 +2987,7 @@ code {
 }
 
 .font-mono{
-  font-family: Dosis, sans-serif;
+  font-family: Consolas, Menlo, Courier, monospace;
 }
 
 .font-hairline{
@@ -11306,7 +11343,7 @@ code {
   }
 
   .sm\:font-mono{
-    font-family: Dosis, sans-serif;
+    font-family: Consolas, Menlo, Courier, monospace;
   }
 
   .sm\:font-hairline{
@@ -19663,7 +19700,7 @@ code {
   }
 
   .md\:font-mono{
-    font-family: Dosis, sans-serif;
+    font-family: Consolas, Menlo, Courier, monospace;
   }
 
   .md\:font-hairline{
@@ -28020,7 +28057,7 @@ code {
   }
 
   .lg\:font-mono{
-    font-family: Dosis, sans-serif;
+    font-family: Consolas, Menlo, Courier, monospace;
   }
 
   .lg\:font-hairline{
@@ -36377,7 +36414,7 @@ code {
   }
 
   .xl\:font-mono{
-    font-family: Dosis, sans-serif;
+    font-family: Consolas, Menlo, Courier, monospace;
   }
 
   .xl\:font-hairline{
