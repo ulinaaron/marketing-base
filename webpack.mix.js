@@ -1,8 +1,8 @@
 
 let mix = require('laravel-mix')
 let tailwindcss = require('tailwindcss')
+
 require('laravel-mix-purgecss')
-require('laravel-mix-criticalcss');
 
 // Paths
 const paths = {
@@ -33,7 +33,7 @@ mix
     .js(paths.javascript.source, paths.javascript.dest)
 
     // Compile singles
-    // .js(paths.javascript.singles, paths.javascript.dest)
+    .js(paths.javascript.singles, paths.javascript.dest)
 
     // Compile SCSS & TailwindCSS
     .sass(paths.sass.source, paths.sass.dest)
@@ -42,53 +42,52 @@ mix
         postCss: [tailwindcss('tailwind.config.js')]
     })
 
-    // Production only
-    if ( mix.inProduction() )
-    {
+// Production only
+if ( mix.inProduction() )
+{
+    // Remove any unused CSS using Purge
+    mix
 
-        // Remove any unused CSS using Purge
-        mix
+        .purgeCss({
+            folders: [
+                'src'
+            ],
+            extensions: [
+                'html',
+                'njk'
+            ],
+            whitelist: [
+                'body',
+                'html',
+                'a',
+                'h1',
+                'h2',
+                'h3',
+                'h4',
+                'h5',
+                'h6',
+                'p',
+                'pre',
+                'code',
+                'blockquote',
+                'breadcrumbs',
+                'content',
+                'form',
+                'input',
+                'textarea',
+                'intro',
+                'btn',
+                'loaded',
+                'page-title',
+                'required',
+                'row',
+                'visually-hidden',
+                'menu-visible'
+            ]
+        })
 
-            .purgeCss({
-                folders: [
-                    'src'
-                ],
-                extensions: [
-                    'html',
-                    'njk'
-                ],
-                whitelist: [
-                    'body',
-                    'html',
-                    'a',
-                    'h1',
-                    'h2',
-                    'h3',
-                    'h4',
-                    'h5',
-                    'h6',
-                    'p',
-                    'pre',
-                    'code',
-                    'blockquote',
-                    'breadcrumbs',
-                    'content',
-                    'form',
-                    'input',
-                    'textarea',
-                    'intro',
-                    'btn',
-                    'loaded',
-                    'page-title',
-                    'required',
-                    'row',
-                    'visually-hidden',
-                    'menu-visible'
-                ]
-            })
+        // Minifies CSS & JS files
+        .minify(paths.sass.dest + 'main.css')
+        .minify(paths.javascript.dest + 'main.js')
 
-            // Minifies CSS & JS files
-            .minify(paths.sass.dest + 'main.css')
-            .minify(paths.javascript.dest + 'main.js')
-
-    }
+}

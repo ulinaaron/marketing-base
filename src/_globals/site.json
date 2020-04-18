@@ -10,25 +10,13 @@
     "images": {
         "logo": "/static/images/favicon.png",
         "favicon": "/static/images/favicon.png",
-        "twitter": "/static/images/meta/twitter.png",
-        "og": "/static/images/meta/og.png"
+        "twitter": "/static/images/meta/twitter.jpg",
+        "og": "/static/images/meta/og.jpg"
     },
     "social_links": {
         "facebook": "https://www.facebook.com/ulinaaron",
         "twitter": "https://twitter.com/ulinaaron",
         "linkedin": "https://www.linkedin.com/in/aaronmazade/",
         "github": "https://github.com/ulinaaron"
-    },
-    "address": {
-        "street": "123 Fake Street",
-        "street_2": "Fake Road",
-        "city": "London",
-        "postcode": "LN1 234",
-        "country": "GB"
-    },
-    "contact": {
-        "phone": "123 456 789",
-        "mobile": "(+44) 1234 5678",
-        "email": "ulinaaron@gmail.com"
     }
 }
