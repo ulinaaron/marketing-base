@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en" class="min-h-full antialiased">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43246428-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-43246428-1');
-    </script>
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if meta_title %}{{ meta_title }}{% else %}{{ title }}{% endif %} | {{ site.name }}</title>
@@ -49,6 +39,16 @@
 
     {# canonical #}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+    <script>
+        !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+        arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+        d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+        insertBefore(d,q)}(window,document,'script','_gs');
+
+        _gs('GSN-353514-C');
+        _gs('set', 'anonymizeIP', true);
+    </script>
 </head>
 
 <body {% if body_class %} id="{{ body_class }}"{% endif %}>
