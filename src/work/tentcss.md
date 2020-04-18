@@ -1,6 +1,7 @@
 ---
 title: TentCSS
 date: 2018-09-30
+featured: true
 featured_image: /static/images/work/tentcss.png
 featured_image_alt: Laptop mockup of TentCSS website.
 image_caption: 

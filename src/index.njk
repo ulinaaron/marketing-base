@@ -48,6 +48,7 @@ title: Hey, I'm Aaron.
         <div class="flex-wrap items-stretch flex-1 -mx-4 posts lg:flex">
 
             {% for post in collections.work %}
+                {% if post.data.featured %}
                 <div class="items-stretch flex-1 w-full px-4 md:w-1/2">
                     <article class="mb-8 overflow-hidden article-card">
 
@@ -104,6 +105,7 @@ title: Hey, I'm Aaron.
                     </article>
                 </div>
 
+                {% endif %}
             {% endfor %}
 
         </div>

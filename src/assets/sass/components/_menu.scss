@@ -9,12 +9,12 @@
         @apply mb-4;
 
         @screen md {
-            @apply mr-4 mb-0;
+            @apply mr-6 mb-0;
         }
     }
 
     &__item__link {
-        @apply font-light font-secondary text-pref-menu;
+        @apply font-bold font-secondary text-pref-menu;
 
         &:hover {
             @apply text-pref-menuHover;

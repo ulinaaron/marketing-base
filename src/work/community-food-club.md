@@ -1,6 +1,7 @@
 ---
 title: Community Food Club
 date: 2018-09-30
+featured: true
 featured_image: /static/images/work/cfc.png
 featured_image_alt: Laptop mockup of Community Food Club website.
 bg_color: '#11b3e8'

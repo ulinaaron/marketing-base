@@ -920,13 +920,13 @@ code {
 
 @media (min-width: 768px) {
   .menu__item {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     margin-bottom: 0;
   }
 }
 
 .menu__item__link {
-  font-weight: 300;
+  font-weight: 700;
   font-family: Dosis, sans-serif;
   color: var(--color-menu);
 }
