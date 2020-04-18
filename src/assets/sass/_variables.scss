@@ -84,6 +84,10 @@
     --color-button-primary-support: var(--color-scale-700);
     --color-button-primary-base-hover: var(--color-primary-400);
     --color-button-primary-support-hover: var(--color-scale-700);
+
+    --color-scheme-toggle: var(--color-scale-800);
+    --color-scheme-toggle-support: var(--color-light);
+    --color-scheme-toggle-support-hover: var(--color-primary-200);
 }
 
 [data-scheme="dark"] {
@@ -119,4 +123,8 @@
     --color-button-primary-support: var(--color-light);
     --color-button-primary-base-hover: var(--color-primary-500);
     --color-button-primary-support-hover: var(--color-light);
+
+    --color-scheme-toggle: var(--color-scale-200);
+    --color-scheme-toggle-support: var(--color-scale-900);
+    --color-scheme-toggle-support-hover: var(--color-primary-500);
 }

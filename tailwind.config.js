@@ -44,7 +44,11 @@ module.exports = {
         buttonPrimaryBase: 'var(--color-button-primary-base)',
         buttonPrimarySupport: 'var(--color-button-primary-support)',
         buttonPrimaryBaseHover: 'var(--color-button-primary-base-hover)',
-        buttonPrimarySupportHover: 'var(--color-button-primary-support-hover)'
+        buttonPrimarySupportHover: 'var(--color-button-primary-support-hover)',
+
+        schemeToggle: 'var(--color-scheme-toggle)',
+        schemeToggleSupport: 'var(--color-scheme-toggle-support)',
+        schemeToggleSupportHover: 'var(--color-scheme-toggle-support-hover)',
       }
     },
     spacing: {

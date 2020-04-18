@@ -6,7 +6,7 @@
 
         <li class="menu__item">
 
-            <a href="{{ item.url | safe }}" class="menu__item__link {% if page.url == item.url %}active text-pref-support{% endif %}
+            <a href="{{ item.url | safe }}" class="menu__item__link {% if page.url == item.url %}active text-pref-linkHover{% endif %}
             "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
 
         </li>

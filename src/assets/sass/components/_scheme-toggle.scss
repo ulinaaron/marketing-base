@@ -26,7 +26,7 @@
   }
 
   .scheme-toggle__control__toggle {
-    @apply bg-pref-support duration-300;
+    @apply bg-pref-schemeToggle duration-300;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -37,7 +37,7 @@
   }
 
   .scheme-toggle__control__toggle:before {
-    @apply bg-pref-base duration-300;
+    @apply bg-pref-schemeToggleSupport duration-300;
     bottom: 4px;
     content: "";
     height: 16px;
@@ -46,6 +46,10 @@
     width: 16px;
     border-radius: 50%;
 
+  }
+
+  .scheme-toggle__control__toggle:hover:before {
+    @apply bg-pref-schemeToggleSupportHover;
   }
 }
 

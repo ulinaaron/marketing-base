@@ -669,6 +669,9 @@ video {
   --color-button-primary-support: var(--color-scale-700);
   --color-button-primary-base-hover: var(--color-primary-400);
   --color-button-primary-support-hover: var(--color-scale-700);
+  --color-scheme-toggle: var(--color-scale-800);
+  --color-scheme-toggle-support: var(--color-light);
+  --color-scheme-toggle-support-hover: var(--color-primary-200);
 }
 
 [data-scheme=dark] {
@@ -699,6 +702,9 @@ video {
   --color-button-primary-support: var(--color-light);
   --color-button-primary-base-hover: var(--color-primary-500);
   --color-button-primary-support-hover: var(--color-light);
+  --color-scheme-toggle: var(--color-scale-200);
+  --color-scheme-toggle-support: var(--color-scale-900);
+  --color-scheme-toggle-support-hover: var(--color-primary-500);
 }
 
 [data-lazy] {
@@ -1400,7 +1406,7 @@ code {
 .form .textarea {
   background-color: var(--color-input-base);
   color: var(--color-input-support);
-  border-width: 1px;
+  border-width: 2px;
   border-color: var(--color-input-border);
   border-radius: 0.25rem;
   padding: 0.75rem;
@@ -1457,7 +1463,7 @@ code {
 }
 
 .scheme-toggle .scheme-toggle__control__toggle {
-  background-color: var(--color-support);
+  background-color: var(--color-scheme-toggle);
   transition-duration: 300ms;
   bottom: 0;
   cursor: pointer;
@@ -1469,7 +1475,7 @@ code {
 }
 
 .scheme-toggle .scheme-toggle__control__toggle:before {
-  background-color: var(--color-base);
+  background-color: var(--color-scheme-toggle-support);
   transition-duration: 300ms;
   bottom: 4px;
   content: "";
@@ -1478,6 +1484,10 @@ code {
   position: absolute;
   width: 16px;
   border-radius: 50%;
+}
+
+.scheme-toggle .scheme-toggle__control__toggle:hover:before {
+  background-color: var(--color-scheme-toggle-support-hover);
 }
 
 .experience-item {
@@ -1695,6 +1705,18 @@ code {
   background-color: var(--color-button-primary-support-hover);
 }
 
+.bg-pref-schemeToggle{
+  background-color: var(--color-scheme-toggle);
+}
+
+.bg-pref-schemeToggleSupport{
+  background-color: var(--color-scheme-toggle-support);
+}
+
+.bg-pref-schemeToggleSupportHover{
+  background-color: var(--color-scheme-toggle-support-hover);
+}
+
 .hover\:bg-transparent:hover{
   background-color: transparent;
 }
@@ -1807,6 +1829,18 @@ code {
   background-color: var(--color-button-primary-support-hover);
 }
 
+.hover\:bg-pref-schemeToggle:hover{
+  background-color: var(--color-scheme-toggle);
+}
+
+.hover\:bg-pref-schemeToggleSupport:hover{
+  background-color: var(--color-scheme-toggle-support);
+}
+
+.hover\:bg-pref-schemeToggleSupportHover:hover{
+  background-color: var(--color-scheme-toggle-support-hover);
+}
+
 .focus\:bg-transparent:focus{
   background-color: transparent;
 }
@@ -1917,6 +1951,18 @@ code {
 
 .focus\:bg-pref-buttonPrimarySupportHover:focus{
   background-color: var(--color-button-primary-support-hover);
+}
+
+.focus\:bg-pref-schemeToggle:focus{
+  background-color: var(--color-scheme-toggle);
+}
+
+.focus\:bg-pref-schemeToggleSupport:focus{
+  background-color: var(--color-scheme-toggle-support);
+}
+
+.focus\:bg-pref-schemeToggleSupportHover:focus{
+  background-color: var(--color-scheme-toggle-support-hover);
 }
 
 .bg-bottom{
@@ -2111,6 +2157,18 @@ code {
   border-color: var(--color-button-primary-support-hover);
 }
 
+.border-pref-schemeToggle{
+  border-color: var(--color-scheme-toggle);
+}
+
+.border-pref-schemeToggleSupport{
+  border-color: var(--color-scheme-toggle-support);
+}
+
+.border-pref-schemeToggleSupportHover{
+  border-color: var(--color-scheme-toggle-support-hover);
+}
+
 .hover\:border-transparent:hover{
   border-color: transparent;
 }
@@ -2223,6 +2281,18 @@ code {
   border-color: var(--color-button-primary-support-hover);
 }
 
+.hover\:border-pref-schemeToggle:hover{
+  border-color: var(--color-scheme-toggle);
+}
+
+.hover\:border-pref-schemeToggleSupport:hover{
+  border-color: var(--color-scheme-toggle-support);
+}
+
+.hover\:border-pref-schemeToggleSupportHover:hover{
+  border-color: var(--color-scheme-toggle-support-hover);
+}
+
 .focus\:border-transparent:focus{
   border-color: transparent;
 }
@@ -2333,6 +2403,18 @@ code {
 
 .focus\:border-pref-buttonPrimarySupportHover:focus{
   border-color: var(--color-button-primary-support-hover);
+}
+
+.focus\:border-pref-schemeToggle:focus{
+  border-color: var(--color-scheme-toggle);
+}
+
+.focus\:border-pref-schemeToggleSupport:focus{
+  border-color: var(--color-scheme-toggle-support);
+}
+
+.focus\:border-pref-schemeToggleSupportHover:focus{
+  border-color: var(--color-scheme-toggle-support-hover);
 }
 
 .rounded-none{
@@ -5737,6 +5819,66 @@ code {
   color: var(--color-button-primary-support-hover);
 }
 
+.placeholder-pref-schemeToggle::-webkit-input-placeholder{
+  color: var(--color-scheme-toggle);
+}
+
+.placeholder-pref-schemeToggle::-moz-placeholder{
+  color: var(--color-scheme-toggle);
+}
+
+.placeholder-pref-schemeToggle:-ms-input-placeholder{
+  color: var(--color-scheme-toggle);
+}
+
+.placeholder-pref-schemeToggle::-ms-input-placeholder{
+  color: var(--color-scheme-toggle);
+}
+
+.placeholder-pref-schemeToggle::placeholder{
+  color: var(--color-scheme-toggle);
+}
+
+.placeholder-pref-schemeToggleSupport::-webkit-input-placeholder{
+  color: var(--color-scheme-toggle-support);
+}
+
+.placeholder-pref-schemeToggleSupport::-moz-placeholder{
+  color: var(--color-scheme-toggle-support);
+}
+
+.placeholder-pref-schemeToggleSupport:-ms-input-placeholder{
+  color: var(--color-scheme-toggle-support);
+}
+
+.placeholder-pref-schemeToggleSupport::-ms-input-placeholder{
+  color: var(--color-scheme-toggle-support);
+}
+
+.placeholder-pref-schemeToggleSupport::placeholder{
+  color: var(--color-scheme-toggle-support);
+}
+
+.placeholder-pref-schemeToggleSupportHover::-webkit-input-placeholder{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
+.placeholder-pref-schemeToggleSupportHover::-moz-placeholder{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
+.placeholder-pref-schemeToggleSupportHover:-ms-input-placeholder{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
+.placeholder-pref-schemeToggleSupportHover::-ms-input-placeholder{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
+.placeholder-pref-schemeToggleSupportHover::placeholder{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
 .focus\:placeholder-transparent:focus::-webkit-input-placeholder{
   color: transparent;
 }
@@ -6297,6 +6439,66 @@ code {
   color: var(--color-button-primary-support-hover);
 }
 
+.focus\:placeholder-pref-schemeToggle:focus::-webkit-input-placeholder{
+  color: var(--color-scheme-toggle);
+}
+
+.focus\:placeholder-pref-schemeToggle:focus::-moz-placeholder{
+  color: var(--color-scheme-toggle);
+}
+
+.focus\:placeholder-pref-schemeToggle:focus:-ms-input-placeholder{
+  color: var(--color-scheme-toggle);
+}
+
+.focus\:placeholder-pref-schemeToggle:focus::-ms-input-placeholder{
+  color: var(--color-scheme-toggle);
+}
+
+.focus\:placeholder-pref-schemeToggle:focus::placeholder{
+  color: var(--color-scheme-toggle);
+}
+
+.focus\:placeholder-pref-schemeToggleSupport:focus::-webkit-input-placeholder{
+  color: var(--color-scheme-toggle-support);
+}
+
+.focus\:placeholder-pref-schemeToggleSupport:focus::-moz-placeholder{
+  color: var(--color-scheme-toggle-support);
+}
+
+.focus\:placeholder-pref-schemeToggleSupport:focus:-ms-input-placeholder{
+  color: var(--color-scheme-toggle-support);
+}
+
+.focus\:placeholder-pref-schemeToggleSupport:focus::-ms-input-placeholder{
+  color: var(--color-scheme-toggle-support);
+}
+
+.focus\:placeholder-pref-schemeToggleSupport:focus::placeholder{
+  color: var(--color-scheme-toggle-support);
+}
+
+.focus\:placeholder-pref-schemeToggleSupportHover:focus::-webkit-input-placeholder{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
+.focus\:placeholder-pref-schemeToggleSupportHover:focus::-moz-placeholder{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
+.focus\:placeholder-pref-schemeToggleSupportHover:focus:-ms-input-placeholder{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
+.focus\:placeholder-pref-schemeToggleSupportHover:focus::-ms-input-placeholder{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
+.focus\:placeholder-pref-schemeToggleSupportHover:focus::placeholder{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
 .pointer-events-none{
   pointer-events: none;
 }
@@ -6660,6 +6862,18 @@ code {
   color: var(--color-button-primary-support-hover);
 }
 
+.text-pref-schemeToggle{
+  color: var(--color-scheme-toggle);
+}
+
+.text-pref-schemeToggleSupport{
+  color: var(--color-scheme-toggle-support);
+}
+
+.text-pref-schemeToggleSupportHover{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
 .hover\:text-transparent:hover{
   color: transparent;
 }
@@ -6770,6 +6984,18 @@ code {
 
 .hover\:text-pref-buttonPrimarySupportHover:hover{
   color: var(--color-button-primary-support-hover);
+}
+
+.hover\:text-pref-schemeToggle:hover{
+  color: var(--color-scheme-toggle);
+}
+
+.hover\:text-pref-schemeToggleSupport:hover{
+  color: var(--color-scheme-toggle-support);
+}
+
+.hover\:text-pref-schemeToggleSupportHover:hover{
+  color: var(--color-scheme-toggle-support-hover);
 }
 
 .focus\:text-transparent:focus{
@@ -6884,6 +7110,18 @@ code {
   color: var(--color-button-primary-support-hover);
 }
 
+.focus\:text-pref-schemeToggle:focus{
+  color: var(--color-scheme-toggle);
+}
+
+.focus\:text-pref-schemeToggleSupport:focus{
+  color: var(--color-scheme-toggle-support);
+}
+
+.focus\:text-pref-schemeToggleSupportHover:focus{
+  color: var(--color-scheme-toggle-support-hover);
+}
+
 .active\:text-transparent:active{
   color: transparent;
 }
@@ -6994,6 +7232,18 @@ code {
 
 .active\:text-pref-buttonPrimarySupportHover:active{
   color: var(--color-button-primary-support-hover);
+}
+
+.active\:text-pref-schemeToggle:active{
+  color: var(--color-scheme-toggle);
+}
+
+.active\:text-pref-schemeToggleSupport:active{
+  color: var(--color-scheme-toggle-support);
+}
+
+.active\:text-pref-schemeToggleSupportHover:active{
+  color: var(--color-scheme-toggle-support-hover);
 }
 
 .text-xs{
@@ -10051,6 +10301,18 @@ code {
     background-color: var(--color-button-primary-support-hover);
   }
 
+  .sm\:bg-pref-schemeToggle{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .sm\:bg-pref-schemeToggleSupport{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:bg-pref-schemeToggleSupportHover{
+    background-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .sm\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -10163,6 +10425,18 @@ code {
     background-color: var(--color-button-primary-support-hover);
   }
 
+  .sm\:hover\:bg-pref-schemeToggle:hover{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .sm\:hover\:bg-pref-schemeToggleSupport:hover{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:hover\:bg-pref-schemeToggleSupportHover:hover{
+    background-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .sm\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -10273,6 +10547,18 @@ code {
 
   .sm\:focus\:bg-pref-buttonPrimarySupportHover:focus{
     background-color: var(--color-button-primary-support-hover);
+  }
+
+  .sm\:focus\:bg-pref-schemeToggle:focus{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .sm\:focus\:bg-pref-schemeToggleSupport:focus{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:focus\:bg-pref-schemeToggleSupportHover:focus{
+    background-color: var(--color-scheme-toggle-support-hover);
   }
 
   .sm\:bg-bottom{
@@ -10467,6 +10753,18 @@ code {
     border-color: var(--color-button-primary-support-hover);
   }
 
+  .sm\:border-pref-schemeToggle{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .sm\:border-pref-schemeToggleSupport{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:border-pref-schemeToggleSupportHover{
+    border-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .sm\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -10579,6 +10877,18 @@ code {
     border-color: var(--color-button-primary-support-hover);
   }
 
+  .sm\:hover\:border-pref-schemeToggle:hover{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .sm\:hover\:border-pref-schemeToggleSupport:hover{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:hover\:border-pref-schemeToggleSupportHover:hover{
+    border-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .sm\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -10689,6 +10999,18 @@ code {
 
   .sm\:focus\:border-pref-buttonPrimarySupportHover:focus{
     border-color: var(--color-button-primary-support-hover);
+  }
+
+  .sm\:focus\:border-pref-schemeToggle:focus{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .sm\:focus\:border-pref-schemeToggleSupport:focus{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:focus\:border-pref-schemeToggleSupportHover:focus{
+    border-color: var(--color-scheme-toggle-support-hover);
   }
 
   .sm\:rounded-none{
@@ -14093,6 +14415,66 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .sm\:placeholder-pref-schemeToggle::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:placeholder-pref-schemeToggle::-moz-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:placeholder-pref-schemeToggle:-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:placeholder-pref-schemeToggle::-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:placeholder-pref-schemeToggle::placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:placeholder-pref-schemeToggleSupport::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:placeholder-pref-schemeToggleSupport::-moz-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:placeholder-pref-schemeToggleSupport:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:placeholder-pref-schemeToggleSupport::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:placeholder-pref-schemeToggleSupport::placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:placeholder-pref-schemeToggleSupportHover::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .sm\:placeholder-pref-schemeToggleSupportHover::-moz-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .sm\:placeholder-pref-schemeToggleSupportHover:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .sm\:placeholder-pref-schemeToggleSupportHover::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .sm\:placeholder-pref-schemeToggleSupportHover::placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -14653,6 +15035,66 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .sm\:focus\:placeholder-pref-schemeToggle:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggle:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggle:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggle:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggle:focus::placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggleSupport:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggleSupport:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggleSupport:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggleSupport:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggleSupport:focus::placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggleSupportHover:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .sm\:focus\:placeholder-pref-schemeToggleSupportHover:focus::placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .sm\:pointer-events-none{
     pointer-events: none;
   }
@@ -15016,6 +15458,18 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .sm\:text-pref-schemeToggle{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:text-pref-schemeToggleSupport{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:text-pref-schemeToggleSupportHover{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .sm\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -15126,6 +15580,18 @@ code {
 
   .sm\:hover\:text-pref-buttonPrimarySupportHover:hover{
     color: var(--color-button-primary-support-hover);
+  }
+
+  .sm\:hover\:text-pref-schemeToggle:hover{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:hover\:text-pref-schemeToggleSupport:hover{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:hover\:text-pref-schemeToggleSupportHover:hover{
+    color: var(--color-scheme-toggle-support-hover);
   }
 
   .sm\:focus\:text-transparent:focus{
@@ -15240,6 +15706,18 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .sm\:focus\:text-pref-schemeToggle:focus{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:focus\:text-pref-schemeToggleSupport:focus{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:focus\:text-pref-schemeToggleSupportHover:focus{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .sm\:active\:text-transparent:active{
     color: transparent;
   }
@@ -15350,6 +15828,18 @@ code {
 
   .sm\:active\:text-pref-buttonPrimarySupportHover:active{
     color: var(--color-button-primary-support-hover);
+  }
+
+  .sm\:active\:text-pref-schemeToggle:active{
+    color: var(--color-scheme-toggle);
+  }
+
+  .sm\:active\:text-pref-schemeToggleSupport:active{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .sm\:active\:text-pref-schemeToggleSupportHover:active{
+    color: var(--color-scheme-toggle-support-hover);
   }
 
   .sm\:text-xs{
@@ -18408,6 +18898,18 @@ code {
     background-color: var(--color-button-primary-support-hover);
   }
 
+  .md\:bg-pref-schemeToggle{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .md\:bg-pref-schemeToggleSupport{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:bg-pref-schemeToggleSupportHover{
+    background-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .md\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -18520,6 +19022,18 @@ code {
     background-color: var(--color-button-primary-support-hover);
   }
 
+  .md\:hover\:bg-pref-schemeToggle:hover{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .md\:hover\:bg-pref-schemeToggleSupport:hover{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:hover\:bg-pref-schemeToggleSupportHover:hover{
+    background-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .md\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -18630,6 +19144,18 @@ code {
 
   .md\:focus\:bg-pref-buttonPrimarySupportHover:focus{
     background-color: var(--color-button-primary-support-hover);
+  }
+
+  .md\:focus\:bg-pref-schemeToggle:focus{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .md\:focus\:bg-pref-schemeToggleSupport:focus{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:focus\:bg-pref-schemeToggleSupportHover:focus{
+    background-color: var(--color-scheme-toggle-support-hover);
   }
 
   .md\:bg-bottom{
@@ -18824,6 +19350,18 @@ code {
     border-color: var(--color-button-primary-support-hover);
   }
 
+  .md\:border-pref-schemeToggle{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .md\:border-pref-schemeToggleSupport{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:border-pref-schemeToggleSupportHover{
+    border-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .md\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -18936,6 +19474,18 @@ code {
     border-color: var(--color-button-primary-support-hover);
   }
 
+  .md\:hover\:border-pref-schemeToggle:hover{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .md\:hover\:border-pref-schemeToggleSupport:hover{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:hover\:border-pref-schemeToggleSupportHover:hover{
+    border-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .md\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -19046,6 +19596,18 @@ code {
 
   .md\:focus\:border-pref-buttonPrimarySupportHover:focus{
     border-color: var(--color-button-primary-support-hover);
+  }
+
+  .md\:focus\:border-pref-schemeToggle:focus{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .md\:focus\:border-pref-schemeToggleSupport:focus{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:focus\:border-pref-schemeToggleSupportHover:focus{
+    border-color: var(--color-scheme-toggle-support-hover);
   }
 
   .md\:rounded-none{
@@ -22450,6 +23012,66 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .md\:placeholder-pref-schemeToggle::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:placeholder-pref-schemeToggle::-moz-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:placeholder-pref-schemeToggle:-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:placeholder-pref-schemeToggle::-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:placeholder-pref-schemeToggle::placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:placeholder-pref-schemeToggleSupport::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:placeholder-pref-schemeToggleSupport::-moz-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:placeholder-pref-schemeToggleSupport:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:placeholder-pref-schemeToggleSupport::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:placeholder-pref-schemeToggleSupport::placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:placeholder-pref-schemeToggleSupportHover::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .md\:placeholder-pref-schemeToggleSupportHover::-moz-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .md\:placeholder-pref-schemeToggleSupportHover:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .md\:placeholder-pref-schemeToggleSupportHover::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .md\:placeholder-pref-schemeToggleSupportHover::placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -23010,6 +23632,66 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .md\:focus\:placeholder-pref-schemeToggle:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggle:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggle:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggle:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggle:focus::placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggleSupport:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggleSupport:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggleSupport:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggleSupport:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggleSupport:focus::placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggleSupportHover:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .md\:focus\:placeholder-pref-schemeToggleSupportHover:focus::placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .md\:pointer-events-none{
     pointer-events: none;
   }
@@ -23373,6 +24055,18 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .md\:text-pref-schemeToggle{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:text-pref-schemeToggleSupport{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:text-pref-schemeToggleSupportHover{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .md\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -23483,6 +24177,18 @@ code {
 
   .md\:hover\:text-pref-buttonPrimarySupportHover:hover{
     color: var(--color-button-primary-support-hover);
+  }
+
+  .md\:hover\:text-pref-schemeToggle:hover{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:hover\:text-pref-schemeToggleSupport:hover{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:hover\:text-pref-schemeToggleSupportHover:hover{
+    color: var(--color-scheme-toggle-support-hover);
   }
 
   .md\:focus\:text-transparent:focus{
@@ -23597,6 +24303,18 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .md\:focus\:text-pref-schemeToggle:focus{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:focus\:text-pref-schemeToggleSupport:focus{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:focus\:text-pref-schemeToggleSupportHover:focus{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .md\:active\:text-transparent:active{
     color: transparent;
   }
@@ -23707,6 +24425,18 @@ code {
 
   .md\:active\:text-pref-buttonPrimarySupportHover:active{
     color: var(--color-button-primary-support-hover);
+  }
+
+  .md\:active\:text-pref-schemeToggle:active{
+    color: var(--color-scheme-toggle);
+  }
+
+  .md\:active\:text-pref-schemeToggleSupport:active{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .md\:active\:text-pref-schemeToggleSupportHover:active{
+    color: var(--color-scheme-toggle-support-hover);
   }
 
   .md\:text-xs{
@@ -26765,6 +27495,18 @@ code {
     background-color: var(--color-button-primary-support-hover);
   }
 
+  .lg\:bg-pref-schemeToggle{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .lg\:bg-pref-schemeToggleSupport{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:bg-pref-schemeToggleSupportHover{
+    background-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .lg\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -26877,6 +27619,18 @@ code {
     background-color: var(--color-button-primary-support-hover);
   }
 
+  .lg\:hover\:bg-pref-schemeToggle:hover{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .lg\:hover\:bg-pref-schemeToggleSupport:hover{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:hover\:bg-pref-schemeToggleSupportHover:hover{
+    background-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .lg\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -26987,6 +27741,18 @@ code {
 
   .lg\:focus\:bg-pref-buttonPrimarySupportHover:focus{
     background-color: var(--color-button-primary-support-hover);
+  }
+
+  .lg\:focus\:bg-pref-schemeToggle:focus{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .lg\:focus\:bg-pref-schemeToggleSupport:focus{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:focus\:bg-pref-schemeToggleSupportHover:focus{
+    background-color: var(--color-scheme-toggle-support-hover);
   }
 
   .lg\:bg-bottom{
@@ -27181,6 +27947,18 @@ code {
     border-color: var(--color-button-primary-support-hover);
   }
 
+  .lg\:border-pref-schemeToggle{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .lg\:border-pref-schemeToggleSupport{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:border-pref-schemeToggleSupportHover{
+    border-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .lg\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -27293,6 +28071,18 @@ code {
     border-color: var(--color-button-primary-support-hover);
   }
 
+  .lg\:hover\:border-pref-schemeToggle:hover{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .lg\:hover\:border-pref-schemeToggleSupport:hover{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:hover\:border-pref-schemeToggleSupportHover:hover{
+    border-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .lg\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -27403,6 +28193,18 @@ code {
 
   .lg\:focus\:border-pref-buttonPrimarySupportHover:focus{
     border-color: var(--color-button-primary-support-hover);
+  }
+
+  .lg\:focus\:border-pref-schemeToggle:focus{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .lg\:focus\:border-pref-schemeToggleSupport:focus{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:focus\:border-pref-schemeToggleSupportHover:focus{
+    border-color: var(--color-scheme-toggle-support-hover);
   }
 
   .lg\:rounded-none{
@@ -30807,6 +31609,66 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .lg\:placeholder-pref-schemeToggle::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:placeholder-pref-schemeToggle::-moz-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:placeholder-pref-schemeToggle:-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:placeholder-pref-schemeToggle::-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:placeholder-pref-schemeToggle::placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:placeholder-pref-schemeToggleSupport::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:placeholder-pref-schemeToggleSupport::-moz-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:placeholder-pref-schemeToggleSupport:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:placeholder-pref-schemeToggleSupport::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:placeholder-pref-schemeToggleSupport::placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:placeholder-pref-schemeToggleSupportHover::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .lg\:placeholder-pref-schemeToggleSupportHover::-moz-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .lg\:placeholder-pref-schemeToggleSupportHover:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .lg\:placeholder-pref-schemeToggleSupportHover::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .lg\:placeholder-pref-schemeToggleSupportHover::placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -31367,6 +32229,66 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .lg\:focus\:placeholder-pref-schemeToggle:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggle:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggle:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggle:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggle:focus::placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggleSupport:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggleSupport:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggleSupport:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggleSupport:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggleSupport:focus::placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggleSupportHover:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .lg\:focus\:placeholder-pref-schemeToggleSupportHover:focus::placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .lg\:pointer-events-none{
     pointer-events: none;
   }
@@ -31730,6 +32652,18 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .lg\:text-pref-schemeToggle{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:text-pref-schemeToggleSupport{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:text-pref-schemeToggleSupportHover{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .lg\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -31840,6 +32774,18 @@ code {
 
   .lg\:hover\:text-pref-buttonPrimarySupportHover:hover{
     color: var(--color-button-primary-support-hover);
+  }
+
+  .lg\:hover\:text-pref-schemeToggle:hover{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:hover\:text-pref-schemeToggleSupport:hover{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:hover\:text-pref-schemeToggleSupportHover:hover{
+    color: var(--color-scheme-toggle-support-hover);
   }
 
   .lg\:focus\:text-transparent:focus{
@@ -31954,6 +32900,18 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .lg\:focus\:text-pref-schemeToggle:focus{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:focus\:text-pref-schemeToggleSupport:focus{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:focus\:text-pref-schemeToggleSupportHover:focus{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .lg\:active\:text-transparent:active{
     color: transparent;
   }
@@ -32064,6 +33022,18 @@ code {
 
   .lg\:active\:text-pref-buttonPrimarySupportHover:active{
     color: var(--color-button-primary-support-hover);
+  }
+
+  .lg\:active\:text-pref-schemeToggle:active{
+    color: var(--color-scheme-toggle);
+  }
+
+  .lg\:active\:text-pref-schemeToggleSupport:active{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .lg\:active\:text-pref-schemeToggleSupportHover:active{
+    color: var(--color-scheme-toggle-support-hover);
   }
 
   .lg\:text-xs{
@@ -35122,6 +36092,18 @@ code {
     background-color: var(--color-button-primary-support-hover);
   }
 
+  .xl\:bg-pref-schemeToggle{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .xl\:bg-pref-schemeToggleSupport{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:bg-pref-schemeToggleSupportHover{
+    background-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .xl\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -35234,6 +36216,18 @@ code {
     background-color: var(--color-button-primary-support-hover);
   }
 
+  .xl\:hover\:bg-pref-schemeToggle:hover{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .xl\:hover\:bg-pref-schemeToggleSupport:hover{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:hover\:bg-pref-schemeToggleSupportHover:hover{
+    background-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .xl\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -35344,6 +36338,18 @@ code {
 
   .xl\:focus\:bg-pref-buttonPrimarySupportHover:focus{
     background-color: var(--color-button-primary-support-hover);
+  }
+
+  .xl\:focus\:bg-pref-schemeToggle:focus{
+    background-color: var(--color-scheme-toggle);
+  }
+
+  .xl\:focus\:bg-pref-schemeToggleSupport:focus{
+    background-color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:focus\:bg-pref-schemeToggleSupportHover:focus{
+    background-color: var(--color-scheme-toggle-support-hover);
   }
 
   .xl\:bg-bottom{
@@ -35538,6 +36544,18 @@ code {
     border-color: var(--color-button-primary-support-hover);
   }
 
+  .xl\:border-pref-schemeToggle{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .xl\:border-pref-schemeToggleSupport{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:border-pref-schemeToggleSupportHover{
+    border-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .xl\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -35650,6 +36668,18 @@ code {
     border-color: var(--color-button-primary-support-hover);
   }
 
+  .xl\:hover\:border-pref-schemeToggle:hover{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .xl\:hover\:border-pref-schemeToggleSupport:hover{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:hover\:border-pref-schemeToggleSupportHover:hover{
+    border-color: var(--color-scheme-toggle-support-hover);
+  }
+
   .xl\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -35760,6 +36790,18 @@ code {
 
   .xl\:focus\:border-pref-buttonPrimarySupportHover:focus{
     border-color: var(--color-button-primary-support-hover);
+  }
+
+  .xl\:focus\:border-pref-schemeToggle:focus{
+    border-color: var(--color-scheme-toggle);
+  }
+
+  .xl\:focus\:border-pref-schemeToggleSupport:focus{
+    border-color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:focus\:border-pref-schemeToggleSupportHover:focus{
+    border-color: var(--color-scheme-toggle-support-hover);
   }
 
   .xl\:rounded-none{
@@ -39164,6 +40206,66 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .xl\:placeholder-pref-schemeToggle::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:placeholder-pref-schemeToggle::-moz-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:placeholder-pref-schemeToggle:-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:placeholder-pref-schemeToggle::-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:placeholder-pref-schemeToggle::placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:placeholder-pref-schemeToggleSupport::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:placeholder-pref-schemeToggleSupport::-moz-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:placeholder-pref-schemeToggleSupport:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:placeholder-pref-schemeToggleSupport::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:placeholder-pref-schemeToggleSupport::placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:placeholder-pref-schemeToggleSupportHover::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .xl\:placeholder-pref-schemeToggleSupportHover::-moz-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .xl\:placeholder-pref-schemeToggleSupportHover:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .xl\:placeholder-pref-schemeToggleSupportHover::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .xl\:placeholder-pref-schemeToggleSupportHover::placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -39724,6 +40826,66 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .xl\:focus\:placeholder-pref-schemeToggle:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggle:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggle:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggle:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggle:focus::placeholder{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggleSupport:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggleSupport:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggleSupport:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggleSupport:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggleSupport:focus::placeholder{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-webkit-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-moz-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggleSupportHover:focus:-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggleSupportHover:focus::-ms-input-placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
+  .xl\:focus\:placeholder-pref-schemeToggleSupportHover:focus::placeholder{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .xl\:pointer-events-none{
     pointer-events: none;
   }
@@ -40087,6 +41249,18 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .xl\:text-pref-schemeToggle{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:text-pref-schemeToggleSupport{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:text-pref-schemeToggleSupportHover{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .xl\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -40197,6 +41371,18 @@ code {
 
   .xl\:hover\:text-pref-buttonPrimarySupportHover:hover{
     color: var(--color-button-primary-support-hover);
+  }
+
+  .xl\:hover\:text-pref-schemeToggle:hover{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:hover\:text-pref-schemeToggleSupport:hover{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:hover\:text-pref-schemeToggleSupportHover:hover{
+    color: var(--color-scheme-toggle-support-hover);
   }
 
   .xl\:focus\:text-transparent:focus{
@@ -40311,6 +41497,18 @@ code {
     color: var(--color-button-primary-support-hover);
   }
 
+  .xl\:focus\:text-pref-schemeToggle:focus{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:focus\:text-pref-schemeToggleSupport:focus{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:focus\:text-pref-schemeToggleSupportHover:focus{
+    color: var(--color-scheme-toggle-support-hover);
+  }
+
   .xl\:active\:text-transparent:active{
     color: transparent;
   }
@@ -40421,6 +41619,18 @@ code {
 
   .xl\:active\:text-pref-buttonPrimarySupportHover:active{
     color: var(--color-button-primary-support-hover);
+  }
+
+  .xl\:active\:text-pref-schemeToggle:active{
+    color: var(--color-scheme-toggle);
+  }
+
+  .xl\:active\:text-pref-schemeToggleSupport:active{
+    color: var(--color-scheme-toggle-support);
+  }
+
+  .xl\:active\:text-pref-schemeToggleSupportHover:active{
+    color: var(--color-scheme-toggle-support-hover);
   }
 
   .xl\:text-xs{
