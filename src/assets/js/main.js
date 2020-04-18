@@ -1,6 +1,5 @@
+// Import from node
+import 'alpinejs'
 
 // Import local modules
 import '@modules/lazyload'
-
-// Import from node
-import 'alpinejs'
