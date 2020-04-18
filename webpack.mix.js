@@ -33,7 +33,7 @@ mix
     .js(paths.javascript.source, paths.javascript.dest)
 
     // Compile singles
-    // .js(paths.javascript.singles, paths.javascript.dest + '/singles/')
+    // .js(paths.javascript.singles, paths.javascript.dest)
 
     // Compile SCSS & TailwindCSS
     .sass(paths.sass.source, paths.sass.dest)
