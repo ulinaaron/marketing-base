@@ -9,6 +9,10 @@
             "url": "/work/"
         },
         {
+            "label": "Process",
+            "url": "/process/"
+        },
+        {
             "label": "Contact",
             "url": "/contact/"
         }
