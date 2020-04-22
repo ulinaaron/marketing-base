@@ -1385,20 +1385,25 @@ code {
   margin-bottom: 1.5rem;
 }
 
-.form .row label {
+.form .row .form-label {
   display: block;
   margin-bottom: 0.25rem;
 }
 
-.form .row label:after {
+.form .row .form-label:after {
   font-size: 1rem;
 }
 
-.form .row.required label:after {
+.form .row .form-sub-label {
+  font-size: 1rem;
+  color: var(--color-meta);
+}
+
+.form .row.required .form-label:after {
   content: "\A0(required)";
 }
 
-.form .row:not(.required) label:after {
+.form .row:not(.required) .form-label:after {
   content: "\A0(optional)";
 }
 

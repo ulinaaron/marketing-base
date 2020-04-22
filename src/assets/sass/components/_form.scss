@@ -6,7 +6,7 @@
     .row {
         @apply mb-6;
 
-        label {
+        .form-label {
             @apply block mb-1;
 
             &:after {
@@ -14,16 +14,20 @@
             }
         }
 
+        .form-sub-label {
+            @apply text-sm text-pref-meta;
+        }
+
         &.required {
 
-            label:after {
+            .form-label:after {
                 content: '\00a0(required)';
             }
         }
 
         &:not(.required) {
 
-            label:after {
+            .form-label:after {
                 content: '\00a0(optional)';
             }
         }
