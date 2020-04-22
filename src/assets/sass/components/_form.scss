@@ -3,7 +3,7 @@
 
 .form {
 
-    .row {
+    .form-line {
         @apply mb-6;
 
         .form-label {
@@ -44,9 +44,65 @@
 
     .input {
         @apply h-12;
+
+        &--check {
+            @apply pt-2 pb-2 text-sm h-auto inline-block w-full;
+
+            @screen md {
+                @apply w-1/2;
+            }
+        }
     }
 
     .textarea {
         @apply h-24;
+    }
+
+    .form-dropdown {
+        @apply relative;
+
+        &__select {
+            @apply appearance-none block bg-pref-inputBase text-pref-inputSupport border-2 border-pref-inputBorder rounded p-3 w-full;
+        }
+        
+        &__pointer {
+            @apply absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-pref-inputSupport;
+        }
+    }
+
+    .form-checkbox {
+        @apply block w-full flex content-center my-2 flex-row content-center;
+
+        &__check {
+            @apply appearance-none bg-pref-inputBase text-pref-inputSupport border-2 border-pref-inputBorder rounded p-3 mr-4 h-6 relative;
+
+            &:after {
+                @apply absolute font-bold h-6 w-6 text-pref-buttonPrimaryBaseHover font-secondary text-xl;
+                left: 5px;
+                top: -5px;
+                line-height: 1;
+            }
+
+            &:checked:after {
+                content: 'x';
+            }
+        }
+
+        label {
+            @apply text-sm font-bold self-center;
+        }
+    }
+
+    .form-error-message {
+        img {
+            @apply hidden;
+        }
+
+        &:before {
+            content: "^^^";
+            @apply mr-2;
+        }
+
+        @apply transition-opacity mt-4 flex flex-row bg-pref-cardBase px-6 py-2 text-sm items-center text-pref-buttonPrimaryBaseHover font-bold rounded;
     }
 }
