@@ -1,0 +1,130 @@
+---
+layout: default
+hidden: true
+meta_title: Estimator
+meta_description: A calculator estimating projects
+body_class: estimator
+title: Project Estimate
+---
+
+<main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
+
+    <article id="container-centre" class="flex-1 column centre">
+
+        <header>
+            <h1 class="page-title">{{ title }}</h1>
+        </header>
+
+        <div class="content">
+
+            {# TODO:
+                - Expressions to get precent of other items (pages * .3)
+             #}
+            
+            <div class="" x-data="estimate()" x-init="fetchItems()">
+                <template x-if="data.items">
+                    <template x-for="(item, index) in data.items" :key="index">
+                        <div>
+                            <template x-if="item.type === 'slider'">    
+                                <div class="flex mt-4">
+                                    <div class="">
+                                        <div x-text="item.title"></div>
+                                        <input type="text" class="p-3 bg-pref-inputBase" x-model="item.amount">
+                                        <button class="px-8 py-2 mr-2 bg-pref-buttonPrimaryBase text-pref-buttonPrimarySupport" @click="incrementUp(index)">+</button>
+                                        <button class="px-8 py-2 mr-2 bg-pref-buttonPrimaryBase text-pref-buttonPrimarySupport" @click="incrementDown(index)">-</button>
+                                    </div>
+                                </div>
+                            </template>
+
+                            <template x-if="item.type === 'check'">    
+                                <div class="flex mt-4">
+                                    <div class="">
+                                        <div x-text="item.title"></div>
+                                        <input type="checkbox" class="p-3 bg-pref-inputBase" x-model="item.amount">
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                </template>
+
+                <div class="flex mt-10">
+                    <div class="">
+                    Estimated Cost: <span class="font-bold" x-text="total()"></span>
+                    </div>
+
+                </div>
+                {# <div class="flex mt-8">
+                    <div>
+                        <button class="px-8 py-2 mr-2 bg-pref-buttonPrimaryBase text-pref-buttonPrimarySupport" @click="reset()">Reset</button>
+                    </div>
+                </div> #}
+            </div>
+
+            <script>
+            function numberWithCommas(x) {
+                return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+            }
+
+            function estimate() {
+
+                return {
+                    data: {},
+                    fetchItems() {
+                        //let currentItems = localStorage.getItem('estimator');
+
+                       // if ( currentItems ) {
+                        //    return this.data = JSON.parse(currentItems);
+                        //}
+
+                        this.get();
+                    },
+                    get() {
+                        fetch(`/static/estimate.json`)
+                        .then(res => res.json())
+                        .then(data => {
+                            this.data = data;
+                        });
+                    },
+                    save() {
+                        return localStorage.setItem('estimator', JSON.stringify(this.data));
+                    },
+                    incrementUp(index) {
+                        this.save();
+                        return ++this.data.items[index].amount;
+                    },
+                    incrementDown(index) {
+                        this.save();
+                        return --this.data.items[index].amount;
+                    },
+                    reset() {
+                        this.data = {};
+                        this.save();
+                        
+                        this.get();
+                    },
+                    total() {
+                        let sum = 0;
+                        let rate = this.data.rate;
+                        let items = this.data.items;
+                        let i = 0;
+                        
+                        for (i = 0; i < items.length; i++) {
+                            if (items[i].amount) {
+                                sum += (items[i].amount * items[i].hours) * rate;
+                            }
+                        }
+
+                        return '$' + numberWithCommas(sum);
+                    }
+                }
+            }
+            </script>
+
+
+
+        </div>
+    </article>
+
+</main>
+
