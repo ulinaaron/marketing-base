@@ -1973,8 +1973,8 @@ var $$ = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/aaronmazade/Documents/Projects/11ty/aaronmazade/src/assets/js/main.js */"./src/assets/js/main.js");
-module.exports = __webpack_require__(/*! /Users/aaronmazade/Documents/Projects/11ty/aaronmazade/src/assets/sass/main.scss */"./src/assets/sass/main.scss");
+__webpack_require__(/*! /Users/aaronmazade/Documents/Projects/11ty/marketing-base/src/assets/js/main.js */"./src/assets/js/main.js");
+module.exports = __webpack_require__(/*! /Users/aaronmazade/Documents/Projects/11ty/marketing-base/src/assets/sass/main.scss */"./src/assets/sass/main.scss");
 
 
 /***/ })
