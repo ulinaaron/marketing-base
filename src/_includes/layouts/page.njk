@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{# a post layout #}
+<main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
+
+    <article id="container-centre" class="flex-1 column centre">
+
+        <div class="mb-12 md:mb-20">
+
+            <header>
+                <h1 class="text-3xl page-title md:text-center md:text-5xl lg:text-6xl">{{ title }}</h1>
+            </header>
+        
+        </div>
+
+        <div class="content post md:px-16">
+
+            {{ content | safe }}
+
+        </div>
+
+    </article>
+
+</main>
