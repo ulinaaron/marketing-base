@@ -13,3 +13,8 @@ fields:
     required: false
   label: Body Class
   description: The CSS class to be applied to the page body tag.
+- name: seo_settings
+  type: include
+  config: {}
+  template: seo-settings
+  label: SEO Settings
