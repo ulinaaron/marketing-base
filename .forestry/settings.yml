@@ -21,8 +21,9 @@ sections:
   path: content
   label: All Pages
   create: all
-  exclude: articles
   match: "**/*.md"
+  templates:
+  - page-builder
 - type: directory
   path: content/articles
   label: Blog
