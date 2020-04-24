@@ -1,5 +1,5 @@
 ---
-label: Hero
+label: Block - Hero
 hide_body: true
 fields:
 - name: headline
