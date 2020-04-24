@@ -86,6 +86,160 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./assets/js/main.js":
+/*!***************************!*\
+  !*** ./assets/js/main.js ***!
+  \***************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_lazyload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @modules/lazyload */ "./assets/js/modules/lazyload/index.js");
+/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
+/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(alpinejs__WEBPACK_IMPORTED_MODULE_1__);
+// Import local modules
+ // Import from node
+
+
+
+/***/ }),
+
+/***/ "./assets/js/modules/lazyload/index.js":
+/*!*********************************************!*\
+  !*** ./assets/js/modules/lazyload/index.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @utilities/selectors */ "./assets/js/utilities/selectors/index.js");
+/* harmony import */ var _utilities_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @utilities/helpers */ "./assets/js/utilities/helpers/index.js");
+
+
+
+var Lazyload = function Lazyload() {
+  // lazyload our images
+  var images = _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].wrapper.querySelectorAll('[data-lazy]');
+
+  if (Object(_utilities_helpers__WEBPACK_IMPORTED_MODULE_1__["exists"])(images)) {
+    // options
+    var options = {
+      threshold: 0.5
+    };
+
+    var preloadImage = function preloadImage(img) {
+      // find and store the image's data-lazy attribute
+      // commented out for now, but if you want to go the extra mile, then you can do all the srcset attribute stuff on the images ;)
+      // const srcset = img.dataset.srcset
+      var src = img.dataset.lazy;
+      img.src = src; // img.srcset = srcset
+      // add a class of loaded
+      // we can then use this as a hook for fade-in animations etc
+
+      img.classList.add('loaded');
+    };
+
+    var lazyLoad = new IntersectionObserver(function (entries, lazyLoad) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          preloadImage(entry.target);
+          lazyLoad.unobserve(entry.target);
+        }
+      });
+    }, options);
+    images.forEach(function (image) {
+      lazyLoad.observe(image);
+    });
+  }
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Lazyload);
+
+/***/ }),
+
+/***/ "./assets/js/utilities/helpers/index.js":
+/*!**********************************************!*\
+  !*** ./assets/js/utilities/helpers/index.js ***!
+  \**********************************************/
+/*! exports provided: page, exists */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "page", function() { return page; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "exists", function() { return exists; });
+/* harmony import */ var _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @utilities/selectors */ "./assets/js/utilities/selectors/index.js");
+
+/**
+ * @description Test if the body id is something
+ * @param  		{string}
+ * @return 		{bool}
+ *
+ */
+
+var page = function page(name) {
+  if (!name) {
+    return _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].body.getAttribute('id');
+  }
+
+  return _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].body.getAttribute('id') == name;
+};
+/**
+ * @description Check if element exists the page
+ * @param  		{string} Element selector
+ * @param  		{string} Minimum number of elements
+ * @return 		{bool}
+ */
+
+
+var exists = function exists(el, limit) {
+  return el.length > 0;
+};
+
+
+
+/***/ }),
+
+/***/ "./assets/js/utilities/selectors/index.js":
+/*!************************************************!*\
+  !*** ./assets/js/utilities/selectors/index.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var $$ = {
+  body: document.querySelector('body'),
+  wrapper: document.getElementById('wrapper'),
+  header: document.getElementById('header'),
+  nav: document.getElementById('nav'),
+  hero: document.getElementById('hero'),
+  main: document.getElementById('main'),
+  containerCentre: document.getElementById('container-centre'),
+  containerRight: document.getElementById('container-right'),
+  preFooter: document.getElementById('pre-footer'),
+  footer: document.getElementById('footer'),
+  mobileNav: document.getElementById('mobile-nav'),
+  mobileNavToggle: document.getElementById('mobile-nav-toggle')
+};
+/* harmony default export */ __webpack_exports__["default"] = ($$);
+
+/***/ }),
+
+/***/ "./assets/sass/main.scss":
+/*!*******************************!*\
+  !*** ./assets/sass/main.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./node_modules/alpinejs/dist/alpine.js":
 /*!**********************************************!*\
   !*** ./node_modules/alpinejs/dist/alpine.js ***!
@@ -1812,169 +1966,15 @@
 
 /***/ }),
 
-/***/ "./src/assets/js/main.js":
-/*!*******************************!*\
-  !*** ./src/assets/js/main.js ***!
-  \*******************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_lazyload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @modules/lazyload */ "./src/assets/js/modules/lazyload/index.js");
-/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
-/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(alpinejs__WEBPACK_IMPORTED_MODULE_1__);
-// Import local modules
- // Import from node
-
-
-
-/***/ }),
-
-/***/ "./src/assets/js/modules/lazyload/index.js":
-/*!*************************************************!*\
-  !*** ./src/assets/js/modules/lazyload/index.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @utilities/selectors */ "./src/assets/js/utilities/selectors/index.js");
-/* harmony import */ var _utilities_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @utilities/helpers */ "./src/assets/js/utilities/helpers/index.js");
-
-
-
-var Lazyload = function Lazyload() {
-  // lazyload our images
-  var images = _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].wrapper.querySelectorAll('[data-lazy]');
-
-  if (Object(_utilities_helpers__WEBPACK_IMPORTED_MODULE_1__["exists"])(images)) {
-    // options
-    var options = {
-      threshold: 0.5
-    };
-
-    var preloadImage = function preloadImage(img) {
-      // find and store the image's data-lazy attribute
-      // commented out for now, but if you want to go the extra mile, then you can do all the srcset attribute stuff on the images ;)
-      // const srcset = img.dataset.srcset
-      var src = img.dataset.lazy;
-      img.src = src; // img.srcset = srcset
-      // add a class of loaded
-      // we can then use this as a hook for fade-in animations etc
-
-      img.classList.add('loaded');
-    };
-
-    var lazyLoad = new IntersectionObserver(function (entries, lazyLoad) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          preloadImage(entry.target);
-          lazyLoad.unobserve(entry.target);
-        }
-      });
-    }, options);
-    images.forEach(function (image) {
-      lazyLoad.observe(image);
-    });
-  }
-}();
-
-/* harmony default export */ __webpack_exports__["default"] = (Lazyload);
-
-/***/ }),
-
-/***/ "./src/assets/js/utilities/helpers/index.js":
-/*!**************************************************!*\
-  !*** ./src/assets/js/utilities/helpers/index.js ***!
-  \**************************************************/
-/*! exports provided: page, exists */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "page", function() { return page; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "exists", function() { return exists; });
-/* harmony import */ var _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @utilities/selectors */ "./src/assets/js/utilities/selectors/index.js");
-
-/**
- * @description Test if the body id is something
- * @param  		{string}
- * @return 		{bool}
- *
- */
-
-var page = function page(name) {
-  if (!name) {
-    return _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].body.getAttribute('id');
-  }
-
-  return _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].body.getAttribute('id') == name;
-};
-/**
- * @description Check if element exists the page
- * @param  		{string} Element selector
- * @param  		{string} Minimum number of elements
- * @return 		{bool}
- */
-
-
-var exists = function exists(el, limit) {
-  return el.length > 0;
-};
-
-
-
-/***/ }),
-
-/***/ "./src/assets/js/utilities/selectors/index.js":
-/*!****************************************************!*\
-  !*** ./src/assets/js/utilities/selectors/index.js ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var $$ = {
-  body: document.querySelector('body'),
-  wrapper: document.getElementById('wrapper'),
-  header: document.getElementById('header'),
-  nav: document.getElementById('nav'),
-  hero: document.getElementById('hero'),
-  main: document.getElementById('main'),
-  containerCentre: document.getElementById('container-centre'),
-  containerRight: document.getElementById('container-right'),
-  preFooter: document.getElementById('pre-footer'),
-  footer: document.getElementById('footer'),
-  mobileNav: document.getElementById('mobile-nav'),
-  mobileNavToggle: document.getElementById('mobile-nav-toggle')
-};
-/* harmony default export */ __webpack_exports__["default"] = ($$);
-
-/***/ }),
-
-/***/ "./src/assets/sass/main.scss":
-/*!***********************************!*\
-  !*** ./src/assets/sass/main.scss ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 0:
-/*!*****************************************************************!*\
-  !*** multi ./src/assets/js/main.js ./src/assets/sass/main.scss ***!
-  \*****************************************************************/
+/*!*********************************************************!*\
+  !*** multi ./assets/js/main.js ./assets/sass/main.scss ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/aaronmazade/Documents/Projects/11ty/marketing-base/src/assets/js/main.js */"./src/assets/js/main.js");
-module.exports = __webpack_require__(/*! /Users/aaronmazade/Documents/Projects/11ty/marketing-base/src/assets/sass/main.scss */"./src/assets/sass/main.scss");
+__webpack_require__(/*! /Users/aaronmazade/Documents/Projects/11ty/marketing-base/assets/js/main.js */"./assets/js/main.js");
+module.exports = __webpack_require__(/*! /Users/aaronmazade/Documents/Projects/11ty/marketing-base/assets/sass/main.scss */"./assets/sass/main.scss");
 
 
 /***/ })

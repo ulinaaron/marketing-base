@@ -7,12 +7,12 @@ require('laravel-mix-purgecss')
 // Paths
 const paths = {
     sass: {
-        source: './src/assets/sass/main.scss',
+        source: './assets/sass/main.scss',
         dest: 'static/css/'
     },
     javascript: {
-        source: './src/assets/js/main.js',
-        singles: './src/assets/js/singles/*',
+        source: './assets/js/main.js',
+        singles: './assets/js/singles/*',
         dest: 'static/js/'
     }
 }
@@ -23,8 +23,8 @@ mix
     .webpackConfig({
         resolve: {
             alias: {
-                '@utilities': path.resolve(__dirname, 'src/assets/js/utilities'),
-                '@modules': path.resolve(__dirname, 'src/assets/js/modules')
+                '@utilities': path.resolve(__dirname, 'assets/js/utilities'),
+                '@modules': path.resolve(__dirname, 'assets/js/modules')
             }
         }
     })
