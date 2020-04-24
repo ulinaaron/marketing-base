@@ -7,10 +7,6 @@ fields:
   config:
     required: false
   label: Title
-- name: hidden
-  type: boolean
-  label: Hidden
-  description: Hide from being indexed.
 - name: body_class
   type: text
   config:
