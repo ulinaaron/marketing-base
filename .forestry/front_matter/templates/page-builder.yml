@@ -21,7 +21,7 @@ fields:
 - name: page_blocks
   type: blocks
   template_types:
-  - hero
+  - block-hero
   config:
     min: 
     max: 
