@@ -20,4 +20,10 @@ fields:
 - name: primary_button
   type: field_group
   config: {}
+  fields:
+  - name: button
+    type: include
+    config: {}
+    template: component-button
+    label: Button
   label: Primary Button
