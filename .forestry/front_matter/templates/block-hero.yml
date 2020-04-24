@@ -16,7 +16,7 @@ fields:
   type: file
   config:
     maxSize: 250
-  label: Background Image
+  label: Hero Background Image
 - name: primary_button
   type: field_group
   config: {}
