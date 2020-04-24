@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: /clients/*/
-Disallow: /articles/*/
-
-Sitemap: https://aaronmazade.netlify.app/sitemap.xml
+Disallow: /
