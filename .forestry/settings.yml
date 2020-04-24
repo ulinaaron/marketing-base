@@ -21,7 +21,7 @@ sections:
   path: content
   label: All Pages
   create: all
-  exclude: content/articles
+  exclude: articles
   match: "**/*.md"
 - type: directory
   path: content/articles
