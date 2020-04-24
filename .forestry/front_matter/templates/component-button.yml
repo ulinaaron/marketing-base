@@ -1,4 +1,29 @@
 ---
 label: Component - Button
 hide_body: true
-fields: []
+fields:
+- name: text
+  type: text
+  config:
+    required: false
+  label: Text
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+- name: style
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - Primary
+    - Secondary
+    - Tertiary
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
