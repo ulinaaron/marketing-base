@@ -1,9 +1,9 @@
 ---
 layout: page
-meta_title: My About Page
-meta_description: Meta description
+meta_title: About Us
+meta_description: Information about our company.
 body_class: about
-title: About
+title: About Us
 
 ---
 About page
