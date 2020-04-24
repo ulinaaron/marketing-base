@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
-  label: Pages
+  label: Primary Pages
 - type: document
   path: content/index.md
   label: Home
@@ -21,6 +21,7 @@ sections:
   path: content
   label: All Pages
   create: all
+  exclude: content/articles
   match: "**/*.md"
 - type: directory
   path: content/articles
