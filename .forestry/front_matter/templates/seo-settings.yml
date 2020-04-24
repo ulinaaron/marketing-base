@@ -1,4 +1,22 @@
 ---
 label: SEO Settings
 hide_body: true
-fields: []
+fields:
+- name: hidden
+  type: boolean
+  label: Hidden
+  description: Disallow being indexed by search engines
+- name: meta_title
+  type: text
+  config:
+    required: false
+  label: Meta Title
+- name: meta_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Meta Description
