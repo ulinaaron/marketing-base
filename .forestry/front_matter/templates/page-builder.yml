@@ -18,3 +18,11 @@ fields:
   config: {}
   template: seo-settings
   label: SEO Settings
+- name: page_blocks
+  type: blocks
+  template_types:
+  - hero
+  config:
+    min: 
+    max: 
+  label: Page Blocks
