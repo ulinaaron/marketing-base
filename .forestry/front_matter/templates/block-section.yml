@@ -19,6 +19,7 @@ fields:
       config:
         required: false
       label: Column Name
+      description: For Internal Use Only
     - name: components
       type: blocks
       label: Components
