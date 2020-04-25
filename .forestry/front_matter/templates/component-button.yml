@@ -14,7 +14,7 @@ fields:
   label: URL
 - name: style
   type: select
-  default: ''
+  default: data/editor.json
   config:
     required: false
     options:
@@ -22,8 +22,8 @@ fields:
     - Secondary
     - Tertiary
     source:
-      type: simple
-      section: 
-      file: 
-      path: 
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: buttons
   label: Style
