@@ -12,7 +12,10 @@ fields:
       type: blocks
       label: Components
       template_types:
+      - component-text-block
+      - component-image
       - component-button
+      - spacer
       config:
         min: 
         max: 
