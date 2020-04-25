@@ -1,4 +1,16 @@
 ---
 label: Spacer
 hide_body: true
-fields: []
+fields:
+- name: height
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: 
+  label: Height
