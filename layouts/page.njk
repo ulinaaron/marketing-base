@@ -7,6 +7,8 @@ layout: default
 
     <article id="container-centre" class="flex-1 column centre">
 
+        {% if title_visibility %}
+
         <div class="mb-12 md:mb-20">
 
             <header>
@@ -15,9 +17,18 @@ layout: default
         
         </div>
 
+        {% endif %}
+
         <div class="content post md:px-16">
 
-            {{ content | safe }}
+            {% for section in page_blocks %}
+                {% if section.template == 'block-hero' %}
+                {{ section.headline }}
+                {{ section.subheadline }}
+                {% endif %}
+            {% endfor %}
+
+            
 
         </div>
 
