@@ -30,6 +30,11 @@ sections:
   label: Blog
   create: all
   match: "**/*.md"
+- type: heading
+  label: Settings
+- type: document
+  label: Editor Defaults
+  path: data/editor.json
 upload_dir: static/images
 public_path: "/static/images"
 front_matter_path: ''

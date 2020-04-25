@@ -1,0 +1,15 @@
+{
+    "spacing": [
+        "none",
+        "tight",
+        "snug",
+        "normal",
+        "relaxed",
+        "loose"
+    ],
+    "buttons": [
+        "primary",
+        "secondary",
+        "tertiary"
+    ]
+}
