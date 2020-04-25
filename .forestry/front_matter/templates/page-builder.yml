@@ -19,11 +19,6 @@ fields:
     required: false
   label: Body Class
   description: The CSS class to be applied to the page body tag.
-- name: seo_settings
-  type: include
-  config: {}
-  template: seo-settings
-  label: SEO Settings
 - name: blocks
   type: blocks
   template_types:
@@ -39,6 +34,16 @@ fields:
   label: Layout
   hidden: true
   default: page
+- name: seo
+  type: field_group
+  config: {}
+  fields:
+  - name: settings
+    type: include
+    config: {}
+    template: seo-settings
+    label: Settings
+  label: SEO Settings
 pages:
 - content/kitchen-sink.md
 - content/kitchen-sink.md
