@@ -1,0 +1,11 @@
+{% for row in block.rows %}
+    <div class="flex flex-row">
+    {% for column in row.columns %}
+        <div class="w-1/2">
+            {% for component in column.components %}
+                {% include "components/" + component.template + ".njk" %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+    <div>
+{% endfor %}
