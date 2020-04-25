@@ -10,7 +10,11 @@ blocks:
 - template: block-section
   rows:
   - row_name: ''
-    columns: []
+    columns:
+    - column_name: ''
+      components:
+      - template: component-image
+        image: "/static/images/articles/author.jpg"
 - template: block-section
   rows: []
 
