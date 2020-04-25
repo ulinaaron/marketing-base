@@ -34,7 +34,11 @@ sections:
   create: all
   match: "**/*.md"
 - type: heading
-  label: Site
+  label: Configuration
+- type: document
+  path: data/navigation.json
+  label: Menus
+  match: "**/*"
 - type: document
   path: data/editor.json
   label: Editor Defaults
