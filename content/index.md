@@ -6,11 +6,10 @@ body_class: home
 title: Home
 page_blocks:
 - template: block-hero
-  headline: Homeboy Quan
-  subheadline: Get it my dude!
   primary_button:
-    text: Action Item
-    style: Tertiary
+    text: Learn More
+    url: "/about"
+    style: Secondary
 title_visibility: false
 
 ---
