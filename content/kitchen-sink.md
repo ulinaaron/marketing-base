@@ -1,7 +1,7 @@
 ---
 title_visibility: true
 title: Kitchen Sink
-body_class: ''
+body_class: kitchen-sink
 hidden: false
 meta_title: ''
 meta_description: ''
@@ -23,5 +23,6 @@ blocks:
         url: "#"
 - template: block-section
   rows: []
+layout: ''
 
 ---
