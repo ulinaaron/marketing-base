@@ -32,3 +32,5 @@ fields:
     min: 
     max: 
   label: Page Blocks
+pages:
+- content/kitchen-sink.md
