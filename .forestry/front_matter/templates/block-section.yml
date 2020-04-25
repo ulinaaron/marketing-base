@@ -5,9 +5,20 @@ fields:
 - name: rows
   type: field_group_list
   fields:
+  - name: row_name
+    type: text
+    config:
+      required: false
+    label: Row Name
+    description: For Internal Use Only
   - name: columns
     type: field_group_list
     fields:
+    - name: column_name
+      type: text
+      config:
+        required: false
+      label: Column Name
     - name: components
       type: blocks
       label: Components
@@ -22,10 +33,10 @@ fields:
     config:
       min: 
       max: 
-      labelField: 
+      labelField: column_name
     label: Columns
   config:
     min: 
     max: 
-    labelField: 
+    labelField: row_name
   label: Rows
