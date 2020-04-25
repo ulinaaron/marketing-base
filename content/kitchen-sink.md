@@ -20,7 +20,7 @@ blocks:
       - template: component-button
         text: Learn More
         style: secondary
-        url: ''
+        url: "#"
 - template: block-section
   rows: []
 
