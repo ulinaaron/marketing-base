@@ -11,6 +11,7 @@ page_blocks:
   primary_button:
     text: Action Item
     style: Tertiary
+title_visibility: false
 
 ---
 This is home!
