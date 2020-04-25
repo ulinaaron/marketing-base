@@ -23,6 +23,6 @@ blocks:
         url: "#"
 - template: block-section
   rows: []
-layout: ''
+layout: page
 
 ---
