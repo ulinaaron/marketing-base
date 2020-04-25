@@ -24,7 +24,7 @@ fields:
   config: {}
   template: seo-settings
   label: SEO Settings
-- name: page_blocks
+- name: blocks
   type: blocks
   template_types:
   - block-hero
@@ -33,4 +33,5 @@ fields:
     max: 
   label: Page Blocks
 pages:
+- content/kitchen-sink.md
 - content/kitchen-sink.md
