@@ -6,12 +6,12 @@ fields:
   type: boolean
   label: Hidden
   description: Disallow being indexed by search engines
-- name: meta_title
+- name: title
   type: text
   config:
     required: false
   label: Meta Title
-- name: meta_description
+- name: description
   type: textarea
   default: ''
   config:
