@@ -27,11 +27,11 @@ fields:
 - name: blocks
   type: blocks
   template_types:
-  - block-hero
+  - block-section
   config:
     min: 
     max: 
-  label: Page Blocks
+  label: Blocks
 pages:
 - content/kitchen-sink.md
 - content/kitchen-sink.md
