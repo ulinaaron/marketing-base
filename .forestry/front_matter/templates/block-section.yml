@@ -1,4 +1,28 @@
 ---
 label: Block - Section
 hide_body: true
-fields: []
+fields:
+- name: rows
+  type: field_group_list
+  fields:
+  - name: columns
+    type: field_group_list
+    fields:
+    - name: components
+      type: blocks
+      label: Components
+      template_types:
+      - component-button
+      config:
+        min: 
+        max: 
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Columns
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Rows
