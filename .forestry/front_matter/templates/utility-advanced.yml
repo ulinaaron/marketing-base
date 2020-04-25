@@ -1,4 +1,16 @@
 ---
 label: Utility - Advanced
 hide_body: true
-fields: []
+fields:
+- name: css_id
+  type: text
+  config:
+    required: false
+  label: CSS ID
+  description: 'Example: "foo"'
+- name: css_classes
+  type: text
+  config:
+    required: false
+  label: CSS Classes
+  description: 'Example: "foo bar baz"'
