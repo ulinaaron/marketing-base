@@ -15,6 +15,10 @@ sections:
 - type: document
   path: content/contact.md
   label: Contact
+- type: document
+  path: content/kitchen-sink.md
+  label: Kitchen Sink
+  match: "**/*"
 - type: heading
   label: Collections
 - type: directory
