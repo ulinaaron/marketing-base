@@ -50,7 +50,7 @@ if ( mix.inProduction() )
 
         .purgeCss({
             folders: [
-                'src'
+                'content'
             ],
             extensions: [
                 'html',
