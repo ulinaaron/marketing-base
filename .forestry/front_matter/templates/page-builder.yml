@@ -32,6 +32,13 @@ fields:
     min: 
     max: 
   label: Blocks
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: true
+  default: page
 pages:
 - content/kitchen-sink.md
 - content/kitchen-sink.md
