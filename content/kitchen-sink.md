@@ -3,8 +3,6 @@ title_visibility: true
 title: Kitchen Sink
 body_class: kitchen-sink
 hidden: false
-meta_title: ''
-meta_description: ''
 page_blocks: []
 blocks:
 - template: block-section
