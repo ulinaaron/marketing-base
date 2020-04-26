@@ -1,6 +1,6 @@
 ---
 title_visibility: true
-title: Kitchen Sink
+title: Style Guide
 body_class: kitchen-sink
 hidden: false
 page_blocks: []
@@ -22,5 +22,9 @@ blocks:
 - template: block-section
   rows: []
 layout: page
+seo:
+  hidden: false
+  title: ''
+  description: ''
 
 ---
