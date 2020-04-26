@@ -45,9 +45,9 @@ sections:
   path: data/editor.json
   label: Editor Defaults
 upload_dir: static/images
-public_path: "/static/images"
+public_path: static/images
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_output_directory: dist
