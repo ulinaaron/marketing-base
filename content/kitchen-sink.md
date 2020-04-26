@@ -1,7 +1,7 @@
 ---
 title_visibility: true
 title: Style Guide
-body_class: kitchen-sink
+body_class: styleguide
 hidden: false
 page_blocks: []
 blocks:
