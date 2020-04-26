@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: data/site.json
+  label: Configuration
+  match: "**/*"
 - type: heading
   label: Primary Pages
 - type: document
