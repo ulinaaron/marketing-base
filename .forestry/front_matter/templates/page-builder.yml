@@ -45,6 +45,3 @@ fields:
     label: Settings
     description: Define the meta properties for the page to be used by search engines.
   label: SEO Settings
-pages:
-- content/kitchen-sink.md
-- content/kitchen-sink.md

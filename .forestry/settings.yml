@@ -16,8 +16,8 @@ sections:
   path: content/contact.md
   label: Contact
 - type: document
-  path: content/kitchen-sink.md
-  label: Kitchen Sink
+  path: content/styleguide.md
+  label: Style Guide
 - type: heading
   label: Collections
 - type: directory
