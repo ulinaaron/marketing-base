@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: data/site.json
-  label: Configuration
-  match: "**/*"
 - type: heading
   label: Primary Pages
 - type: document
@@ -38,6 +34,9 @@ sections:
   create: all
   match: "**/*.md"
 - type: heading
+  label: Site Settings
+- type: document
+  path: data/site.json
   label: Configuration
 - type: document
   path: data/navigation.json
