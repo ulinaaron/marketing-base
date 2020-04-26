@@ -38,7 +38,6 @@ sections:
 - type: document
   path: data/navigation.json
   label: Menus
-  match: "**/*"
 - type: document
   path: data/editor.json
   label: Editor Defaults
