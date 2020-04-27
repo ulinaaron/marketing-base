@@ -32,7 +32,7 @@
     {% endif %}
     
     {# include social meta tags #}
-    {% include "components/social-meta.njk" %}
+    {% include "components/legacy/social-meta.njk" %}
 
     {# lastly include favicon, fonts, etc #}
     <link rel="icon" type="image/png" href="{{ site.images.favicon }}">
@@ -56,18 +56,18 @@
     <a class="sr-only" href="#main">Skip to content</a>
 
     {# include mobile nav #}
-    {% include "components/mobile-nav.njk" %}
+    {% include "components/legacy/mobile-nav.njk" %}
 
     <div id="wrapper" class="relative flex flex-col min-h-screen pt-16 wrapper md:pt-0">
 
         {# include header #}
-        {% include "components/header.njk" %}
+        {% include "components/legacy/header.njk" %}
 
         {# include content #}
         {{ content | safe }}
 
         {# include footer #}
-        {% include "components/footer.njk" %}
+        {% include "components/legacy/footer.njk" %}
 
     </div>
 
