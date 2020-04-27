@@ -7,36 +7,43 @@
         "relaxed",
         "loose"
     ],
-    "button_styles": {
-        "primary": {
+    "button_styles": [
+        {
             "name": "Primary",
+            "id": "primary",
             "value": "bg-pref-buttonPrimaryBase"
         },
-        "secondary": {
+        {
             "name": "Secondary",
+            "id": "secondary",
             "value": "bg-pref-buttonSecondaryBase"
         },
-        "tertiary": {
+        {
             "name": "Tertiary",
+            "id": "tertiary",
             "value": "bg-pref-buttonTertiaryBase"
         }
-    },
-    "button_sizes": {
-        "small": {
+    ],
+    "button_sizes": [
+        {
             "name": "Small",
+            "id": "small",
             "value": "px-10 py-2"
         },
-        "base": {
+        {
             "name": "Base",
+            "id": "base",
             "value": "px-20 py-2"
         },
-        "large": {
+        {
             "name": "Large",
+            "id": "large",
             "value": "px-32 py-4"
         },
-        "xl": {
+        {
             "name": "Extra Large",
+            "id": "extra Large",
             "value": "px-40 py-6"
         }
-    }
+    ]
 }
