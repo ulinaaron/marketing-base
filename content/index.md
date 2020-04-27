@@ -11,6 +11,7 @@ blocks:
   headline: This Is A Big Hero Headline
   subheadline: Azimuth is the perfect theme for developers, designers and entrepreneurs
     who need a sleek, modern SaaS site.
+  bg_image: ''
 title_visibility: false
 seo:
   title: Home
