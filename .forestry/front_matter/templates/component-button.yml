@@ -27,3 +27,15 @@ fields:
       file: data/editor.json
       path: buttons
   label: Style
+- name: size
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: buttons
+  label: Size
