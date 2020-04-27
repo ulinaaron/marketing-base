@@ -43,7 +43,7 @@ sections:
   label: Menus
 - type: document
   path: data/editor.json
-  label: Editor Defaults
+  label: Appearance
 upload_dir: static/images
 public_path: static/images
 front_matter_path: ''
