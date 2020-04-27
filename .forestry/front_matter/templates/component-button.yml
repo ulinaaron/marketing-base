@@ -25,7 +25,7 @@ fields:
       type: documents
       section: editor-defaults
       file: data/editor.json
-      path: button-styles
+      path: button_styles
   label: Style
 - name: size
   type: select
@@ -37,5 +37,5 @@ fields:
       type: documents
       section: editor-defaults
       file: data/editor.json
-      path: button-sizes
+      path: button_sizes
   label: Size
