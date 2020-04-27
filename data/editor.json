@@ -7,7 +7,7 @@
         "relaxed",
         "loose"
     ],
-    "button-styles": {
+    "button_styles": {
         "primary": {
             "name": "Primary",
             "value": "bg-pref-buttonPrimaryBase"
@@ -21,7 +21,7 @@
             "value": "bg-pref-buttonTertiaryBase"
         }
     },
-    "button-sizes": {
+    "button_sizes": {
         "small": {
             "name": "Small",
             "value": "px-10 py-2"
