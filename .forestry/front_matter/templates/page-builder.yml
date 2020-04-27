@@ -41,7 +41,7 @@ fields:
   - name: settings
     type: include
     config: {}
-    template: seo-settings
+    template: utility-seo
     label: Settings
     description: Define the meta properties for the page to be used by search engines.
   label: SEO Settings
