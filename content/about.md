@@ -2,7 +2,7 @@
 layout: page
 body_class: about
 title: About Us
-page_blocks: []
+blocks: []
 title_visibility: true
 
 ---

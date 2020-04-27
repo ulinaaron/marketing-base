@@ -3,7 +3,6 @@ title_visibility: true
 title: Style Guide
 body_class: styleguide
 hidden: false
-page_blocks: []
 blocks:
 - template: block-section
   rows:

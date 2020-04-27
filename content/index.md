@@ -2,7 +2,7 @@
 layout: page
 body_class: home
 title: Home
-page_blocks:
+blocks:
 - template: block-hero
   primary_button:
     text: Learn More
