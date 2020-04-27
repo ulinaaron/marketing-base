@@ -30,7 +30,7 @@ sections:
   - page-builder
 - type: directory
   path: content/articles
-  label: Blog
+  label: Articles
   create: all
   match: "**/*.md"
 - type: heading
