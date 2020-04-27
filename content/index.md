@@ -15,6 +15,7 @@ title_visibility: false
 seo:
   title: Home
   description: The homepage of or website.
+  hidden: false
 
 ---
 This is home!
