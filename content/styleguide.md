@@ -18,8 +18,18 @@ blocks:
         text: Learn More
         style: secondary
         url: "#"
+        size: ''
 - template: block-section
-  rows: []
+  rows:
+  - row_name: ''
+    columns:
+    - column_name: ''
+      components:
+      - template: component-button
+        style: primary
+        text: Primary Button
+        url: "#"
+        size: base
 layout: page
 seo:
   hidden: false
