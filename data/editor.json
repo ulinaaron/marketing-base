@@ -7,9 +7,20 @@
         "relaxed",
         "loose"
     ],
-    "buttons": [
-        "primary",
-        "secondary",
-        "tertiary"
-    ]
+    "buttons": {
+        "styles": [
+            {
+                "name": "Primary",
+                "value": "bg-pref-buttonPrimaryBase"
+            },
+            {
+                "name": "Secondary",
+                "value": "bg-pref-buttonSecondaryBase"
+            },
+            {
+                "name": "Tertiary",
+                "value": "bg-pref-buttonTertiaryBase"
+            }
+        ]
+    }
 }
