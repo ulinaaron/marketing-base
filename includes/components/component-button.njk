@@ -1,1 +1,13 @@
-<a href="{{ component.url }}" class="">{{ component.text }}</a>
+{{ component | dump }}
+
+{% set class = "inline-block px-4 py-2 font-bold rounded" %}
+
+{% if component.style == "primary" %}
+    {% set class = class + " hey" %}
+{% endif %}
+
+{% if component.style == "secondary" %}
+    {% set class = class + " bg-pref-buttonPrimaryBase" %}
+{% endif %}
+
+<a href="{{ component.url }}" class="{{ class }}">{{ component.text }}</a>
