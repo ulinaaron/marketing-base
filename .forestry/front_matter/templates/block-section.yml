@@ -27,7 +27,7 @@ fields:
       - component-text-block
       - component-image
       - component-button
-      - spacer
+      - component-spacer
       config:
         min: 
         max: 
