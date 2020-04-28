@@ -1,0 +1,8 @@
+{% import "macros.njk" as macros %}
+
+{# Defaults #}
+{% set defaults = "inline-block px-4 py-2 font-bold rounded" %}
+
+{% set styles =  macros.styles(component.height, editor.spacing) %}
+
+<div class="divider {{ styles }}"></div>

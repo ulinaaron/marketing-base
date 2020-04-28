@@ -8,15 +8,15 @@
         "loose": "py-40"
     },
     "button_styles": {
-        "primary": "bg-primary-base text-light",
-        "secondary": "bg-secondary-base text-light",
-        "tertiary": "bg-tertiary-base text-light",
-        "info": "bg-info-base text-light",
-        "success": "bg-success-base text-light",
-        "warning": "bg-warning-base text-light",
-        "danger": "bg-danger-base text-light",
-        "light": "bg-light-base text-light",
-        "dark": "bg-dark-base text-light"
+        "primary": "bg-primary-base text-light hover:bg-primary-dark",
+        "secondary": "bg-secondary-base text-light hover:bg-secondary-dark",
+        "tertiary": "bg-tertiary-base text-light hover:bg-tertiary-dark",
+        "info": "bg-info-base text-light hover:bg-info-dark",
+        "success": "bg-success-base text-light hover:bg-success-dark",
+        "warning": "bg-warning-base text-light hover:bg-warning-dark",
+        "danger": "bg-danger-base text-light hover:bg-danger-dark",
+        "light": "bg-light-base text-light hover:bg-light-dark",
+        "dark": "bg-dark-base text-light hover:bg-dark-dark"
     },
     "button_sizes": {
         "small": "px-10 py-2",

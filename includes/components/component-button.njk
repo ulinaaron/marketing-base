@@ -7,4 +7,4 @@
 {% set styles =  macros.styles(component.style, editor.button_styles) %}
 {% set sizes =  macros.styles(component.size, editor.button_sizes) %}
 
-<a href="{{ component.url }}" class="{{ defaults }} {{ styles }} {{ sizes }}">{{ component.text }}</a>
+<a href="{{ component.url }}" class="button {{ defaults }} {{ styles }} {{ sizes }}">{{ component.text }}</a>
