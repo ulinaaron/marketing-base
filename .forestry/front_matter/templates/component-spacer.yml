@@ -12,5 +12,5 @@ fields:
       type: documents
       section: editor-defaults
       file: data/editor.json
-      path: 
+      path: spacing
   label: Height
