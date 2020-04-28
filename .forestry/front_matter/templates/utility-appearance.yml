@@ -2,14 +2,28 @@
 label: Utility - Appearance
 hide_body: true
 fields:
-- name: bg_color
-  type: color
-  label: Background Color
-  config:
-    required: false
-    color_format: Hex
 - name: bg_image
   type: file
   config:
     maxSize: 64
   label: Background Image
+- name: bg_color
+  type: select
+  default: ''
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: appearance_bg_color
+  label: Background Color
+- name: bg_color_custom
+  type: color
+  label: Background Color Custom
+  config:
+    required: false
+    color_format: Hex
+  showOnly:
+    field: bg_color
