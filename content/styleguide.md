@@ -29,7 +29,7 @@ blocks:
         style: primary
         text: Primary Button
         url: "#"
-        size: base
+        size: large
 layout: page
 seo:
   hidden: false
