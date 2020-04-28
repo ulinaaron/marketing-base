@@ -14,10 +14,10 @@
     }
 
     &__item__link {
-        @apply font-bold font-secondary text-pref-menu;
+        @apply font-bold font-secondary text-scale-800;
 
         &:hover {
-            @apply text-pref-menuHover;
+            @apply text-primary-base;
         }
     }
 

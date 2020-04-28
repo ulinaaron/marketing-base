@@ -1,16 +1,22 @@
 {
-    "spacing": [
-        "none",
-        "tight",
-        "snug",
-        "normal",
-        "relaxed",
-        "loose"
-    ],
+    "spacing": {
+        "none": "py-0",
+        "tight": "py-6",
+        "snug": "py-12",
+        "normal": "py-20",
+        "relaxed": "py-32",
+        "loose": "py-40"
+    },
     "button_styles": {
-        "primary": "bg-pref-buttonPrimaryBase",
-        "secondary": "bg-pref-buttonSecondaryBase",
-        "tertiary": "bg-pref-buttonTertiaryBase"
+        "primary": "bg-primary-base text-light",
+        "secondary": "bg-secondary-base text-light",
+        "tertiary": "bg-tertiary-base text-light",
+        "info": "bg-info-base text-light",
+        "success": "bg-success-base text-light",
+        "warning": "bg-warning-base text-light",
+        "danger": "bg-danger-base text-light",
+        "light": "bg-light-base text-light",
+        "dark": "bg-dark-base text-light"
     },
     "button_sizes": {
         "small": "px-10 py-2",

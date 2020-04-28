@@ -1,13 +1,10 @@
-{{ component | dump }}
+{# {{ component | dump }} #}
+{% import "macros.njk" as macros %}
 
-{% set class = "inline-block px-4 py-2 font-bold rounded" %}
+{# Defaults #}
+{% set defaults = "inline-block px-4 py-2 font-bold rounded" %}
 
-{% if component.style == "primary" %}
-    {% set class = class + " hey" %}
-{% endif %}
+{% set styles =  macros.styles(component.style, editor.button_styles) %}
+{% set sizes =  macros.styles(component.size, editor.button_sizes) %}
 
-{% if component.style == "secondary" %}
-    {% set class = class + " bg-pref-buttonPrimaryBase" %}
-{% endif %}
-
-<a href="{{ component.url }}" class="{{ class }}">{{ component.text }}</a>
+<a href="{{ component.url }}" class="{{ defaults }} {{ styles }} {{ sizes }}">{{ component.text }}</a>

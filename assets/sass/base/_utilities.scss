@@ -20,7 +20,7 @@
 
 // Code Style
 pre {
-    @apply bg-pref-cardBase p-4 shadow-lg;
+    @apply bg-scale-200 p-4 shadow-lg;
     white-space: pre-wrap;
 
     @screen md {
@@ -28,7 +28,7 @@ pre {
     }
 
     code {
-        @apply bg-transparent text-pref-support font-mono text-sm;
+        @apply bg-transparent text-scale-700 font-mono text-sm;
 
         @screen md {
             @apply text-xs;

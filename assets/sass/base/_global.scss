@@ -2,26 +2,14 @@
 //==========  Globals ==========//
 
 body {
-    @apply font-primary text-base leading-normal bg-pref-base text-pref-support;
+    // Todo: Move to edit.json so it can be defined in admin
+    @apply font-primary text-scale-700 leading-normal bg-light;
 }
 
 .brand {
-    @apply text-3xl font-bold text-pref-brand font-secondary;
+    @apply text-3xl font-bold text-primary-base font-secondary;
 }
 
 .footer {
-    @apply bg-pref-footerBase text-pref-footerSupport;
-}
-
-.work-post {
-    img {
-        @apply shadow-lg;
-
-        @screen md {
-       } 
-    }
-
-    figure img {
-        @apply shadow-none;
-    }
+    @apply bg-primary-base text-light;
 }

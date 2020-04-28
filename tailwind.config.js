@@ -12,43 +12,61 @@ module.exports = {
     colors: {
       transparent: 'transparent',
 
-      pref: {
-        brand: 'var(--color-brand)',
-        base: 'var(--color-base)',
-        support: 'var(--color-support)',
-        lead: 'var(--color-lead)',
-        meta: 'var(--color-meta)',
-        heading: 'var(--color-heading)',
-        footerBase: 'var(--color-footer-base)',
-        footerSupport: 'var(--color-footer-support)',
+      dark: '#000',
+      light: '#fff',
 
-        cardBase: 'var(--color-card-base)',
-        cardSupport: 'var(--color-card-support)',
-        cardMeta: 'var(--color-card-meta)',
-        cardHeading: 'var(--color-card-heading)',
+      primary: {
+        light: '#33a1ff',
+        base: '#008aff',
+        dark: '#006ecc'
+      },
 
-        menu: 'var(--color-menu)',
-        menuSupport: 'var(--color-menu-support)',
-        menuHover: 'var(--color-menu-hover)',
-        menuSupportHover: 'var(--color-menu-support-hover)',
+      secondary: {
+        light: '#8b33ff',
+        base: '#6E00FF',
+        dark: '#5800cc'
+      },
 
-        link: 'var(--color-link)',
-        linkSupport: 'var(--color-link-support)',
-        linkHover: 'var(--color-link-hover)',
-        linkSupportHover: 'var(--color-link-support-hover)',
+      tertiary: {
+        light: '#241e6f',
+        base: '#161447',
+        dark: '#0A0820'
+      },
 
-        inputBase: 'var(--color-input-base)',
-        inputBorder: 'var(--color-input-border)',
-        inputSupport: 'var(--color-input-support)',
+      success: {
+        light: '#82D6BC',
+        base: '#5CC9A7',
+        dark: '#3CB690'
+      },
 
-        buttonPrimaryBase: 'var(--color-button-primary-base)',
-        buttonPrimarySupport: 'var(--color-button-primary-support)',
-        buttonPrimaryBaseHover: 'var(--color-button-primary-base-hover)',
-        buttonPrimarySupportHover: 'var(--color-button-primary-support-hover)',
+      danger: {
+        light: '#F68592',
+        base: '#F25667',
+        dark: '#EE273C'
+      },
 
-        schemeToggle: 'var(--color-scheme-toggle)',
-        schemeToggleSupport: 'var(--color-scheme-toggle-support)',
-        schemeToggleSupportHover: 'var(--color-scheme-toggle-support-hover)',
+      warning: {
+        light: '#FFCE70',
+        base: '#FFBD3E',
+        dark: '#ffad0a'
+      },
+
+      info: {
+        light: '#82CBFF',
+        base: '#50b5ff',
+        dark: '#1d9fff'
+      },
+
+      scale: {
+        100: '#f7fafc',
+        200: '#edf2f7',
+        300: '#e2e8f0',
+        400: '#cbd5e0',
+        500: '#a0aec0',
+        600: '#718096',
+        700: '#4a5568',
+        800: '#2d3748',
+        900: '#1a202c',
       }
     },
     spacing: {

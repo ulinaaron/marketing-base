@@ -15,7 +15,7 @@
         }
 
         .form-sub-label {
-            @apply text-sm text-pref-meta;
+            @apply text-sm text-scale-700
         }
 
         &.required {
@@ -35,10 +35,10 @@
 
     .input,
     .textarea {
-        @apply bg-pref-inputBase text-pref-inputSupport border-2 border-pref-inputBorder rounded p-3 w-full transition-all duration-300 ease-out;
+        @apply bg-scale-100 text-scale-800 border-2 border-scale-300 rounded p-3 w-full transition-all duration-300 ease-out;
 
         &:focus {
-            @apply border-pref-linkHover outline-none;
+            @apply border-primary-light outline-none;
         }
     }
 
@@ -62,11 +62,11 @@
         @apply relative;
 
         &__select {
-            @apply appearance-none block bg-pref-inputBase text-pref-inputSupport border-2 border-pref-inputBorder rounded p-3 w-full;
+            @apply appearance-none block bg-scale-100 text-scale-800 border-2 border-scale-300 rounded p-3 w-full;
         }
         
         &__pointer {
-            @apply absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-pref-inputSupport;
+            @apply absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-scale-800;
         }
     }
 
@@ -74,10 +74,10 @@
         @apply block w-full flex content-center my-2 flex-row content-center;
 
         &__check {
-            @apply appearance-none bg-pref-inputBase text-pref-inputSupport border-2 border-pref-inputBorder rounded p-3 mr-4 h-6 relative;
+            @apply appearance-none bg-scale-100 text-scale-800 border-2 border-scale-300 rounded p-3 mr-4 h-6 relative;
 
             &:after {
-                @apply absolute font-bold h-6 w-6 text-pref-buttonPrimaryBaseHover font-secondary text-xl;
+                @apply absolute font-bold h-6 w-6 text-primary-dark font-secondary text-xl;
                 left: 5px;
                 top: -5px;
                 line-height: 1;
@@ -103,6 +103,6 @@
             @apply mr-2;
         }
 
-        @apply transition-opacity mt-4 flex flex-row bg-pref-cardBase px-6 py-2 text-sm items-center text-pref-buttonPrimaryBaseHover font-bold rounded;
+        @apply transition-opacity mt-4 flex flex-row bg-scale-200 px-6 py-2 text-sm items-center text-primary-dark font-bold rounded;
     }
 }

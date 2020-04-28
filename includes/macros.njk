@@ -1,0 +1,9 @@
+{% macro styles(component='', group='',  class='') %}
+    {% for name, value in group %}
+        {% if name == component %}
+            {% set class =  value %}
+        {% endif %}
+    {% endfor %}
+
+    {{ class }}
+{% endmacro %}

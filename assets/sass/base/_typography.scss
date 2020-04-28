@@ -3,7 +3,7 @@
 
 // headings
 h1, h2, h3, h4, h5, h6 {
-    @apply font-secondary font-light leading-tight mt-0 mb-6 text-pref-heading text-pref-heading;
+    @apply font-secondary font-light leading-tight mt-0 mb-6 text-scale-800;
 }
 
 h1 { @apply text-6xl; }
@@ -36,23 +36,18 @@ h6 { @apply text-xl; }
 }
 
 .lead {
-    @apply text-lg mb-10 font-light leading-snug text-pref-lead;
+    @apply text-lg mb-10 font-light leading-snug text-scale-700;
 }
 
 a {
-    @apply text-pref-link no-underline transition-all duration-300 ease-out;
+    @apply text-primary-base no-underline transition-all duration-300 ease-out;
 
     &:not([class]) {
         border-bottom-width: 2px;
-        @apply border-pref-linkSupport;
+        @apply border-primary-base;
 
         &:hover {
-            @apply text-pref-linkHover;
+            @apply text-primary-dark;
         }
     }
-}
-
-
-code {
-    @apply bg-pref-cardBase px-1;
 }
