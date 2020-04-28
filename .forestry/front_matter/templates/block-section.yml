@@ -41,3 +41,13 @@ fields:
     max: 
     labelField: row_name
   label: Rows
+- name: advanced
+  type: field_group
+  config: {}
+  fields:
+  - name: advanced_settings
+    type: include
+    config: {}
+    template: utility-advanced
+    label: Advanced Settings
+  label: Advanced
