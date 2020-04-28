@@ -25,6 +25,8 @@ blocks:
     columns:
     - column_name: ''
       components:
+      - template: component-image
+        image: "/static/images/articles/post-2.jpg"
       - template: component-spacer
         height: '64'
       - template: component-button
