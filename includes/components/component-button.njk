@@ -1,10 +1,12 @@
-{# {{ component | dump }} #}
-{% import "macros.njk" as macros %}
+{% import "macros.njk" as macro %}
 
 {# Defaults #}
-{% set defaults = "inline-block px-4 py-2 font-bold rounded" %}
+{% set defaults = "inline-block font-bold rounded" %}
 
-{% set styles =  macros.styles(component.style, editor.button_styles) %}
-{% set sizes =  macros.styles(component.size, editor.button_sizes) %}
+{% set styles =  macro.styles(component.style, editor.button_styles) %}
+{% set sizes =  macro.styles(component.size, editor.button_sizes) %}
+{% set advanced = macro.advanced(component.advanced) %}
 
-<a href="{{ component.url }}" class="button {{ defaults }} {{ styles }} {{ sizes }}">{{ component.text }}</a>
+<div class="ui-component ui-component--button {{ advanced }}">
+    <a href="{{ component.url }}" class="button {{ defaults }} {{ styles }} {{ sizes }}">{{ component.text }}</a>
+</div>

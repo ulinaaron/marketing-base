@@ -1,9 +1,29 @@
-{% macro styles(component='', group='',  class='') %}
+{# Set Component Styles Properties
+    Loops through styles set in editor.json and compares them to those set by the component.
+    It applies corresponding styles to the variable string to return.
+
+    @return class string
+ #}
+{% macro styles(component='', group='') %}
+    {% set class = '' %}
     {% for name, value in group %}
         {% if name == component %}
             {% set class =  value %}
         {% endif %}
     {% endfor %}
 
+    {{ class }}
+{% endmacro %}
+
+{# Set Component Advanced Properties
+    Sets properties that exsist in the advanced config.
+
+    @return class string
+ #}
+{% macro advanced(component='') %}
+    {% set class = '' %}
+    {% set class = class + ' ' +  component.css_id if component.css_id %}
+    {% set class = class + ' ' + component.css_classes if component.css_classes %}
+    
     {{ class }}
 {% endmacro %}

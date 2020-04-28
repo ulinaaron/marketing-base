@@ -1,11 +1,17 @@
-{% for row in block.rows %}
-    <div class="flex flex-row">
-    {% for column in row.columns %}
-        <div class="w-1/2">
-            {% for component in column.components %}
-                {% include "components/" + component.template + ".njk" %}
-            {% endfor %}
+{% import "macros.njk" as macro %}
+
+{% set spacing =  macro.styles(block.spacing, editor.section_spacing) %}
+
+<div class="ui-block ui-block--section {{ spacing }}">
+    {% for row in block.rows %}
+        <div class="flex flex-row flex-wrap">
+        {% for column in row.columns %}
+            <div class="w-1/2">
+                {% for component in column.components %}
+                    {% include "components/" + component.template + ".njk" %}
+                {% endfor %}
+            </div>
+        {% endfor %}
         </div>
     {% endfor %}
-    <div>
-{% endfor %}
+</div>

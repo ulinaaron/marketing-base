@@ -1,0 +1,10 @@
+{% import "macros.njk" as macro %}
+
+{# Defaults #}
+{% set defaults = "spacer block" %}
+
+{% set styles =  macro.styles(component.height, editor.spacer) %}
+
+<div class="ui-component ui-component--spacer {{ advanced }}">
+    <div class="{{ defaults }} {{ styles }}"></div>
+</div>

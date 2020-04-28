@@ -1,4 +1,29 @@
 {
+    "appearance_bg_color": {
+        "primary-light": "bg-primary-light",
+        "primary-base": "bg-primary-base",
+        "primary-dark": "bg-primary-dark",
+        "secondary-light": "bg-secondary-light",
+        "secondary-base": "bg-secondary-base",
+        "secondary-dark": "bg-secondary-dark",
+        "tertiary-light": "bg-tertiary-light",
+        "tertiary-base": "bg-tertiary-base",
+        "tertiary-dark": "bg-tertiary-dark",
+        "info-light": "bg-info-light",
+        "info-base": "bg-info-base",
+        "info-dark": "bg-info-dark",
+        "success-light": "bg-success-light",
+        "success-base": "bg-success-base",
+        "success-dark": "bg-success-dark",
+        "warning-light": "bg-warning-light",
+        "warning-base": "bg-warning-base",
+        "warning-dark": "bg-warning-dark",
+        "danger-light": "bg-danger-light",
+        "danger-base": "bg-danger-base",
+        "danger-dark": "bg-danger-dark",
+        "light": "bg-light",
+        "dark": "bg-dark"
+    },
     "button_styles": {
         "primary": "bg-primary-base text-light hover:bg-primary-dark",
         "secondary": "bg-secondary-base text-light hover:bg-secondary-dark",
@@ -7,8 +32,8 @@
         "success": "bg-success-base text-light hover:bg-success-dark",
         "warning": "bg-warning-base text-light hover:bg-warning-dark",
         "danger": "bg-danger-base text-light hover:bg-danger-dark",
-        "light": "bg-light-base text-light hover:bg-light-dark",
-        "dark": "bg-dark-base text-light hover:bg-dark-dark"
+        "light": "bg-light text-dark hover:bg-dark hover:text-light",
+        "dark": "bg-dark text-light hover:bg-light hover:text-dark"
     },
     "button_sizes": {
         "small": "px-10 py-2",

@@ -12,12 +12,6 @@
     @apply opacity-100;
 }
 
-// 'container' helper class
-.inner {
-    @apply w-full max-w-5xl ml-auto mr-auto px-4;
-}
-
-
 // Code Style
 pre {
     @apply bg-scale-200 p-4 shadow-lg;
