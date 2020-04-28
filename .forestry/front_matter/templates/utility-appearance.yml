@@ -27,3 +27,4 @@ fields:
     color_format: Hex
   showOnly:
     field: bg_color
+    value: custom
