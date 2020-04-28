@@ -26,6 +26,10 @@ blocks:
   advanced:
     css_id: ''
     css_classes: ''
+  appearance:
+    bg_image: ''
+    bg_color: primary-base
+    bg_color_custom: ''
 - template: block-section
   rows:
   - row_name: ''
@@ -48,6 +52,10 @@ blocks:
   advanced:
     css_id: ''
     css_classes: ''
+  appearance:
+    bg_image: ''
+    bg_color: ''
+    bg_color_custom: ''
 layout: page
 seo:
   hidden: false
