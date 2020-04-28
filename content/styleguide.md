@@ -19,6 +19,9 @@ blocks:
         style: secondary
         url: "#"
         size: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
 - template: block-section
   rows:
   - row_name: ''
@@ -34,6 +37,9 @@ blocks:
         text: Primary Button
         url: "#"
         size: large
+        advanced:
+          css_id: customButton
+          css_classes: customButtonClass
 layout: page
 seo:
   hidden: false
