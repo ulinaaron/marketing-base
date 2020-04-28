@@ -41,6 +41,20 @@ fields:
     max: 
     labelField: row_name
   label: Rows
+- name: spacing
+  type: select
+  default: normal
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: section_spacing
+  label: Spacing
+  description: The spacing inside a section. Useful when you want a set amount of
+    whitespace inside of a section.
 - name: advanced
   type: field_group
   config: {}
