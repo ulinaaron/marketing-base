@@ -14,7 +14,7 @@ fields:
   label: URL
 - name: style
   type: select
-  default: data/editor.json
+  default: primary
   config:
     required: false
     options:
@@ -29,7 +29,7 @@ fields:
   label: Style
 - name: size
   type: select
-  default: []
+  default: base
   config:
     required: false
     options: []
