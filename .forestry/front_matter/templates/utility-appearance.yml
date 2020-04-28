@@ -11,5 +11,5 @@ fields:
 - name: bg_image
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: Background Image
