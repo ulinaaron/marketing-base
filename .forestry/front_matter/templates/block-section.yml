@@ -55,6 +55,16 @@ fields:
   label: Spacing
   description: The spacing inside a section. Useful when you want a set amount of
     whitespace inside of a section.
+- name: appearance
+  type: field_group
+  config: {}
+  fields:
+  - name: appearance_settings
+    type: include
+    config: {}
+    template: utility-appearance
+    label: Appearance Settings
+  label: Appearance
 - name: advanced
   type: field_group
   config: {}
