@@ -22,6 +22,10 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+  spacing: loose
+  advanced:
+    css_id: ''
+    css_classes: ''
 - template: block-section
   rows:
   - row_name: ''
@@ -40,6 +44,10 @@ blocks:
         advanced:
           css_id: customButton
           css_classes: customButtonClass
+  spacing: ''
+  advanced:
+    css_id: ''
+    css_classes: ''
 layout: page
 seo:
   hidden: false
