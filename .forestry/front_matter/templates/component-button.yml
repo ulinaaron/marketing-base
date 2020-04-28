@@ -39,3 +39,13 @@ fields:
       file: data/editor.json
       path: button_sizes
   label: Size
+- name: advanced
+  type: field_group
+  config: {}
+  fields:
+  - name: advanced_settings
+    type: include
+    config: {}
+    template: utility-advanced
+    label: Advanced Settings
+  label: Advanced
