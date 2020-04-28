@@ -26,7 +26,7 @@ blocks:
     - column_name: ''
       components:
       - template: component-spacer
-        height: ''
+        height: '64'
       - template: component-button
         style: primary
         text: Primary Button
