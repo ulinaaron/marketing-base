@@ -28,8 +28,8 @@ blocks:
     css_classes: ''
   appearance:
     bg_image: ''
-    bg_color: primary-base
-    bg_color_custom: ''
+    bg_color: custom
+    bg_color_custom: "#7ED321"
 - template: block-section
   rows:
   - row_name: ''
