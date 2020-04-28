@@ -22,7 +22,8 @@
         "danger-base": "bg-danger-base",
         "danger-dark": "bg-danger-dark",
         "light": "bg-light",
-        "dark": "bg-dark"
+        "dark": "bg-dark",
+        "custom": ""
     },
     "button_styles": {
         "primary": "bg-primary-base text-light hover:bg-primary-dark",
