@@ -5,12 +5,11 @@ fields:
 - name: rows
   type: field_group_list
   fields:
-  - name: row_name
-    type: text
-    config:
-      required: false
-    label: Row Name
-    description: For Internal Use Only
+  - name: columns
+    type: include
+    config: {}
+    template: set-columns
+    label: Columns
   config:
     min: 
     max: 
