@@ -4,6 +4,12 @@ hide_body: true
 fields:
 - name: rows
   type: field_group_list
+  fields:
+  - name: rows
+    type: include
+    config: {}
+    template: set-rows
+    label: Rows
   config:
     min: 
     max: 
