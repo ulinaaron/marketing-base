@@ -1,4 +1,18 @@
 ---
 label: Set - Rows
 hide_body: true
-fields: []
+fields:
+- name: rows
+  type: field_group_list
+  fields:
+  - name: row_name
+    type: text
+    config:
+      required: false
+    label: Row Name
+    description: For Internal Use Only
+  config:
+    min: 
+    max: 
+    labelField: row_name
+  label: Rows
