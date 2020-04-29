@@ -42,6 +42,13 @@
         "large": "px-32 py-4",
         "xl": "px-40 py-6"
     },
+    "breakpoints": {
+        "default": "",
+        "small": "sm",
+        "medium": "md",
+        "large": "lg",
+        "xl": "xl"
+    },
     "columns_widths": {
         "full": "w-full",
         "1/2": "w-1/2", 
@@ -67,6 +74,14 @@
         "9/12": "w-9/12",
         "10/12": "w-10/12",
         "11/12": "w-11/12"
+    },
+    "row_gutters": {
+        "none": "0",
+        "tight": "2",
+        "snug": "4",
+        "normal": "6",
+        "relaxed": "10",
+        "loose": "12"
     },
     "spacer": {
         "0": "h-0",
