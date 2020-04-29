@@ -20,3 +20,16 @@ fields:
     max: 
     labelField: 
   label: Columns
+- name: gutters
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: row_gutters
+  label: Gutters
+  description: The spacing in between columns.
