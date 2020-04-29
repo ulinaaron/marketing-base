@@ -31,52 +31,59 @@ fields:
       section: editor-defaults
       file: data/editor.json
       path: columns_widths
-  label: Column Width Default
-- name: column_width_small
-  type: select
-  default: full
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: editor-defaults
-      file: data/editor.json
-      path: columns_widths
-  label: Column Width Small
-- name: column_width_medium
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: editor-defaults
-      file: data/editor.json
-      path: columns_widths
-  label: Column Width Medium
-- name: column_width_large
-  type: select
-  default: full
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: editor-defaults
-      file: data/editor.json
-      path: columns_widths
-  label: Column Width Large
-- name: column_width_xl
-  type: select
-  default: full
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: editor-defaults
-      file: data/editor.json
-      path: columns_widths
-  label: Column Width XL
+  label: Column Width
+  description: The default column width. If you need to set specific column widths
+    for large screen sizes use the Responsive Column widths section.
+- name: responsive_column_widths
+  type: field_group
+  config: {}
+  fields:
+  - name: small
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: columns_widths
+    label: Small
+  - name: medium
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: columns_widths
+    label: Medium
+  - name: large
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: columns_widths
+    label: Large
+  - name: xl
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: columns_widths
+    label: XL
+  label: Responsive Column Widths
