@@ -2,28 +2,21 @@
 label: Set - Columns
 hide_body: true
 fields:
-- name: columns
-  type: field_group_list
-  fields:
-  - name: column_name
-    type: text
-    config:
-      required: false
-    label: Column Name
-    description: For Internal Use Only
-  - name: components
-    type: blocks
-    label: Components
-    template_types:
-    - component-text-block
-    - component-image
-    - component-button
-    - component-spacer
-    config:
-      min: 
-      max: 
+- name: column_name
+  type: text
+  config:
+    required: false
+  label: Column Name
+- name: components
+  type: blocks
+  label: Components
+  template_types:
+  - component-text-block
+  - component-image
+  - component-button
+  - component-divider
+  - component-spacer
+  - component-tabs
   config:
     min: 
     max: 
-    labelField: column_name
-  label: Columns
