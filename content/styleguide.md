@@ -6,7 +6,7 @@ hidden: false
 blocks:
 - template: block-section
   rows:
-  - row_name: ''
+  - row_name: A set
     columns:
     - column_name: ''
       components:
