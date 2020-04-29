@@ -20,3 +20,63 @@ fields:
   config:
     min: 
     max: 
+- name: column_width
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: columns_widths
+  label: Column Width Default
+- name: column_width_small
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: columns_widths
+  label: Column Width Small
+- name: column_width_medium
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: columns_widths
+  label: Column Width Medium
+- name: column_width_large
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: columns_widths
+  label: Column Width Large
+- name: column_width_xl
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: columns_widths
+  label: Column Width XL
