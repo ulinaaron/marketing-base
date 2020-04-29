@@ -2,7 +2,7 @@
 label: Set - Rows
 hide_body: true
 fields:
-- name: rows
+- name: columns
   type: field_group_list
   fields:
   - name: columns
@@ -13,5 +13,5 @@ fields:
   config:
     min: 
     max: 
-    labelField: row_name
-  label: Rows
+    labelField: 
+  label: Columns
