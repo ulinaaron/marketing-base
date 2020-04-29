@@ -42,6 +42,7 @@ blocks:
         medium: ''
         large: ''
         xl: ''
+    gutters: ''
   spacing: loose
   advanced:
     css_id: ''
@@ -100,6 +101,7 @@ blocks:
         medium: 1/4
         large: ''
         xl: ''
+    gutters: loose
   spacing: ''
   advanced:
     css_id: ''
