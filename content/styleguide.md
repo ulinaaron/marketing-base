@@ -1,5 +1,5 @@
 ---
-title_visibility: true
+title_visibility: false
 title: Style Guide
 body_class: styleguide
 hidden: false
