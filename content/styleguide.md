@@ -97,7 +97,7 @@ blocks:
       column_width_xl: ''
       responsive_column_widths:
         small: 1/2
-        medium: ''
+        medium: 1/4
         large: ''
         xl: ''
   spacing: ''
