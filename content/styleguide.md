@@ -72,7 +72,7 @@ blocks:
           sem, vehicula in dui vel, convallis imperdiet tortor.
       column_name: ''
       responsive_column_widths:
-        small: ''
+        small: 1/2
         medium: ''
         large: ''
         xl: ''
@@ -96,7 +96,7 @@ blocks:
       column_width_large: ''
       column_width_xl: ''
       responsive_column_widths:
-        small: ''
+        small: 1/2
         medium: ''
         large: ''
         xl: ''
