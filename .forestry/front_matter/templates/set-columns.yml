@@ -22,7 +22,7 @@ fields:
     max: 
 - name: column_width
   type: select
-  default: []
+  default: full
   config:
     required: false
     options: []
@@ -34,7 +34,7 @@ fields:
   label: Column Width Default
 - name: column_width_small
   type: select
-  default: []
+  default: full
   config:
     required: false
     options: []
@@ -58,7 +58,7 @@ fields:
   label: Column Width Medium
 - name: column_width_large
   type: select
-  default: []
+  default: full
   config:
     required: false
     options: []
@@ -70,7 +70,7 @@ fields:
   label: Column Width Large
 - name: column_width_xl
   type: select
-  default: []
+  default: full
   config:
     required: false
     options: []
