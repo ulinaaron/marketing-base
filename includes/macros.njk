@@ -4,12 +4,29 @@
 
     @return class string
  #}
-{% macro styles(component='', group='') %}
+{% macro styles(component='', group='') -%}
     {% set class = '' %}
-    {% for name, value in group %}
-        {% if name == component %}
-            {% set class =  value %}
-        {% endif %}
+    {%- for name, value in group -%}
+        {% if name == component -%}
+            {% set class = value %}
+        {%- endif %}
+    {%- endfor -%}
+    {{ class }}
+{% endmacro %}
+
+
+{# Loop through all set breakpoints to conditionally apply styles for each.
+ #}
+{% macro breakpoint_styles(basic='', responsive='', group='', breakpoints='') -%}
+    {% set class = '' %}
+    {% set class = styles(basic, group) %}
+
+    {% for name, value in responsive %}
+        {% for break, point in breakpoints %}
+            {% if name == break and value %}
+                {% set class = class + " " + point + ":w-"+ value %}
+            {% endif %}
+        {% endfor %}
     {% endfor %}
 
     {{ class }}

@@ -17,7 +17,10 @@
     {% for row in block.rows %}
         <div class="flex flex-row flex-wrap">
         {% for column in row.columns %}
-            <div class="w-1/2">
+
+            {% set bp_width = macro.breakpoint_styles(column.column_width, column.responsive_column_widths, editor.columns_widths , editor.breakpoints) %}
+
+            <div class="{{ bp_width }}">
                 {% for component in column.components %}
                     {% include "components/" + component.template + ".njk" %}
                 {% endfor %}
