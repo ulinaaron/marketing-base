@@ -8,10 +8,20 @@ blocks:
   rows:
   - row_name: A set
     columns:
-    - column_name: ''
+    - column_name: set
       components:
       - template: component-image
         image: "/static/images/articles/author.jpg"
+      column_width: ''
+      column_width_small: ''
+      column_width_medium: ''
+      column_width_large: ''
+      column_width_xl: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
     - column_name: ''
       components:
       - template: component-button
@@ -22,6 +32,16 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+      column_width: ''
+      column_width_small: ''
+      column_width_medium: ''
+      column_width_large: ''
+      column_width_xl: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
   spacing: loose
   advanced:
     css_id: ''
@@ -34,6 +54,28 @@ blocks:
   rows:
   - row_name: ''
     columns:
+    - column_width: 1/3
+      components:
+      - template: component-text-block
+        text: Donec id turpis consectetur, aliquam sem id, porta neque. Mauris finibus,
+          justo sollicitudin malesuada rhoncus, quam neque consequat tellus, tincidunt
+          sodales augue quam non velit. Vestibulum molestie rhoncus odio, eget interdum
+          eros bibendum eu. Pellentesque est sem, convallis hendrerit massa faucibus,
+          gravida tristique mauris. Quisque pharetra dui commodo neque consequat dapibus
+          id ac nisi. Sed mauris mauris, vehicula a elit in, dapibus faucibus nunc.
+          Suspendisse faucibus sem et diam vestibulum accumsan. Proin sit amet dignissim
+          mi. Vivamus maximus mauris augue, eu dapibus ipsum euismod a. Nulla in enim
+          tempor, suscipit lacus sit amet, finibus tortor. Aenean neque risus, dignissim
+          at accumsan eu, scelerisque vel nulla. Morbi ornare luctus ante, semper
+          eleifend nisl efficitur id. Aliquam nisi sapien, faucibus id porttitor vitae,
+          pulvinar et leo. Vestibulum hendrerit porttitor ante nec varius. Nam neque
+          sem, vehicula in dui vel, convallis imperdiet tortor.
+      column_name: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
     - column_name: ''
       components:
       - template: component-image
@@ -48,6 +90,16 @@ blocks:
         advanced:
           css_id: customButton
           css_classes: customButtonClass
+      column_width: 2/3
+      column_width_small: ''
+      column_width_medium: ''
+      column_width_large: ''
+      column_width_xl: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
   spacing: ''
   advanced:
     css_id: ''
