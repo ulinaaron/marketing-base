@@ -22,7 +22,7 @@ fields:
   label: Columns
 - name: gutters
   type: select
-  default: []
+  default: normal
   config:
     required: false
     options: []
