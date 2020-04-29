@@ -4,16 +4,10 @@ hide_body: true
 fields:
 - name: rows
   type: field_group_list
-  fields:
-  - name: row
-    type: include
-    config: {}
-    template: set-rows
-    label: Row
   config:
     min: 
     max: 
-    labelField: row_name
+    labelField: 
   label: Rows
 - name: spacing
   type: select
