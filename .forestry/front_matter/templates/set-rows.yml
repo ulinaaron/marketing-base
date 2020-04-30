@@ -33,3 +33,42 @@ fields:
       path: row_gutters
   label: Gutters
   description: The spacing in between columns.
+- name: align_content
+  type: select
+  default: Start
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: row_align
+  label: Align Content
+  description: Vertically align content lines in a row.
+- name: align_items
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: row_items
+  label: Align Items
+  description: Vertically align the content items in the row.
+- name: justify_content
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: row_justify
+  label: Justify Content
+  description: 'Align the items in the row horizontally. '
