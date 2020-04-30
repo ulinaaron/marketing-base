@@ -104,7 +104,7 @@ blocks:
         large: ''
         xl: ''
     gutters: loose
-  spacing: ''
+  spacing: normal
   advanced:
     css_id: ''
     css_classes: ''
@@ -113,7 +113,7 @@ blocks:
     bg_color: ''
     bg_color_custom: ''
   section_width: false
-  content_width: false
+  content_width: true
 layout: page
 seo:
   hidden: false
