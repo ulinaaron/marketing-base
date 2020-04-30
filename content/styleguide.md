@@ -8,30 +8,13 @@ blocks:
   rows:
   - row_name: A set
     columns:
-    - column_name: set
-      components:
-      - template: component-image
-        image: "/static/images/articles/author.jpg"
-      column_width: ''
-      column_width_small: ''
-      column_width_medium: ''
-      column_width_large: ''
-      column_width_xl: ''
-      responsive_column_widths:
-        small: ''
-        medium: ''
-        large: ''
-        xl: ''
     - column_name: ''
       components:
-      - template: component-button
-        text: Learn More
-        style: secondary
-        url: "#"
-        size: ''
-        advanced:
-          css_id: ''
-          css_classes: ''
+      - template: component-text-block
+        text: Viris vivendum ex qui, agam regione vis in, ea quas laoreet qualisque
+          eum. Id stet wisi theophrastus ius, ea eam simul dissentias, quis vitae
+          ei has. Dico dicunt sea cu, eum ei quodsi dignissim ullamcorper. Et explicari
+          dissentiunt sed, rebum repudiare vis no. Cu per affert dictas accusata.
       column_width: ''
       column_width_small: ''
       column_width_medium: ''
