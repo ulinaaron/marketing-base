@@ -2,13 +2,16 @@
 
 {% set spacing =  macro.styles(block.spacing, editor.section_spacing) %}
 
+{# TODO: Move to Appearance Macro #}
 {% if block.appearance.bg_color !== "custom" %}
     {% set bg_color =  macro.styles(block.appearance.bg_color, editor.appearance_bg_color) %}
 {% else %}
     {% set bg_color = "" %}
 {% endif %}
 
-{# Todo: Make custom work #}
+
+{# TODO: Move to Appearance Macro #}
+{# TODO: Make custom work #}
 {% set styles %}
     background-color: {{ block.appearance.bg_color_custom }};
 {% endset %}

@@ -2,6 +2,18 @@
 label: Utility - Appearance
 hide_body: true
 fields:
+- name: text_color
+  type: select
+  default: ''
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: appearance_text_color
+  label: Text Color
 - name: bg_image
   type: file
   config:
