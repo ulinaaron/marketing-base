@@ -35,6 +35,12 @@ fields:
   default: true
   description: By default, this section will span the entire width of the screen.
     By disabling this, the section will be fixed.
+- name: content_width
+  type: boolean
+  label: Content Width
+  default: false
+  description: By default, the content will be centered but not span the entire width
+    of the screen. By enabling this, the content will go edge to edge.
 - name: appearance
   type: field_group
   config: {}
@@ -55,9 +61,3 @@ fields:
     template: utility-advanced
     label: Advanced Settings
   label: Advanced
-- name: content_width
-  type: boolean
-  label: Content Width
-  default: false
-  description: By default, the content will be centered but not span the entire width
-    of the screen. By enabling this, the content will go edge to edge.
