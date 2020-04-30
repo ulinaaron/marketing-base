@@ -112,7 +112,7 @@ blocks:
     bg_image: ''
     bg_color: ''
     bg_color_custom: ''
-  section_width: false
+  section_width: true
   content_width: true
 layout: page
 seo:
