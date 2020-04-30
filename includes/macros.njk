@@ -63,6 +63,8 @@
 
 {% macro appearance(component='') %}
     {% set class = '' %}
+
+    {% set class = class + ' ' +  component.text_color if component.text_color %
     
     {{ class }}
 {% endmacro %}
