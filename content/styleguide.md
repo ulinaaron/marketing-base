@@ -51,7 +51,7 @@ blocks:
     bg_image: ''
     bg_color: custom
     bg_color_custom: "#7ED321"
-  section_width: false
+  section_width: true
   content_width: true
 - template: block-section
   rows:
