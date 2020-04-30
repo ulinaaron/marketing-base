@@ -52,7 +52,7 @@ blocks:
     css_classes: ''
   appearance:
     bg_image: ''
-    bg_color: info-light
+    bg_color: info-dark
     bg_color_custom: "#7ED321"
     text_color: ''
   section_width: false
