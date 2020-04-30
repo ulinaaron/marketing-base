@@ -51,6 +51,8 @@ blocks:
     bg_image: ''
     bg_color: custom
     bg_color_custom: "#7ED321"
+  section_width: true
+  content_width: false
 - template: block-section
   rows:
   - row_name: ''
@@ -110,6 +112,8 @@ blocks:
     bg_image: ''
     bg_color: ''
     bg_color_custom: ''
+  section_width: false
+  content_width: false
 layout: page
 seo:
   hidden: false
