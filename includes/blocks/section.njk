@@ -27,8 +27,6 @@
     {% set section_container = "" %}
 {% endif %}
 
-{{block.section_width}}
-
 <div class="ui-block ui-block--section {{ spacing }} {{ bg_color }} {{ section_container }}">
     <div class="{{ content_container }}">
         {% for row in block.rows %}

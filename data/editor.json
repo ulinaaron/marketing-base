@@ -83,6 +83,27 @@
         "relaxed": "10",
         "loose": "12"
     },
+    "row_align": {
+        "Start": "content-start",
+        "Center": "content-center",
+        "End": "content-end",
+        "Between": "content-between",
+        "Around": "content-around"
+    },
+    "row_items": {
+        "Start": "items-start",
+        "Center": "items-center",
+        "End": "items-end",
+        "Baseline": "items-baseline",
+        "Stretch": "items-stretch"
+    },
+    "row_justify": {
+        "Start": "justify-start",
+        "Center": "justify-center",
+        "End": "justify-end",
+        "Between": "justify-between",
+        "Around": "justify-around"
+    },
     "spacer": {
         "0": "h-0",
         "1": "h-1",
