@@ -40,7 +40,7 @@ fields:
   label: Content Width
   default: true
   description: By default, the content will be centered but not span the entire width
-    of the screen. By enabling this, the content will go edge to edge.
+    of the screen. By disabling this, the content will go edge to edge.
 - name: appearance
   type: field_group
   config: {}
