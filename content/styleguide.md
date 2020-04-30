@@ -15,7 +15,7 @@ blocks:
           eum. Id stet wisi theophrastus ius, ea eam simul dissentias, quis vitae
           ei has. Dico dicunt sea cu, eum ei quodsi dignissim ullamcorper. Et explicari
           dissentiunt sed, rebum repudiare vis no. Cu per affert dictas accusata.
-      column_width: ''
+      column_width: 2/3
       column_width_small: ''
       column_width_medium: ''
       column_width_large: ''
