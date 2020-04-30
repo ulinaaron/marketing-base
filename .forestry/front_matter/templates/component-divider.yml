@@ -2,16 +2,6 @@
 label: Component - Divider
 hide_body: true
 fields:
-- name: advanced
-  type: field_group
-  config: {}
-  fields:
-  - name: advanced_settings
-    type: include
-    config: {}
-    template: utility-advanced
-    label: Advanced Settings
-  label: Advanced
 - name: appearance
   type: field_group
   config: {}
@@ -22,3 +12,13 @@ fields:
     template: utility-appearance
     label: Appearance Settings
   label: Appearance
+- name: advanced
+  type: field_group
+  config: {}
+  fields:
+  - name: advanced_settings
+    type: include
+    config: {}
+    template: utility-advanced
+    label: Advanced Settings
+  label: Advanced
