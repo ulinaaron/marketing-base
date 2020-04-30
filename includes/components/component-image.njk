@@ -1,1 +1,7 @@
-<img src="{{ component.image }}">
+{% import "macros.njk" as macro %}
+
+{% set advanced = macro.advanced(component.advanced) %}
+
+<div class="ui-component ui-component--image {{ advanced }}">
+    <img src="{{ component.image }}">
+</div>

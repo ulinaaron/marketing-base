@@ -1,1 +1,7 @@
-{{ component.text | safe }}
+{% import "macros.njk" as macro %}
+
+{% set advanced = macro.advanced(component.advanced) %}
+
+<div class="ui-component ui-component--text-block {{ advanced }}">
+    {{ component.text | safe }}
+</div>

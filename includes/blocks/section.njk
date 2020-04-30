@@ -31,7 +31,11 @@
     <div class="{{ content_container }}">
         {% for row in block.rows %}
             {% set row_gutters = macro.gutter(row.gutters, "row", editor.row_gutters) %}
-            <div class="flex flex-row flex-wrap {{ row_gutters }}">
+            {% set row_justify = macro.styles(row.justify_content, editor.row_justify) %}
+            {% set row_items = macro.styles(row.align_items, editor.row_justify) %}
+            {% set row_align = macro.styles(row.align_content, editor.row_justify) %}
+
+            <div class="flex flex-row flex-wrap {{ row_gutters }} {{ row_justify }} {{ row_items }} {{ row_align }}">
             {% for column in row.columns %}
 
                 {% set bp_width = macro.breakpoint_styles(column.column_width, column.responsive_column_widths, editor.columns_widths, editor.breakpoints) %}
