@@ -15,6 +15,23 @@ blocks:
           eum. Id stet wisi theophrastus ius, ea eam simul dissentias, quis vitae
           ei has. Dico dicunt sea cu, eum ei quodsi dignissim ullamcorper. Et explicari
           dissentiunt sed, rebum repudiare vis no. Cu per affert dictas accusata.
+        appearance:
+          text_color: light
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      - template: component-divider
+        appearance:
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+          text_color: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
       column_width: 3/5
       column_width_small: ''
       column_width_medium: ''
@@ -37,6 +54,7 @@ blocks:
     bg_image: ''
     bg_color: info-light
     bg_color_custom: "#7ED321"
+    text_color: ''
   section_width: false
   content_width: true
 - template: block-section
@@ -59,6 +77,14 @@ blocks:
           eleifend nisl efficitur id. Aliquam nisi sapien, faucibus id porttitor vitae,
           pulvinar et leo. Vestibulum hendrerit porttitor ante nec varius. Nam neque
           sem, vehicula in dui vel, convallis imperdiet tortor.
+        appearance:
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
       column_name: ''
       responsive_column_widths:
         small: 1/2
@@ -69,8 +95,24 @@ blocks:
       components:
       - template: component-image
         image: "/static/images/articles/post-2.jpg"
+        appearance:
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
       - template: component-spacer
         height: '64'
+        appearance:
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
       - template: component-button
         style: primary
         text: Primary Button
@@ -101,6 +143,7 @@ blocks:
     bg_image: ''
     bg_color: ''
     bg_color_custom: ''
+    text_color: ''
   section_width: true
   content_width: true
 layout: page
