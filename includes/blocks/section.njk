@@ -13,19 +13,39 @@
     background-color: {{ block.appearance.bg_color_custom }};
 {% endset %}
 
-<div class="ui-block ui-block--section {{ spacing }} {{ bg_color }}">
-    {% for row in block.rows %}
-        <div class="flex flex-row flex-wrap">
-        {% for column in row.columns %}
+{# Set container width #}
+{% if block.content_width %}
+    {% set content_container = "container mx-auto"%}
+{% else %}
+    {% set content_container = "container-full" %}
+{% endif %}
 
-            {% set bp_width = macro.breakpoint_styles(column.column_width, column.responsive_column_widths, editor.columns_widths , editor.breakpoints) %}
+{# Set container width #}
+{% if block.section_width %}
+    {% set section_container = "container mx-auto" %}
+{% else %}
+    {% set section_container = "" %}
+{% endif %}
 
-            <div class="{{ bp_width }}">
-                {% for component in column.components %}
-                    {% include "components/" + component.template + ".njk" %}
-                {% endfor %}
+{{block.section_width}}
+
+<div class="ui-block ui-block--section {{ spacing }} {{ bg_color }} {{ section_container }}">
+    <div class="{{ content_container }}">
+        {% for row in block.rows %}
+            {% set row_gutters = macro.gutter(row.gutters, "row", editor.row_gutters) %}
+            <div class="flex flex-row flex-wrap {{ row_gutters }}">
+            {% for column in row.columns %}
+
+                {% set bp_width = macro.breakpoint_styles(column.column_width, column.responsive_column_widths, editor.columns_widths, editor.breakpoints) %}
+                {% set gutters = macro.gutter(row.gutters, "column", editor.row_gutters) %}
+
+                <div class="{{ bp_width }} {{ gutters }}">
+                    {% for component in column.components %}
+                        {% include "components/" + component.template + ".njk" %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
             </div>
         {% endfor %}
-        </div>
-    {% endfor %}
+    </div>
 </div>

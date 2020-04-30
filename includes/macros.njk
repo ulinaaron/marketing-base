@@ -32,6 +32,22 @@
     {{ class }}
 {% endmacro %}
 
+{% macro gutter(setting='', type='', editor='' ) %}
+
+    {% set class = '' %}
+    {% set value = styles(setting, editor) %}
+
+    {% if type == 'row' %}
+        {% set class = '-mx-' + value %}
+    {% endif %}
+
+    {% if type == 'column' %}
+        {% set class = 'px-' + value %}
+    {% endif %}
+
+    {{ class }}
+{% endmacro %}
+
 {# Set Component Advanced Properties
     Sets properties that exsist in the advanced config.
 
