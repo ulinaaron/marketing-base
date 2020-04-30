@@ -1,7 +1,7 @@
 {% import "macros.njk" as macro %}
 
 {% set advanced = macro.advanced(component.advanced) %}
-{% set appearance = macro.appearance(component.appearance) %}
+{% set appearance = macro.appearance(component.appearance, editor) %}
 
 <div class="ui-component ui-component--text-block {{ advanced }} {{ appearance }}">
     {{ component.text | safe }}

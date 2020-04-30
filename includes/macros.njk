@@ -61,10 +61,10 @@
     {{ class }}
 {% endmacro %}
 
-{% macro appearance(component='') %}
+{% macro appearance(component='', group='') %}
     {% set class = '' %}
 
-    {% set class = class + ' ' +  component.text_color if component.text_color %
+    {% set class = class + ' ' +  styles(component.text_color, group.appearance_text_color) %}
     
     {{ class }}
 {% endmacro %}
