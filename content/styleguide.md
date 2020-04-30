@@ -21,7 +21,7 @@ blocks:
       column_width_large: ''
       column_width_xl: ''
       responsive_column_widths:
-        small: ''
+        small: 2/3
         medium: ''
         large: ''
         xl: ''
