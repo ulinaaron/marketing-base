@@ -26,6 +26,9 @@ blocks:
         large: ''
         xl: ''
     gutters: ''
+    align_content: ''
+    align_items: ''
+    justify_content: Center
   spacing: loose
   advanced:
     css_id: ''
@@ -87,6 +90,9 @@ blocks:
         large: ''
         xl: ''
     gutters: loose
+    align_content: ''
+    align_items: ''
+    justify_content: ''
   spacing: normal
   advanced:
     css_id: ''
