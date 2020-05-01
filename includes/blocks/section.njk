@@ -25,9 +25,9 @@
 
 {# Set container width #}
 {% if block.section_width %}
-    {% set section_container = "container mx-auto" %}
-{% else %}
     {% set section_container = "" %}
+{% else %}
+    {% set section_container = "container mx-auto" %}
 {% endif %}
 
 <div class="ui-block ui-block--section {{ spacing }} {{ bg_color }} {{ section_container }}">
