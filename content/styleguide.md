@@ -56,6 +56,7 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+        text_alignment: center
       column_width: 3/5
       column_width_small: ''
       column_width_medium: ''
@@ -147,6 +148,7 @@ blocks:
         advanced:
           css_id: customButton
           css_classes: customButtonClass
+        text_alignment: ''
       column_width: 2/3
       column_width_small: ''
       column_width_medium: ''
