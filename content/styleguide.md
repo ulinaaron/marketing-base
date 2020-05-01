@@ -118,9 +118,9 @@ blocks:
       column_name: ''
       column_width: full
       responsive_column_widths:
-        small: 1/2
-        medium: ''
-        large: ''
+        small: ''
+        medium: 1/2
+        large: 1/4
         xl: ''
     - column_name: ''
       components: []
