@@ -35,7 +35,7 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
-        font_size: ''
+        font_size: 2xl
       - template: component-spacer
         height: '20'
         appearance:
