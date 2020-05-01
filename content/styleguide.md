@@ -86,22 +86,12 @@ blocks:
   rows:
   - row_name: ''
     columns:
-    - column_width: 1/3
-      components:
-      - template: component-text-block
-        text: Donec id turpis consectetur, aliquam sem id, porta neque. Mauris finibus,
-          justo sollicitudin malesuada rhoncus, quam neque consequat tellus, tincidunt
-          sodales augue quam non velit. Vestibulum molestie rhoncus odio, eget interdum
-          eros bibendum eu. Pellentesque est sem, convallis hendrerit massa faucibus,
-          gravida tristique mauris. Quisque pharetra dui commodo neque consequat dapibus
-          id ac nisi. Sed mauris mauris, vehicula a elit in, dapibus faucibus nunc.
-          Suspendisse faucibus sem et diam vestibulum accumsan. Proin sit amet dignissim
-          mi. Vivamus maximus mauris augue, eu dapibus ipsum euismod a. Nulla in enim
-          tempor, suscipit lacus sit amet, finibus tortor. Aenean neque risus, dignissim
-          at accumsan eu, scelerisque vel nulla. Morbi ornare luctus ante, semper
-          eleifend nisl efficitur id. Aliquam nisi sapien, faucibus id porttitor vitae,
-          pulvinar et leo. Vestibulum hendrerit porttitor ante nec varius. Nam neque
-          sem, vehicula in dui vel, convallis imperdiet tortor.
+    - components:
+      - template: component-heading
+        font_size: ''
+        text_alignment: ''
+        title: Feature One
+        element: h3
         appearance:
           text_color: ''
           bg_image: ''
@@ -110,68 +100,65 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+      - template: component-text-block
+        text: Vivamus at gravida diam. Sed nisl nulla, congue nec purus quis, porta
+          aliquet odio. Nam tortor lorem, efficitur eget luctus sit amet, tempor non
+          orci. Aliquam erat volutpat. Phasellus sit amet massa eu lectus tincidunt
+          molestie ac nec nisi.
         font_size: ''
         text_alignment: ''
+        appearance:
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
       column_name: ''
+      column_width: ''
       responsive_column_widths:
-        small: 1/2
+        small: ''
         medium: ''
         large: ''
         xl: ''
     - column_name: ''
-      components:
-      - template: component-image
-        image: "/static/images/articles/post-2.jpg"
-        appearance:
-          text_color: ''
-          bg_image: ''
-          bg_color: ''
-          bg_color_custom: ''
-        advanced:
-          css_id: ''
-          css_classes: ''
-      - template: component-spacer
-        height: '64'
-        appearance:
-          text_color: ''
-          bg_image: ''
-          bg_color: ''
-          bg_color_custom: ''
-        advanced:
-          css_id: ''
-          css_classes: ''
-      - template: component-button
-        style: primary
-        text: Primary Button
-        url: "#"
-        size: large
-        advanced:
-          css_id: customButton
-          css_classes: customButtonClass
-        text_alignment: ''
-      column_width: 2/3
-      column_width_small: ''
-      column_width_medium: ''
-      column_width_large: ''
-      column_width_xl: ''
+      components: []
+      column_width: ''
       responsive_column_widths:
-        small: 1/2
-        medium: 1/4
+        small: ''
+        medium: ''
         large: ''
         xl: ''
-    gutters: loose
-    align_content: ''
+    - column_name: ''
+      components: []
+      column_width: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
+    - column_name: ''
+      components: []
+      column_width: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
+    gutters: normal
+    align_content: Start
     align_items: ''
-    justify_content: ''
+    justify_content: Center
   spacing: normal
   advanced:
     css_id: ''
     css_classes: ''
   appearance:
     bg_image: ''
-    bg_color: ''
+    bg_color: scale-100
     bg_color_custom: ''
-    text_color: ''
+    text_color: scale-700
   section_width: true
   content_width: true
 layout: page
