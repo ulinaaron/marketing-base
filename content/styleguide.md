@@ -236,7 +236,7 @@ blocks:
     align_content: Start
     align_items: ''
     justify_content: Center
-    horizontal_padding: false
+    horizontal_padding: true
   spacing: normal
   advanced:
     css_id: ''
