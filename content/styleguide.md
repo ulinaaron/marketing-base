@@ -80,7 +80,7 @@ blocks:
     bg_color: info-dark
     bg_color_custom: "#7ED321"
     text_color: ''
-  section_width: false
+  section_width: true
   content_width: true
 - template: block-section
   rows:
