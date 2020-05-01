@@ -36,12 +36,13 @@ blocks:
           css_id: ''
           css_classes: ''
         font_size: ''
-      - template: component-divider
+      - template: component-spacer
+        height: '4'
         appearance:
+          text_color: ''
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
-          text_color: ''
         advanced:
           css_id: ''
           css_classes: ''
