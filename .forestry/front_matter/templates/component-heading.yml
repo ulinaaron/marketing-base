@@ -40,6 +40,18 @@ fields:
       file: data/editor.json
       path: text_sizes
   label: Font Size
+- name: text_alignment
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: text_alignment
+  label: Heading Alignment
 - name: appearance
   type: field_group
   config: {}
