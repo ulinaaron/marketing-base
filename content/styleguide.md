@@ -10,6 +10,18 @@ blocks:
     columns:
     - column_name: ''
       components:
+      - template: component-heading
+        font_size: 6xl
+        title: Hero Heading
+        appearance:
+          text_color: scale-200
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        element: h1
+        advanced:
+          css_id: ''
+          css_classes: ''
       - template: component-text-block
         text: Viris vivendum ex qui, agam regione vis in, ea quas laoreet qualisque
           eum. Id stet wisi theophrastus ius, ea eam simul dissentias, quis vitae
@@ -23,6 +35,7 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+        font_size: ''
       - template: component-divider
         appearance:
           bg_image: ''
@@ -85,6 +98,7 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+        font_size: ''
       column_name: ''
       responsive_column_widths:
         small: 1/2
