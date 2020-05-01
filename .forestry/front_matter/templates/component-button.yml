@@ -39,6 +39,17 @@ fields:
       file: data/editor.json
       path: button_sizes
   label: Size
+- name: text_alignment
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: text_alignment
 - name: advanced
   type: field_group
   config: {}

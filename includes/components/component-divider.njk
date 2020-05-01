@@ -1,7 +1,8 @@
 {% import "macros.njk" as macro %}
 
 {% set advanced = macro.advanced(component.advanced) %}
+{% set appearance = macro.appearance(component.appearance, editor) %}
 
-<div class="ui-component ui-component--divider {{ advanced }}">
+<div class="ui-component ui-component--divider {{ advanced }} {{ appearance }}">
     
 </div>

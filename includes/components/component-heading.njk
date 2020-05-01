@@ -4,9 +4,10 @@
 {% set appearance = macro.appearance(component.appearance, editor) %}
 {% set size =  macro.styles(component.font_size, editor.text_sizes) %}
 {% set color =  macro.styles(component.appearance.text_color, editor.appearance_text_color ) %}
+{% set text_alignment =  macro.styles(component.text_alignment, editor.text_alignment ) %}
 
 {% set line = '<' + component.element + ' class="' + size + color + '">' + component.title + '</' + component.element + '>' %}
 
-<div class="ui-component ui-component--heading {{ advanced }} {{ appearance }}">
+<div class="ui-component ui-component--heading {{ advanced }} {{ appearance }} {{ text_alignment }}">
     {{ line | safe }}
 </div>

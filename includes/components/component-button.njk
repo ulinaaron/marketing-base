@@ -3,10 +3,12 @@
 {# Defaults #}
 {% set defaults = "inline-block font-bold rounded" %}
 
+{% set advanced = macro.advanced(component.advanced) %}
+{% set appearance = macro.appearance(component.appearance, editor) %}
 {% set styles =  macro.styles(component.style, editor.button_styles) %}
 {% set sizes =  macro.styles(component.size, editor.button_sizes) %}
-{% set advanced = macro.advanced(component.advanced) %}
+{% set text_alignment =  macro.styles(component.text_alignment, editor.text_alignment ) %}
 
-<div class="ui-component ui-component--button {{ advanced }}">
+<div class="ui-component ui-component--button {{ advanced }} {{ appearance }} {{ text_alignment }}">
     <a href="{{ component.url }}" class="button {{ defaults }} {{ styles }} {{ sizes }}">{{ component.text }}</a>
 </div>
