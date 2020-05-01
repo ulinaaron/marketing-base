@@ -18,7 +18,7 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
-        element: h1
+        element: h3
         advanced:
           css_id: ''
           css_classes: ''
