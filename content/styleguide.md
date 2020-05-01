@@ -22,6 +22,7 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+        text_alignment: center
       - template: component-text-block
         text: Viris vivendum ex qui, agam regione vis in, ea quas laoreet qualisque
           eum. Id stet wisi theophrastus ius, ea eam simul dissentias, quis vitae
@@ -36,6 +37,7 @@ blocks:
           css_id: ''
           css_classes: ''
         font_size: lg
+        text_alignment: ''
       - template: component-spacer
         height: '20'
         appearance:
@@ -108,6 +110,7 @@ blocks:
           css_id: ''
           css_classes: ''
         font_size: ''
+        text_alignment: ''
       column_name: ''
       responsive_column_widths:
         small: 1/2
