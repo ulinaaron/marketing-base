@@ -123,12 +123,40 @@ blocks:
         large: 1/4
         xl: ''
     - column_name: ''
-      components: []
-      column_width: ''
+      components:
+      - template: component-heading
+        title: Feature Two
+        element: h3
+        font_size: ''
+        text_alignment: ''
+        appearance:
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      - template: component-text-block
+        text: Vivamus at gravida diam. Sed nisl nulla, congue nec purus quis, porta
+          aliquet odio. Nam tortor lorem, efficitur eget luctus sit amet, tempor non
+          orci. Aliquam erat volutpat. Phasellus sit amet massa eu lectus tincidunt
+          molestie ac nec nisi.
+        font_size: ''
+        text_alignment: ''
+        appearance:
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      column_width: full
       responsive_column_widths:
         small: ''
-        medium: ''
-        large: ''
+        medium: 1/2
+        large: 1/4
         xl: ''
     - column_name: ''
       components: []
