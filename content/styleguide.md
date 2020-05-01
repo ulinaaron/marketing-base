@@ -57,6 +57,7 @@ blocks:
           css_id: ''
           css_classes: ''
         text_alignment: center
+        type: outline
       column_width: 3/5
       column_width_small: ''
       column_width_medium: ''
