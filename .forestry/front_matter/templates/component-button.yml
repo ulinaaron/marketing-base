@@ -12,6 +12,20 @@ fields:
   config:
     required: false
   label: URL
+- name: type
+  type: select
+  default: fill
+  config:
+    required: false
+    options:
+    - fill
+    - outline
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
 - name: style
   type: select
   default: primary
@@ -50,6 +64,7 @@ fields:
       section: editor-defaults
       file: data/editor.json
       path: text_alignment
+  label: Text Alignment
 - name: advanced
   type: field_group
   config: {}
