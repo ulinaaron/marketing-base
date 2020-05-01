@@ -48,43 +48,49 @@ if ( mix.inProduction() )
     // Remove any unused CSS using Purge
     mix
 
-        .purgeCss({
-            folders: [
-                'content'
-            ],
-            extensions: [
-                'html',
-                'njk'
-            ],
-            whitelist: [
-                'body',
-                'html',
-                'a',
-                'h1',
-                'h2',
-                'h3',
-                'h4',
-                'h5',
-                'h6',
-                'p',
-                'pre',
-                'code',
-                'blockquote',
-                'breadcrumbs',
-                'content',
-                'form',
-                'input',
-                'textarea',
-                'intro',
-                'btn',
-                'loaded',
-                'page-title',
-                'required',
-                'row',
-                'visually-hidden',
-                'menu-visible'
-            ]
-        })
+        // .purgeCss({
+        //     folders: [
+        //         'content',
+        //         'includes',
+        //         'layouts'
+        //     ],
+        //     extensions: [
+        //         'html',
+        //         'njk',
+        //         'md'
+        //     ],
+        //     whitelist: [
+        //         'body',
+        //         'html',
+        //         'div',
+        //         'section',
+        //         'main',
+        //         'a',
+        //         'h1',
+        //         'h2',
+        //         'h3',
+        //         'h4',
+        //         'h5',
+        //         'h6',
+        //         'p',
+        //         'pre',
+        //         'code',
+        //         'blockquote',
+        //         'breadcrumbs',
+        //         'content',
+        //         'form',
+        //         'input',
+        //         'textarea',
+        //         'intro',
+        //         'btn',
+        //         'loaded',
+        //         'page-title',
+        //         'required',
+        //         'row',
+        //         'visually-hidden',
+        //         'menu-visible'
+        //     ]
+        // })
 
         // Minifies CSS & JS files
         .minify(paths.sass.dest + 'main.css')
