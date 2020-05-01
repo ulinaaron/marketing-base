@@ -9,7 +9,7 @@ fields:
   label: Title
 - name: element
   type: select
-  default: []
+  default: h3
   config:
     required: false
     options:
