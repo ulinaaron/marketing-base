@@ -71,6 +71,7 @@ blocks:
     align_content: ''
     align_items: ''
     justify_content: Center
+    horizontal_padding: true
   spacing: loose
   advanced:
     css_id: ''
@@ -82,6 +83,7 @@ blocks:
     text_color: ''
   section_width: true
   content_width: true
+  horizontal_padding: true
 - template: block-section
   rows:
   - row_name: ''
@@ -234,6 +236,7 @@ blocks:
     align_content: Start
     align_items: ''
     justify_content: Center
+    horizontal_padding: false
   spacing: normal
   advanced:
     css_id: ''
@@ -245,6 +248,7 @@ blocks:
     text_color: scale-700
   section_width: true
   content_width: true
+  horizontal_padding: false
 layout: page
 seo:
   hidden: false
