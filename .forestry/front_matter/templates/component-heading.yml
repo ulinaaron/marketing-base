@@ -2,6 +2,44 @@
 label: Component - Heading
 hide_body: true
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: element
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - h1
+    - h2
+    - h3
+    - h4
+    - h5
+    - h6
+    - p
+    - div
+    - span
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Heading Element
+- name: font_size
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: text_sizes
+  label: Font Size
 - name: appearance
   type: field_group
   config: {}
