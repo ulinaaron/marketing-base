@@ -37,7 +37,7 @@ blocks:
           css_classes: ''
         font_size: ''
       - template: component-spacer
-        height: '4'
+        height: '20'
         appearance:
           text_color: ''
           bg_image: ''
