@@ -12,11 +12,15 @@ fields:
   label: Components
   template_types:
   - component-text-block
-  - component-image
+  - component-heading
   - component-button
+  - component-image
+  - component-video
   - component-divider
   - component-spacer
   - component-tabs
+  - component-toggle
+  - component-modal
   config:
     min: 
     max: 
