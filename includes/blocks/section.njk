@@ -37,8 +37,13 @@
             {% set row_justify = macro.styles(row.justify_content, editor.row_justify) %}
             {% set row_items = macro.styles(row.align_items, editor.row_justify) %}
             {% set row_align = macro.styles(row.align_content, editor.row_justify) %}
+            {% if row.horizontal_padding %}
+                {% set horizontal_padding = editor.row_horizontal_padding %}
+            {% else %}
+                {% set horizontal_padding = "" %}
+            {% endif %}
 
-            <div class="flex flex-row flex-wrap {{ row_gutters }} {{ row_justify }} {{ row_items }} {{ row_align }}">
+            <div class="flex flex-row flex-wrap {{ row_gutters }} {{ row_justify }} {{ row_items }} {{ row_align }} {{ horizontal_padding }}">
             {% for column in row.columns %}
 
                 {% set bp_width = macro.breakpoint_styles(column.column_width, column.responsive_column_widths, editor.columns_widths, editor.breakpoints) %}

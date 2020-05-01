@@ -29,13 +29,6 @@ fields:
   label: Vertical Spacing
   description: The spacing inside a section. Useful when you want a set amount of
     whitespace inside of a section.
-- name: horizontal_padding
-  type: boolean
-  default: true
-  label: Horizontal Spacing
-  description: By default, the row has padding on the right and left sides. This makes
-    readability on smaller devices easier. This setting can be controlled globally
-    or turned off on a row by row basis.
 - name: section_width
   type: boolean
   label: Section Width
