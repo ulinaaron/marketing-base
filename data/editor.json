@@ -176,6 +176,11 @@
         "relaxed": "py-32",
         "loose": "py-40"
     },
+    "text_alignment": {
+        "left": "text-left",
+        "center": "text-center",
+        "right": "text-right"
+    },
     "text_sizes": {
         "xs": "text-xs",
         "sm": "text-sm",

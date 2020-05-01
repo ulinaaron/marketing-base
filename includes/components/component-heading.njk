@@ -1,1 +1,12 @@
 {% import "macros.njk" as macro %}
+
+{% set advanced = macro.advanced(component.advanced) %}
+{% set appearance = macro.appearance(component.appearance, editor) %}
+{% set size =  macro.styles(component.font_size, editor.text_sizes) %}
+{% set color =  macro.styles(component.appearance.text_color, editor.appearance_text_color ) %}
+
+{% set line = '<' + component.element + ' class="' + size + color + '">' + component.title + '</' + component.element + '>' %}
+
+<div class="ui-component ui-component--heading {{ advanced }} {{ appearance }}">
+    {{ line | safe }}
+</div>

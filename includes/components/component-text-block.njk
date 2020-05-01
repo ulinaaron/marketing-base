@@ -2,7 +2,8 @@
 
 {% set advanced = macro.advanced(component.advanced) %}
 {% set appearance = macro.appearance(component.appearance, editor) %}
+{% set size =  macro.styles(component.font_size, editor.text_sizes) %}
 
-<div class="ui-component ui-component--text-block {{ advanced }} {{ appearance }}">
+<div class="ui-component ui-component--text-block {{ advanced }} {{ appearance }} {{ size }}">
     {{ component.text | safe }}
 </div>
