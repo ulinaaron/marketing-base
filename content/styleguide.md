@@ -37,7 +37,7 @@ blocks:
           css_id: ''
           css_classes: ''
         font_size: lg
-        text_alignment: ''
+        text_alignment: center
       - template: component-spacer
         height: '20'
         appearance:
