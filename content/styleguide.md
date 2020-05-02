@@ -18,6 +18,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         element: h3
         advanced:
           css_id: ''
@@ -33,6 +35,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -45,6 +49,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -82,6 +88,8 @@ blocks:
     bg_color: custom
     bg_color_custom: "#7ED321"
     text_color: ''
+    bg_properties:
+      position: Bottom
   section_width: true
   content_width: true
   horizontal_padding: true
@@ -100,6 +108,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -115,6 +125,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -137,6 +149,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -152,6 +166,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -173,6 +189,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -188,6 +206,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -209,6 +229,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -224,6 +246,8 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          bg_properties:
+            position: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -247,6 +271,8 @@ blocks:
     bg_color: scale-100
     bg_color_custom: ''
     text_color: scale-700
+    bg_properties:
+      position: ''
   section_width: true
   content_width: true
   horizontal_padding: false
