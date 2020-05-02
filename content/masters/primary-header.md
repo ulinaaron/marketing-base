@@ -18,7 +18,7 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
-        font_size: ''
+        font_size: xl
         text_alignment: ''
         advanced:
           css_id: ''
