@@ -1,6 +1,10 @@
 {
   "name": "Base",
   "url": "https://base.aaronmazade.com",
+  "globals": {
+    "header": "primary-header",
+    "footer": "primary-footer"
+  },
   "author": {
     "name": "Aaron Mazade",
     "email": "ulinaaron",
