@@ -4,7 +4,7 @@ title: Primary Header
 body_class: ''
 blocks:
 - template: block-section
-  spacing: snug
+  spacing: tight
   section_width: true
   content_width: true
   rows:
@@ -18,7 +18,7 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
-        font_size: xl
+        font_size: 3xl
         text_alignment: ''
         advanced:
           css_id: ''
@@ -39,7 +39,7 @@ blocks:
         large: ''
         xl: ''
     row_name: ''
-    horizontal_padding: false
+    horizontal_padding: true
     gutters: ''
     align_content: ''
     align_items: ''
