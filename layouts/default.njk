@@ -46,75 +46,20 @@
 
     <a class="sr-only" href="#main">Skip to content</a>
 
-    {# include mobile nav #}
-    {% include "components/legacy/mobile-nav.njk" %}
-
     <div id="wrapper" class="relative flex flex-col min-h-screen pt-16 wrapper md:pt-0">
 
         {# include header #}
-        {% include "components/legacy/header.njk" %}
+        {% for global in collections.global %}
+            {{ global | dump }}
+        {% endfor %}
 
         {# include content #}
         {{ content | safe }}
 
         {# include footer #}
-        {% include "components/legacy/footer.njk" %}
+        
 
     </div>
-
-    <script>
-        function schemeToggle() {
-            return {
-                clicked: 0,
-                toggle: false,
-                schemeToggleInit() {
-                    let currentScheme = localStorage.getItem('scheme');
-                    let controlInput = document.querySelector('.scheme-toggle__control__input');
-                    
-                    if (currentScheme) {
-                        document.documentElement.setAttribute('data-scheme', currentScheme);
-                    
-                        if (currentScheme === 'dark') {
-                            this.isDark();
-                            this.clicked++;
-                            controlInput.checked = true;
-
-                            return this.toggle = true;
-                        }
-                    }
-                },
-                open() {
-                    this.clicked++;
-                    
-                    if (this.clicked%2==0) {
-                        this.setLight();
-                        this.isLight();
-                    } else {
-                        this.setDark();
-                        this.isDark();
-                    }
-                },
-                setLight() {
-                    document.documentElement.setAttribute('data-scheme', 'light');
-                    localStorage.setItem('scheme', 'light');
-
-                    return this.toggle = false;
-                },
-                setDark() {
-                    document.documentElement.setAttribute('data-scheme', 'dark');
-                    localStorage.setItem('scheme', 'dark');
-
-                    return this.toggle = true;
-                },
-                isLight() {
-                    return this.toggle === false;
-                },
-                isDark() { 
-                    return this.toggle === true;
-                }
-            }
-        }
-    </script>
 
 </body>
 </html>

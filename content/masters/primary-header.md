@@ -1,7 +1,9 @@
 ---
-layout: global
+layout: master
 title: Primary Header
 body_class: ''
+tags:
+    - master
 blocks:
 - template: block-section
   spacing: normal

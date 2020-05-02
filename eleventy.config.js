@@ -59,21 +59,21 @@ module.exports = eleventyConfig => {
 
     })
 
-    eleventyConfig.addCollection('global', collection => {
+    eleventyConfig.addCollection('master', collection => {
 
-        const globals = collection.getFilteredByTag('global')
+        const masters = collection.getFilteredByTag('master')
 
-        for( let i = 0; i < globals.length; i++ ) {
+        for( let i = 0; i < masters.length; i++ ) {
 
-            const prevPost = globals[i - 1]
-            const nextPost = globals[i + 1]
+            const prevPost = masters[i - 1]
+            const nextPost = masters[i + 1]
 
-            globals[i].data["prevPost"] = prevPost
-            globals[i].data["nextPost"] = nextPost
+            masters[i].data["prevPost"] = prevPost
+            masters[i].data["nextPost"] = nextPost
 
         }
 
-        return globals.reverse()
+        return masters.reverse()
 
     })
 
@@ -81,7 +81,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addLayoutAlias('default', '../layouts/default.njk')
     eleventyConfig.addLayoutAlias('post', '../layouts/post.njk')
     eleventyConfig.addLayoutAlias('page', '../layouts/page.njk')
-    eleventyConfig.addLayoutAlias('global', '../layouts/global.njk')
+    eleventyConfig.addLayoutAlias('master', '../layouts/master.njk')
 
     // Include our static assets
     eleventyConfig.addPassthroughCopy("static/css")
