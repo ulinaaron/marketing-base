@@ -1,5 +1,5 @@
 ---
-label: Global Builder
+label: Master Template Builder
 hide_body: true
 display_field: title
 fields:
@@ -29,5 +29,3 @@ fields:
   label: Layout
   hidden: true
   default: global
-pages:
-- content/globals/primary-header.md
