@@ -1,4 +1,16 @@
 ---
 label: Component - Menu
 hide_body: true
-fields: []
+fields:
+- name: navigation_menu
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: menus
+      file: data/navigation.json
+      path: 
+  label: Navigation Menu
