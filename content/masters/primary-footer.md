@@ -16,7 +16,7 @@ blocks:
         font_size: ''
         text_alignment: ''
         appearance:
-          text_color: ''
+          text_color: light
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
