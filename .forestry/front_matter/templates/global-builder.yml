@@ -28,4 +28,4 @@ fields:
     required: false
   label: Layout
   hidden: true
-  default: global
+  default: master
