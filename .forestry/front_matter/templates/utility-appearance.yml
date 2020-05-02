@@ -23,6 +23,18 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: attachment
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: appearance_bg_attachment
+    label: Background Attachment
   - name: position
     type: select
     default: []
@@ -35,6 +47,42 @@ fields:
         file: data/editor.json
         path: appearance_bg_positions
     label: Background Position
+  - name: background_opacity
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: appearance_bg_opacity
+    label: Background Opacity
+  - name: repeat
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: appearance_bg_repeat
+    label: Background Repeat
+  - name: size
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: appearance_bg_size
+    label: Background Size
   label: Background Image Properties
 - name: bg_color
   type: select
