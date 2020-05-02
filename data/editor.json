@@ -69,6 +69,11 @@
         "dark": "text-dark",
         "custom": ""
     },
+    "appearance_bg_attachment": {
+        "Fixed": "bg-fixed",
+        "Local": "bg-local",
+        "Scroll": "bg-scroll"
+    },
     "appearance_bg_positions": {
         "Center": "bg-center",
         "Top": "bg-top",
@@ -79,6 +84,26 @@
         "Right": "bg-right",
         "Right Top": "bg-right-top",
         "Right Bottom": "bg-right-bottom"
+    },
+    "appearance_bg_size": {
+        "Auto": "bg-auto",
+        "Cover": "bg-cover",
+        "Contain": "bg-contain"
+    },
+    "appearance_bg_opacity": {
+        "0": "bg-opacity-0",
+        "25%": "bg-opacity-25",
+        "50%": "bg-opacity-50",
+        "75%": "bg-opacity-75",
+        "100%": "bg-opacity-100"
+    },
+    "appearance_bg_repeat": {
+        "Repeat": "bg-repeat",
+        "No Repeat": "bg-no-repeat",
+        "Repeat X": "bg-repeat-x",
+        "Repeat Y": "bg-repeat-y",
+        "Repeat Round": "bg-repeat-round",
+        "Repeat Space": "bg-repeat-space"
     },
     "button_styles": {
         "primary": "bg-primary-base text-light hover:bg-primary-dark",
