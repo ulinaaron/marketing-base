@@ -20,6 +20,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         element: h3
         advanced:
           css_id: ''
@@ -37,6 +41,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -51,6 +59,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -90,6 +102,10 @@ blocks:
     text_color: ''
     bg_properties:
       position: Bottom
+      attachment: Fixed
+      background_opacity: ''
+      repeat: No Repeat
+      size: Cover
   section_width: true
   content_width: true
   horizontal_padding: true
@@ -110,6 +126,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -127,6 +147,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -151,6 +175,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -168,6 +196,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -191,6 +223,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -208,6 +244,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -231,6 +271,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -248,6 +292,10 @@ blocks:
           bg_color_custom: ''
           bg_properties:
             position: ''
+            attachment: ''
+            background_opacity: ''
+            repeat: ''
+            size: ''
         advanced:
           css_id: ''
           css_classes: ''
@@ -273,6 +321,10 @@ blocks:
     text_color: scale-700
     bg_properties:
       position: ''
+      attachment: ''
+      background_opacity: ''
+      repeat: ''
+      size: ''
   section_width: true
   content_width: true
   horizontal_padding: false
