@@ -9,12 +9,16 @@
     {% set bg_color = "" %}
 {% endif %}
 
-
 {# TODO: Move to Appearance Macro #}
 {# TODO: Make custom work #}
-{% set styles %}
-    background-color: {{ block.appearance.bg_color_custom }};
-{% endset %}
+{%- set styles -%}
+    {%- if block.appearance.bg_color_custom -%}
+        background-color: {{ block.appearance.bg_color_custom }};
+    {%- endif -%}
+    {%- if block.appearance.bg_color_custom -%}
+        background-image: url('/{{ block.appearance.bg_image }}');
+    {%- endif -%}
+{%- endset -%}
 
 {# Set container width #}
 {% if block.content_width %}
@@ -30,13 +34,13 @@
     {% set section_container = "container mx-auto" %}
 {% endif %}
 
-<div class="ui-block ui-block--section {{ spacing }} {{ bg_color }} {{ section_container }}">
+<div class="ui-block ui-block--section {{ spacing }} {{ bg_color }} {{ section_container }}" style="{{ styles }}">
     <div class="{{ content_container }}">
         {% for row in block.rows %}
             {% set row_gutters = macro.gutter(row.gutters, "row", editor.row_gutters) %}
             {% set row_justify = macro.styles(row.justify_content, editor.row_justify) %}
-            {% set row_items = macro.styles(row.align_items, editor.row_justify) %}
-            {% set row_align = macro.styles(row.align_content, editor.row_justify) %}
+            {% set row_items = macro.styles(row.align_items, editor.row_items) %}
+            {% set row_align = macro.styles(row.align_content, editor.row_align) %}
             {% if row.horizontal_padding %}
                 {% set horizontal_padding = editor.row_horizontal_padding %}
             {% else %}

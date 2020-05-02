@@ -69,6 +69,17 @@
         "dark": "text-dark",
         "custom": ""
     },
+    "appearance_bg_positions": {
+        "Center": "bg-center",
+        "Top": "bg-top",
+        "Bottom": "bg-bottom",
+        "Left": "bg-left",
+        "Left Top": "bg-left-top",
+        "Left Bottom": "bg-left-bottom",
+        "Right": "bg-right",
+        "Right Top": "bg-right-top",
+        "Right Bottom": "bg-right-bottom"
+    },
     "button_styles": {
         "primary": "bg-primary-base text-light hover:bg-primary-dark",
         "secondary": "bg-secondary-base text-light hover:bg-secondary-dark",
