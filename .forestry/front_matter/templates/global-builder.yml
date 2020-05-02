@@ -33,4 +33,4 @@ fields:
     required: false
   label: Layout
   hidden: true
-  default: page
+  default: global
