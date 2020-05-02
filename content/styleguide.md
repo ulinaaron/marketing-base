@@ -165,7 +165,7 @@ blocks:
       components:
       - template: component-heading
         element: h3
-        title: Heading Three
+        title: Feature Three
         font_size: ''
         text_alignment: ''
         appearance:
@@ -201,7 +201,7 @@ blocks:
       components:
       - template: component-heading
         element: h3
-        title: Heading Four
+        title: Feature Four
         font_size: ''
         text_alignment: ''
         appearance:
