@@ -4,7 +4,7 @@ title: Primary Header
 body_class: ''
 blocks:
 - template: block-section
-  spacing: normal
+  spacing: snug
   section_width: true
   content_width: true
   rows:
