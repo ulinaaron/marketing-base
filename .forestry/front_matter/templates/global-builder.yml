@@ -8,11 +8,6 @@ fields:
   config:
     required: false
   label: Title
-- name: title_visibility
-  type: boolean
-  label: Title Visibility
-  description: Whether or not to show the page title header.
-  default: true
 - name: body_class
   type: text
   config:
