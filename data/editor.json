@@ -80,6 +80,17 @@
         "light": "bg-light text-dark hover:bg-dark hover:text-light",
         "dark": "bg-dark text-light hover:bg-light hover:text-dark"
     },
+    "button_outline_styles": {
+        "primary": "border border-primary-base text-primary-base hover:bg-primary-dark hover:text-light",
+        "secondary": "border border-secondary-base text-secondary-base hover:bg-secondary-dark hover:text-light",
+        "tertiary": "border border-tertiary-base text-tertiary-base hover:bg-tertiary-dark hover:text-light",
+        "info": "border border-info-base text-info-base hover:bg-info-dark hover:text-light",
+        "success": "border border-success-base text-success-base hover:bg-success-dark hover:text-light",
+        "warning": "border border-warning-base text-warning-base hover:bg-warning-dark hover:text-light",
+        "danger": "border border-danger-base text-danger-base hover:bg-danger-dark hover:text-light",
+        "light": "border border-light text-light hover:bg-light hover:text-dark",
+        "dark": "border border-dark text-dark hover:bg-light hover:text-dark over:text-light"
+    },
     "button_sizes": {
         "small": "px-10 py-2",
         "base": "px-20 py-2",

@@ -59,6 +59,8 @@ module.exports = eleventyConfig => {
 
     })
 
+    eleventyConfig.addCollection('global', collection => {})
+
     // Layout aliases
     eleventyConfig.addLayoutAlias('default', '../layouts/default.njk')
     eleventyConfig.addLayoutAlias('post', '../layouts/post.njk')
