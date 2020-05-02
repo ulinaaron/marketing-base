@@ -34,14 +34,3 @@ fields:
   label: Layout
   hidden: true
   default: page
-- name: seo
-  type: field_group
-  config: {}
-  fields:
-  - name: settings
-    type: include
-    config: {}
-    template: utility-seo
-    label: Settings
-    description: Define the meta properties for the page to be used by search engines.
-  label: SEO Settings
