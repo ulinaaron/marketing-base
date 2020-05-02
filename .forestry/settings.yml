@@ -25,7 +25,7 @@ sections:
   label: All Pages
   create: all
   match: "**/*.md"
-  exclude: articles/*.md
+  exclude: articles/*.md, globals/*.md
   templates:
   - page-builder
 - type: directory
@@ -35,6 +35,13 @@ sections:
   match: "**/*.md"
 - type: heading
   label: Site Settings
+- type: directory
+  path: content/globals
+  label: Global Templates
+  create: documents
+  match: "**/*.md"
+  templates:
+  - global-builder
 - type: document
   path: data/site.json
   label: Configuration
