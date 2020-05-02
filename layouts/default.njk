@@ -46,18 +46,14 @@
 
     <a class="sr-only" href="#main">Skip to content</a>
 
-    <div id="wrapper" class="relative flex flex-col min-h-screen pt-16 wrapper md:pt-0">
+    <div id="wrapper">
 
-        {# include header #}
-        {% for global in collections.global %}
-            {{ global | dump }}
-        {% endfor %}
+        {% include "header.njk" %}
 
         {# include content #}
         {{ content | safe }}
 
-        {# include footer #}
-        
+        {% include "footer.njk" %}
 
     </div>
 

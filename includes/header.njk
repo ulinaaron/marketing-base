@@ -1,0 +1,9 @@
+{% for post in collections.all %}
+    {% if post.data.title == site.master_templates.header %}
+        {% for block in post.data.blocks %}
+            {% if block.template == 'block-section' %}
+                {% include "blocks/section.njk" %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}

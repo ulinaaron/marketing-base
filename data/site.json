@@ -1,9 +1,9 @@
 {
   "name": "Base",
   "url": "https://base.aaronmazade.com",
-  "globals": {
-    "header": "primary-header",
-    "footer": "primary-footer"
+  "master_templates": {
+    "header": "Primary Header",
+    "footer": "Primary Footer"
   },
   "author": {
     "name": "Aaron Mazade",
