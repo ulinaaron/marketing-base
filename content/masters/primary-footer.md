@@ -4,7 +4,7 @@ title: Primary Footer
 body_class: ''
 blocks:
 - template: block-section
-  spacing: normal
+  spacing: tight
   section_width: true
   content_width: true
   rows:
@@ -45,9 +45,9 @@ blocks:
     align_items: ''
     justify_content: ''
   appearance:
-    text_color: ''
+    text_color: light
     bg_image: ''
-    bg_color: ''
+    bg_color: secondary-dark
     bg_color_custom: ''
   advanced:
     css_id: ''
