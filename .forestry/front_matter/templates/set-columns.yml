@@ -21,6 +21,7 @@ fields:
   - component-tabs
   - component-toggle
   - component-modal
+  - component-menu
   config:
     min: 
     max: 
