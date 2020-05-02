@@ -1,0 +1,7 @@
+<div>
+    {% for block in blocks %}
+        {% if block.template == 'block-section' %}
+            {% include "blocks/section.njk" %}
+        {% endif %}
+    {% endfor %}
+</div>
