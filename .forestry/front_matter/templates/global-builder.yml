@@ -29,3 +29,5 @@ fields:
   label: Layout
   hidden: true
   default: global
+pages:
+- content/globals/primary-header.md
