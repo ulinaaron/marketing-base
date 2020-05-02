@@ -42,10 +42,10 @@ blocks:
         xl: ''
     row_name: ''
     horizontal_padding: true
-    gutters: ''
-    align_content: ''
-    align_items: ''
-    justify_content: ''
+    gutters: normal
+    align_content: Center
+    align_items: Center
+    justify_content: Between
   appearance:
     text_color: ''
     bg_image: ''
