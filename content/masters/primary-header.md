@@ -24,20 +24,20 @@ blocks:
           css_id: ''
           css_classes: ''
       column_name: ''
-      column_width: ''
+      column_width: 1/2
       responsive_column_widths:
         small: ''
-        medium: ''
+        medium: 1/4
         large: ''
         xl: ''
     - column_name: ''
       components:
       - template: component-menu
         navigation_menu: main
-      column_width: ''
+      column_width: 1/2
       responsive_column_widths:
         small: ''
-        medium: ''
+        medium: 3/4
         large: ''
         xl: ''
     row_name: ''
