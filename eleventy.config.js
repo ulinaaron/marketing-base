@@ -59,7 +59,23 @@ module.exports = eleventyConfig => {
 
     })
 
-    eleventyConfig.addCollection('global', collection => {})
+    eleventyConfig.addCollection('global', collection => {
+
+        const globals = collection.getFilteredByTag('global')
+
+        for( let i = 0; i < globals.length; i++ ) {
+
+            const prevPost = globals[i - 1]
+            const nextPost = globals[i + 1]
+
+            globals[i].data["prevPost"] = prevPost
+            globals[i].data["nextPost"] = nextPost
+
+        }
+
+        return globals.reverse()
+
+    })
 
     // Layout aliases
     eleventyConfig.addLayoutAlias('default', '../layouts/default.njk')
