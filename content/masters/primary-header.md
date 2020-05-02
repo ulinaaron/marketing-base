@@ -31,7 +31,9 @@ blocks:
         large: ''
         xl: ''
     - column_name: ''
-      components: []
+      components:
+      - template: component-menu
+        navigation_menu: main
       column_width: ''
       responsive_column_widths:
         small: ''
