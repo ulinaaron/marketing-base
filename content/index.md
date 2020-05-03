@@ -42,6 +42,12 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          typography:
+            font_family: ''
+            font_weight: Black
+            transform: ''
+            line_height: ''
+            letter_spacing: ''
         title: Build performant modular websites easily.
         font_size: 4xl
         text_alignment: ''
@@ -121,6 +127,12 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          typography:
+            font_family: ''
+            font_weight: ''
+            transform: ''
+            line_height: ''
+            letter_spacing: ''
         text_alignment: center
         title: Powerful visual editing for your entire website
         font_size: ''
@@ -171,6 +183,12 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          typography:
+            font_family: ''
+            font_weight: ''
+            transform: ''
+            line_height: ''
+            letter_spacing: ''
         title: Drag & Drop Editing
         font_size: ''
         text_alignment: ''
@@ -216,6 +234,12 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          typography:
+            font_family: ''
+            font_weight: ''
+            transform: ''
+            line_height: ''
+            letter_spacing: ''
         title: Header Builder
         font_size: ''
         text_alignment: ''
@@ -263,6 +287,12 @@ blocks:
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
+          typography:
+            font_family: ''
+            font_weight: ''
+            transform: ''
+            line_height: ''
+            letter_spacing: ''
         title: Global Edits
         font_size: ''
         text_alignment: ''
