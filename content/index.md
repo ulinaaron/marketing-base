@@ -84,7 +84,7 @@ blocks:
           css_classes: ''
       column_name: ''
     gutters: ''
-    align_content: ''
+    align_content: Center
     align_items: ''
     justify_content: ''
   advanced:
