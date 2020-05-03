@@ -1,4 +1,75 @@
 ---
 label: Component - Logo
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: element
+  type: select
+  default: h3
+  config:
+    required: false
+    options:
+    - h1
+    - h2
+    - h3
+    - h4
+    - h5
+    - h6
+    - p
+    - div
+    - span
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Heading Element
+- name: font_size
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: text_sizes
+  label: Font Size
+- name: text_alignment
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: text_alignment
+  label: Heading Alignment
+- name: appearance
+  type: field_group
+  config: {}
+  fields:
+  - name: appearance_settings
+    type: include
+    config: {}
+    template: utility-appearance
+    label: Appearance Settings
+  label: Appearance
+- name: advanced
+  type: field_group
+  config: {}
+  fields:
+  - name: advanced_settings
+    type: include
+    config: {}
+    template: utility-advanced
+    label: Advanced Settings
+  label: Advanced
+

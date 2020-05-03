@@ -1,5 +1,6 @@
-<nav id="nav" class="flex nav">
+{% set justify = macro.styles(component.justify, editor.row_justify) if component.justify else ""%}
 
+<nav id="nav" class="flex {{ justify }}">
     <ul class="menu">
 
         {% for item in navigation.main %}
@@ -14,5 +15,4 @@
         {% endfor %}
 
     </ul>
-
 </nav>

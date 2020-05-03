@@ -20,7 +20,11 @@
     {%- endif -%}
 {%- endset -%}
 
-{% set image_position = macro.styles(block.appearance.bg_properties.position, editor.appearance_bg_positions) if block.appearance.bg_properties.position %}
+{% set image_attachment = macro.styles(block.appearance.bg_properties.attachment, editor.appearance_bg_attachment) if block.appearance.bg_properties.attachment else "" %}
+{% set image_position = macro.styles(block.appearance.bg_properties.position, editor.appearance_bg_positions) if block.appearance.bg_properties.position else "" %}
+{% set image_opacity = macro.styles(block.appearance.bg_properties.opacity, editor.appearance_bg_opacity) if block.appearance.bg_properties.opacity else "" %}
+{% set image_size = macro.styles(block.appearance.bg_properties.size, editor.appearance_bg_size) if block.appearance.bg_properties.size else "" %}
+{% set image_repeat = macro.styles(block.appearance.bg_properties.repeat, editor.appearance_bg_repeat) if block.appearance.bg_properties.repeat else "" %}
 
 {# Set container width #}
 {% if block.content_width %}
@@ -36,7 +40,7 @@
     {% set section_container = "container mx-auto" %}
 {% endif %}
 
-<div class="ui-block ui-block--section {{ spacing }} {{ bg_color }} {{ section_container }} {{ image_position }}" style="{{ styles }}">
+<div class="ui-block ui-block--section {{ spacing }} {{ bg_color }} {{ section_container }} {{ image_attachment }} {{ image_position }} {{ image_size }} {{ image_opacity }} {{ image_repeat }}" style="{{ styles }}">
     <div class="{{ content_container }}">
         {% for row in block.rows %}
             {% set row_gutters = macro.gutter(row.gutters, "row", editor.row_gutters) %}
