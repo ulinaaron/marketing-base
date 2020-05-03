@@ -56,6 +56,11 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: typography
+    type: include
+    config: {}
+    template: utility-typography
+    label: Typography
   - name: appearance_settings
     type: include
     config: {}
