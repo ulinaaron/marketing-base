@@ -127,6 +127,22 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+      - template: component-spacer
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        height: '10'
+        advanced:
+          css_id: ''
+          css_classes: ''
       column_name: ''
       column_width: ''
       responsive_column_widths:
