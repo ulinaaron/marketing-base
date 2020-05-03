@@ -14,7 +14,7 @@ fields:
       file: data/navigation.json
       path: 
   label: Navigation Menu
-- name: align_navigation
+- name: justify
   type: select
   default: []
   config:
