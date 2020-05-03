@@ -166,6 +166,10 @@
         "10/12": "w-10/12",
         "11/12": "w-11/12"
     },
+    "font_family": {
+        "Primary": "font-primary",
+        "Secondary": "font-secondary"
+    },
     "font_weight": {
         "Hairline": "font-hairline",
         "Thin": "font-thin",
