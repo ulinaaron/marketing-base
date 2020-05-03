@@ -19,7 +19,7 @@ blocks:
     bg_image: ''
     bg_color_custom: ''
   rows:
-  - horizontal_padding: false
+  - horizontal_padding: true
     row_name: ''
     columns:
     - column_width: full
