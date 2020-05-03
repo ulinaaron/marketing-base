@@ -10,19 +10,17 @@ blocks:
   rows:
   - columns:
     - components:
-      - template: component-heading
+      - template: component-logo
         element: h3
-        title: Base
+        font_size: []
+        text_alignment: []
         appearance:
-          text_color: primary-base
-          bg_image: ''
-          bg_color: ''
-          bg_color_custom: ''
-        font_size: 3xl
-        text_alignment: ''
-        advanced:
-          css_id: ''
-          css_classes: ''
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
       column_name: ''
       column_width: 1/2
       responsive_column_widths:
