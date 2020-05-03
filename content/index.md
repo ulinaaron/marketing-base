@@ -83,7 +83,7 @@ blocks:
           css_id: ''
           css_classes: ''
       column_name: ''
-    gutters: ''
+    gutters: relaxed
     align_content: Center
     align_items: Center
     justify_content: ''
