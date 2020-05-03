@@ -34,6 +34,7 @@ blocks:
       components:
       - template: component-menu
         navigation_menu: main
+        justify: End
       column_width: 1/2
       responsive_column_widths:
         small: ''
