@@ -62,3 +62,7 @@ fields:
       file: data/editor.json
       path: utility_type_letter_spacing
   label: Letter Spacing
+- name: typography
+  type: field_group
+  config: {}
+  label: Typography
