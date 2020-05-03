@@ -180,15 +180,15 @@ blocks:
           css_id: ''
           css_classes: ''
       column_name: ''
-      column_width: ''
+      column_width: full
       responsive_column_widths:
         small: ''
-        medium: ''
+        medium: 1/3
         large: ''
         xl: ''
     - components:
       - template: component-heading
-        element: h3
+        element: h4
         appearance:
           bg_properties:
             attachment: []
@@ -226,10 +226,10 @@ blocks:
           css_id: ''
           css_classes: ''
       column_name: ''
-      column_width: ''
+      column_width: full
       responsive_column_widths:
         small: ''
-        medium: ''
+        medium: 1/3
         large: ''
         xl: ''
     - column_name: ''
