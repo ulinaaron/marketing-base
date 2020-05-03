@@ -22,6 +22,7 @@ fields:
   - component-toggle
   - component-modal
   - component-menu
+  - component-logo
   config:
     min: 
     max: 
