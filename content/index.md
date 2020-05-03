@@ -85,7 +85,7 @@ blocks:
       column_name: ''
     gutters: ''
     align_content: Center
-    align_items: ''
+    align_items: Center
     justify_content: ''
   advanced:
     css_id: ''
