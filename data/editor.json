@@ -240,5 +240,25 @@
         "4xl": "text-4xl",
         "5xl": "text-5xl",
         "6xl": "text-6xl"
+    },
+    "utility_type_transform": {
+        "Uppercase": "uppercase",
+        "Lowercase": "lowercase",
+        "Capitalize": "capitalize"
+    },
+    "utility_type_line_height": {
+        "Leading None": "leading-none",
+        "Leading Snug": "leading-snug",
+        "Leading Normal": "leading-normal",
+        "Leading Relaxed": "leading-relaxed",
+        "Leading Loose": "leading-loose"
+    },
+    "utility_type_letter_spacing": {
+        "Tracking Tighter": "tracking-tighter",
+        "Tracking Tight": "tracking-tight",
+        "Tracking Normal": "tracking-normal",
+        "Tracking Wide": "tracking-wide",
+        "Tracking Wider": "tracking-wider",
+        "Tracking Widest": "tracking-widest"
     }
 }
