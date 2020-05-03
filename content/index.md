@@ -3,15 +3,32 @@ layout: page
 body_class: home
 title: Home
 blocks:
-- template: block-hero
-  primary_button:
-    text: Learn More
-    url: "/about"
-    style: secondary
-  headline: This Is A Big Hero Headline
-  subheadline: Azimuth is the perfect theme for developers, designers and entrepreneurs
-    who need a sleek, modern SaaS site.
-  bg_image: ''
+- template: block-section
+  spacing: normal
+  section_width: true
+  content_width: true
+  appearance:
+    bg_properties:
+      attachment: []
+      position: []
+      background_opacity: []
+      repeat: []
+      size: []
+    text_color: light
+    bg_color: secondary-base
+    bg_image: ''
+    bg_color_custom: ''
+  rows:
+  - horizontal_padding: false
+    row_name: ''
+    columns: []
+    gutters: ''
+    align_content: ''
+    align_items: ''
+    justify_content: ''
+  advanced:
+    css_id: ''
+    css_classes: ''
 title_visibility: false
 seo:
   title: Home
