@@ -14,6 +14,18 @@ fields:
       file: data/navigation.json
       path: 
   label: Navigation Menu
+- name: align_navigation
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: row_justify
+  label: Align Navigation
 - name: appearance
   type: field_group
   config: {}
