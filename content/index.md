@@ -91,7 +91,7 @@ blocks:
     css_id: ''
     css_classes: ''
 - template: block-section
-  spacing: normal
+  spacing: relaxed
   section_width: true
   content_width: true
   appearance:
