@@ -166,6 +166,17 @@
         "10/12": "w-10/12",
         "11/12": "w-11/12"
     },
+    "font_weight": {
+        "Hairline": "font-hairline",
+        "Thin": "font-thin",
+        "Light": "font-light",
+        "Normal": "font-normal",
+        "Medium": "font-medium",
+        "Semibold": "font-semibold",
+        "Bold": "font-bold",
+        "Extra Bold": "font-extrabold",
+        "Black": "font-black"
+    },
     "row_gutters": {
         "none": "0",
         "tight": "2",
