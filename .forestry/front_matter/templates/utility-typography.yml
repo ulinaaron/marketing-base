@@ -38,3 +38,15 @@ fields:
       file: data/editor.json
       path: utility_type_letter_spacing
   label: Letter Spacing
+- name: font_weight
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: font_weight
+  label: Font Weight
