@@ -21,7 +21,58 @@ blocks:
   rows:
   - horizontal_padding: false
     row_name: ''
-    columns: []
+    columns:
+    - column_width: full
+      responsive_column_widths:
+        medium: 1/3
+        small: ''
+        large: ''
+        xl: ''
+      components:
+      - template: component-heading
+        element: h1
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        title: Build performant modular websites easily.
+        font_size: 4xl
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      column_name: ''
+    - column_width: full
+      responsive_column_widths:
+        medium: 2/3
+        small: ''
+        large: ''
+        xl: ''
+      components:
+      - template: component-image
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        image: static/images/front-image_2x_d72a7834a090d3018dc40c986f1ff53a-1-optimized.webp
+        advanced:
+          css_id: ''
+          css_classes: ''
+      column_name: ''
     gutters: ''
     align_content: ''
     align_items: ''
