@@ -1,4 +1,40 @@
 ---
 label: Utility - Typography
 hide_body: true
-fields: []
+fields:
+- name: transform
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: utility_type_transform
+  label: Transform
+- name: line_height
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: utility_type_line_height
+  label: Line Height
+- name: letter_spacing
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: utility_type_letter_spacing
+  label: Letter Spacing
