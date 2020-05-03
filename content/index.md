@@ -295,11 +295,11 @@ blocks:
         large: ''
         xl: ''
     row_name: ''
-    horizontal_padding: false
-    gutters: ''
+    horizontal_padding: true
+    gutters: normal
     align_content: ''
     align_items: ''
-    justify_content: ''
+    justify_content: Center
   - row_name: ''
     columns: []
     horizontal_padding: false
