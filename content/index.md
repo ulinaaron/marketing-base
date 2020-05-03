@@ -90,6 +90,172 @@ blocks:
   advanced:
     css_id: ''
     css_classes: ''
+- template: block-section
+  spacing: normal
+  section_width: true
+  content_width: true
+  appearance:
+    bg_properties:
+      attachment: []
+      position: []
+      background_opacity: []
+      repeat: []
+      size: []
+    bg_color: light
+    text_color: scale-800
+    bg_image: ''
+    bg_color_custom: ''
+  rows:
+  - columns:
+    - components:
+      - template: component-heading
+        element: h3
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        text_alignment: center
+        title: Powerful visual editing for your entire website
+        font_size: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      column_name: ''
+      column_width: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
+    row_name: ''
+    horizontal_padding: false
+    gutters: ''
+    align_content: ''
+    align_items: ''
+    justify_content: ''
+  - columns:
+    - components:
+      - template: component-heading
+        element: h4
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        title: Drag & Drop Editing
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      - template: component-text-block
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        text: Drag element edges to set spacing, or drag & drop to re-order.
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      column_name: ''
+      column_width: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
+    - components:
+      - template: component-heading
+        element: h3
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        title: Header Builder
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      - template: component-text-block
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        text: Create custom website headers visually, including sticky and overlay
+          headers.
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      column_name: ''
+      column_width: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
+    - column_name: ''
+      components: []
+      column_width: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
+    row_name: ''
+    horizontal_padding: false
+    gutters: ''
+    align_content: ''
+    align_items: ''
+    justify_content: ''
+  - row_name: ''
+    columns: []
+    horizontal_padding: false
+    gutters: ''
+    align_content: ''
+    align_items: ''
+    justify_content: ''
+  advanced:
+    css_id: ''
+    css_classes: ''
 title_visibility: false
 seo:
   title: Home
