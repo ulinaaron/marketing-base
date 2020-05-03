@@ -2,73 +2,68 @@
 label: Utility - Typography
 hide_body: true
 fields:
-- name: font_family
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: editor-defaults
-      file: data/editor.json
-      path: font_family
-  label: Font Family
-- name: font_weight
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: editor-defaults
-      file: data/editor.json
-      path: font_weight
-  label: Font Weight
-- name: transform
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: editor-defaults
-      file: data/editor.json
-      path: utility_type_transform
-  label: Transform
-- name: line_height
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: editor-defaults
-      file: data/editor.json
-      path: utility_type_line_height
-  label: Line Height
-- name: letter_spacing
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: editor-defaults
-      file: data/editor.json
-      path: utility_type_letter_spacing
-  label: Letter Spacing
 - name: typography
   type: field_group
   config: {}
   fields:
-  - name: test
-    type: text
+  - name: font_family
+    type: select
+    default: []
     config:
       required: false
-    label: test
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: font_family
+    label: Font Family
+  - name: font_weight
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: font_weight
+    label: Font Weight
+  - name: transform
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: utility_type_transform
+    label: Transform
+  - name: line_height
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: utility_type_line_height
+    label: Line Height
+  - name: letter_spacing
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: utility_type_letter_spacing
+    label: Letter Spacing
   label: Typography
