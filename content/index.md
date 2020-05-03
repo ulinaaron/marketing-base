@@ -38,12 +38,22 @@ blocks:
             background_opacity: []
             repeat: []
             size: []
-          text_color: ''
+          text_color: light
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
         title: Build performant modular websites easily.
         font_size: 4xl
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      - template: component-button
+        type: outline
+        style: light
+        size: large
+        text: Learn More
+        url: ''
         text_alignment: ''
         advanced:
           css_id: ''
