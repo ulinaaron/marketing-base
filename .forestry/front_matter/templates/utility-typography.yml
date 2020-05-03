@@ -65,4 +65,10 @@ fields:
 - name: typography
   type: field_group
   config: {}
+  fields:
+  - name: test
+    type: text
+    config:
+      required: false
+    label: test
   label: Typography
