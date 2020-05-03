@@ -233,11 +233,49 @@ blocks:
         large: ''
         xl: ''
     - column_name: ''
-      components: []
-      column_width: ''
+      components:
+      - template: component-heading
+        element: h4
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        title: Global Edits
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      - template: component-text-block
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        text: Edit colors in one place. Changes take effect everywhere the color was
+          used.
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      column_width: full
       responsive_column_widths:
         small: ''
-        medium: ''
+        medium: 1/3
         large: ''
         xl: ''
     row_name: ''
