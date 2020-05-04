@@ -376,6 +376,13 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+        column_width: ''
+        responsive_column_widths:
+          small: ''
+          medium: ''
+          large: ''
+          xl: ''
+        source: articles
       responsive_column_widths:
         small: ''
         medium: ''
