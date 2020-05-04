@@ -2,6 +2,30 @@
 label: Component - Modal
 hide_body: true
 fields:
+- name: modal_button
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  label: Modal Button
+- name: modal_content
+  type: field_group
+  config: {}
+  fields:
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Content
+  label: Modal Content
 - name: appearance
   type: field_group
   config: {}
