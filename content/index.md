@@ -376,10 +376,10 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
-        column_width: ''
+        column_width: full
         responsive_column_widths:
           small: ''
-          medium: ''
+          medium: 1/3
           large: ''
           xl: ''
         source: articles
