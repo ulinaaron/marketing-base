@@ -22,5 +22,8 @@
     "twitter": "https://twitter.com/ulinaaron",
     "linkedin": "https://www.linkedin.com/in/aaronmazade/",
     "github": "https://github.com/ulinaaron"
-  }
+  },
+  "collections": [
+    "articles"
+  ]
 }
