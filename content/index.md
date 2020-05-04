@@ -360,7 +360,22 @@ blocks:
     columns:
     - column_width: full
       column_name: ''
-      components: []
+      components:
+      - template: component-articles
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
       responsive_column_widths:
         small: ''
         medium: ''
