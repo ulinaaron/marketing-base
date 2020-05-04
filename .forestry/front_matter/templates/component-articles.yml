@@ -2,6 +2,20 @@
 label: Component - Articles
 hide_body: true
 fields:
+- name: column_width
+  type: select
+  default: full
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: columns_widths
+  label: Column Width
+  description: The default column width. If you need to set specific column widths
+    for large screen sizes use the Responsive Column widths section.
 - name: responsive_column_widths
   type: field_group
   config: {}
