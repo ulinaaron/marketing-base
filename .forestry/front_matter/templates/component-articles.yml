@@ -89,3 +89,16 @@ fields:
     template: utility-advanced
     label: Advanced Settings
   label: Advanced
+- name: source
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: configuration
+      file: data/site.json
+      path: collections
+  label: Source
+  description: Which collection would you like to show posts from?
