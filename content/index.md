@@ -340,6 +340,40 @@ blocks:
   advanced:
     css_id: ''
     css_classes: ''
+- template: block-section
+  spacing: normal
+  section_width: true
+  content_width: true
+  appearance:
+    bg_properties:
+      attachment: []
+      position: []
+      background_opacity: []
+      repeat: []
+      size: []
+    text_color: ''
+    bg_image: ''
+    bg_color: ''
+    bg_color_custom: ''
+  rows:
+  - horizontal_padding: true
+    columns:
+    - column_width: full
+      column_name: ''
+      components: []
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
+    row_name: ''
+    gutters: ''
+    align_content: ''
+    align_items: ''
+    justify_content: ''
+  advanced:
+    css_id: ''
+    css_classes: ''
 title_visibility: false
 seo:
   title: Home
