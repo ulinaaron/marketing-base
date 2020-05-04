@@ -23,6 +23,7 @@ fields:
   - component-modal
   - component-menu
   - component-logo
+  - component-articles
   config:
     min: 
     max: 
