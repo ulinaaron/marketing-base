@@ -2,6 +2,59 @@
 label: Component - Articles
 hide_body: true
 fields:
+- name: responsive_column_widths
+  type: field_group
+  config: {}
+  fields:
+  - name: small
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: columns_widths
+    label: Small
+  - name: medium
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: columns_widths
+    label: Medium
+  - name: large
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: columns_widths
+    label: Large
+  - name: xl
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: columns_widths
+    label: XL
+  label: Responsive Column Widths
 - name: appearance
   type: field_group
   config: {}
