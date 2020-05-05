@@ -396,6 +396,62 @@ blocks:
   advanced:
     css_id: ''
     css_classes: ''
+- template: block-section
+  spacing: normal
+  section_width: true
+  content_width: true
+  appearance:
+    bg_properties:
+      attachment: []
+      position: []
+      background_opacity: []
+      repeat: []
+      size: []
+    text_color: ''
+    bg_image: ''
+    bg_color: scale-200
+    bg_color_custom: ''
+  rows:
+  - horizontal_padding: true
+    columns:
+    - column_width: full
+      column_name: ''
+      components:
+      - template: component-articles
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+        column_width: full
+        responsive_column_widths:
+          small: ''
+          medium: 1/2
+          large: ''
+          xl: ''
+        source: articles
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
+    row_name: ''
+    gutters: ''
+    align_content: ''
+    align_items: ''
+    justify_content: ''
+  advanced:
+    css_id: ''
+    css_classes: ''
 title_visibility: false
 seo:
   title: Home
