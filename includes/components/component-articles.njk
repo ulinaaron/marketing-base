@@ -1,79 +1,80 @@
 {% import "macros.njk" as macro %}
 
 {% set source = component.source %}
-
 {% set bp_width = macro.breakpoint_styles(component.column_width, component.responsive_column_widths, editor.columns_widths, editor.breakpoints) %}
 
-<div class="flex flex-row flex-wrap -mx-4">
-{% for article in collections[source] %}
-    <article class="{{ bp_width }} px-4 mb-8 flex items-stretch">
-        <div class="flex flex-col shadow-xl">
-            {# featured article image & category #}
-            {% if article.data.featured_image %}
+<div class="ui-component ui-component--card {{ advanced }} {{ appearance }}">
+    <div class="flex flex-row flex-wrap -mx-4">
+    {% for article in collections[source] %}
+        <article class="{{ bp_width }} px-4 mb-8 flex items-stretch">
+            <div class="flex flex-col shadow-xl">
+                {# featured article image & category #}
+                {% if article.data.featured_image %}
 
-                <a class="relative block overflow-hidden featured-image-link" href="{{ article.url }}">
+                    <a class="relative block overflow-hidden featured-image-link" href="{{ article.url }}">
 
-                    {# category link #}
-                    {% if article.data.tags %}
-                    <ul class="absolute bottom-0 left-0 z-10 flex p-8">
+                        {# category link #}
+                        {% if article.data.tags %}
+                        <ul class="absolute bottom-0 left-0 z-10 flex p-8">
 
-                        {% for item in article.data.tags %}
+                            {% for item in article.data.tags %}
 
-                            {%- if item != "articles" -%}
+                                {%- if item != "articles" -%}
 
-                                <li class="mr-2">
+                                    <li class="mr-2">
 
-                                    <span class="inline-block px-4 py-2 text-sm font-bold rounded bg-light">{{ item | capitalize }}</span>
+                                        <span class="inline-block px-4 py-2 text-sm font-bold rounded bg-light">{{ item | capitalize }}</span>
 
-                                </li>
+                                    </li>
 
-                            {%- endif -%}
+                                {%- endif -%}
 
-                        {% endfor %}
+                            {% endfor %}
 
-                    </ul>
-                    {% endif %}
+                        </ul>
+                        {% endif %}
 
-                    <figure>
+                        <figure>
 
-                        {# the 'data-lazy' attribute will lazy load your images in #}
-                        {# the js uses the new Intersection Observer API, see ../modules/lazyload #}
-                        {# it's not fully supported in some browsers, so proceed with caution! #}
-                        {# the srcset attribute would be a nice addtion here as well...in a future update maybe :) #}
-                        <img data-lazy="{{ article.data.featured_image }}" class="block" alt="{{ article.data.image_caption }}">
+                            {# the 'data-lazy' attribute will lazy load your images in #}
+                            {# the js uses the new Intersection Observer API, see ../modules/lazyload #}
+                            {# it's not fully supported in some browsers, so proceed with caution! #}
+                            {# the srcset attribute would be a nice addtion here as well...in a future update maybe :) #}
+                            <img data-lazy="{{ article.data.featured_image }}" class="block" alt="{{ article.data.image_caption }}">
 
-                    </figure>
+                        </figure>
 
-                </a>
+                    </a>
 
-            {% endif %}
+                {% endif %}
 
-            <div class="flex-1 p-8 bg-light">
+                <div class="flex-1 p-8 bg-light">
 
-                <h2 class="mb-6 text-xl font-bold"><a class="block" href="{{ article.url }}">{{ article.data.title }}</a></h2>
+                    <h2 class="mb-6 text-xl font-bold"><a class="block" href="{{ article.url }}">{{ article.data.title }}</a></h2>
 
-                <div class="flex flex-row">
-                    <div class="w-2/3">
-                        <div class="flex text-sm text-pref-cardMeta">
+                    <div class="flex flex-row">
+                        <div class="w-2/3">
+                            <div class="flex text-sm text-pref-cardMeta">
 
-                            <p class="author">By {{ site.author.name }}</p>
+                                <p class="author">By {{ site.author.name }}</p>
 
-                            <p class="hidden px-2 sm:block">—</p>
+                                <p class="hidden px-2 sm:block">—</p>
 
-                            <time datetime="{{ article.date }}">
-                                {{ article.date | dateDisplay }}
-                            </time>
+                                <time datetime="{{ article.date }}">
+                                    {{ article.date | dateDisplay }}
+                                </time>
+
+                            </div>
 
                         </div>
+                        <div class="w-1/3 text-right">
+                            <a class="inline-block text-sm text-right" href="{{ article.url }}">Read More</a>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <a class="inline-block text-sm text-right" href="{{ article.url }}">Read More</a>
-                    </div>
                 </div>
-
             </div>
-        </div>
-    </article>
-{% endfor %}
+        </article>
+    {% endfor %}
+    </div>
 </div>
