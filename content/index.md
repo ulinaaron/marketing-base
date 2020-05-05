@@ -447,7 +447,7 @@ blocks:
           css_id: ''
           css_classes: ''
         heading:
-          title: ''
+          title: A card
           element: ''
           font_size: ''
           text_alignment: ''
@@ -503,7 +503,7 @@ blocks:
           type: icon
           image: ''
           appearance:
-            text_color: ''
+            text_color: info-light
             bg_image: ''
             bg_properties:
               attachment: ''
@@ -516,7 +516,7 @@ blocks:
           advanced:
             css_id: ''
             css_classes: ''
-          icon: TV
+          icon: Food
       column_name: ''
       column_width: ''
       responsive_column_widths:
