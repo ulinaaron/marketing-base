@@ -20,16 +20,24 @@ fields:
         file: 
         path: 
     label: Select Feature Type
+    hidden: false
   - name: image
     type: include
     config: {}
     template: component-image
     label: Image
+    hidden: true
+    showOnly:
+      field: type
+      value: image
   - name: icon
     type: include
     config: {}
     template: component-icon
     label: Icon
+    showOnly:
+      field: type
+      value: icon
   label: Image / Icon
 - name: heading
   type: field_group
