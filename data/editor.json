@@ -283,7 +283,7 @@
         "Tracking Wider": "tracking-wider",
         "Tracking Widest": "tracking-widest"
     },
-    "lineicons": {
+    "linecons": {
         "Heart": ".li_heart",
         "Cloud": ".li_cloud",
         "Star": ".li_star",
