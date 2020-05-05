@@ -423,7 +423,7 @@ blocks:
             background_opacity: []
             repeat: []
             size: []
-          text_color: ''
+          text_color: light
           bg_image: ''
           bg_color: ''
           bg_color_custom: ''
