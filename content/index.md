@@ -499,6 +499,24 @@ blocks:
           advanced:
             css_id: ''
             css_classes: ''
+        feature:
+          type: icon
+          image: ''
+          appearance:
+            text_color: ''
+            bg_image: ''
+            bg_properties:
+              attachment: ''
+              position: ''
+              background_opacity: ''
+              repeat: ''
+              size: ''
+            bg_color: ''
+            bg_color_custom: ''
+          advanced:
+            css_id: ''
+            css_classes: ''
+          icon: TV
       column_name: ''
       column_width: ''
       responsive_column_widths:
@@ -577,6 +595,24 @@ blocks:
           advanced:
             css_id: ''
             css_classes: ''
+        feature:
+          type: ''
+          image: ''
+          appearance:
+            text_color: ''
+            bg_image: ''
+            bg_properties:
+              attachment: ''
+              position: ''
+              background_opacity: ''
+              repeat: ''
+              size: ''
+            bg_color: ''
+            bg_color_custom: ''
+          advanced:
+            css_id: ''
+            css_classes: ''
+          icon: ''
       responsive_column_widths:
         small: ''
         medium: ''
