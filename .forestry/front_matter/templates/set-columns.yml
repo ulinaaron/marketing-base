@@ -15,6 +15,7 @@ fields:
   - component-heading
   - component-button
   - component-image
+  - component-icon
   - component-video
   - component-divider
   - component-spacer
