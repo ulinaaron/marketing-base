@@ -2,6 +2,35 @@
 label: Component - Card
 hide_body: true
 fields:
+- name: feature
+  type: field_group
+  config: {}
+  fields:
+  - name: type
+    type: select
+    default: image
+    config:
+      required: false
+      options:
+      - image
+      - icon
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Select Feature Type
+  - name: image
+    type: include
+    config: {}
+    template: component-image
+    label: Image
+  - name: icon
+    type: include
+    config: {}
+    template: component-icon
+    label: Icon
+  label: Image / Icon
 - name: heading
   type: field_group
   config: {}
