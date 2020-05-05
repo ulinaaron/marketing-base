@@ -7,6 +7,7 @@ image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: A meeting is a gathering of two or more people that has been convened for the purpose of achieving a common goal through verbal interaction.
 tags:
     - articles
+    - remote
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut porttitor leo a diam sollicitudin tempor id eu. Egestas quis ipsum suspendisse ultrices gravida. Aliquet lectus proin nibh nisl condimentum id venenatis. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu. Euismod nisi porta lorem mollis aliquam. Orci sagittis eu volutpat odio. Id eu nisl nunc mi ipsum faucibus. Senectus et netus et malesuada fames ac turpis egestas integer. Tempus urna et pharetra pharetra massa massa ultricies. Amet massa vitae tortor condimentum lacinia quis. Donec et odio pellentesque diam. Arcu bibendum at varius vel pharetra vel. Congue nisi vitae suscipit tellus mauris a diam maecenas. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Vitae congue mauris rhoncus aenean. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Donec ac odio tempor orci dapibus.
