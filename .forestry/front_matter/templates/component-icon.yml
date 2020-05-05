@@ -22,3 +22,15 @@ fields:
     template: utility-advanced
     label: Advanced Settings
   label: Advanced
+- name: icon
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: 
+  label: Icon
