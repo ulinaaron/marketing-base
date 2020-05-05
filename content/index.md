@@ -415,6 +415,22 @@ blocks:
   - horizontal_padding: true
     columns:
     - components:
+      - template: component-icon
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        icon: Like
+        advanced:
+          css_id: ''
+          css_classes: ''
       - template: component-card
         appearance:
           bg_properties:
@@ -430,6 +446,59 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+        heading:
+          title: ''
+          element: ''
+          font_size: ''
+          text_alignment: ''
+          appearance:
+            typography:
+              font_family: ''
+              font_weight: ''
+              transform: ''
+              line_height: ''
+              letter_spacing: ''
+            text_color: ''
+            bg_image: ''
+            bg_properties:
+              attachment: ''
+              position: ''
+              background_opacity: ''
+              repeat: ''
+              size: ''
+            bg_color: ''
+            bg_color_custom: ''
+          advanced:
+            css_id: ''
+            css_classes: ''
+        content:
+          text: ''
+          font_size: ''
+          text_alignment: ''
+          appearance:
+            text_color: ''
+            bg_image: ''
+            bg_properties:
+              attachment: ''
+              position: ''
+              background_opacity: ''
+              repeat: ''
+              size: ''
+            bg_color: ''
+            bg_color_custom: ''
+          advanced:
+            css_id: ''
+            css_classes: ''
+        button:
+          text: ''
+          url: ''
+          type: ''
+          style: ''
+          size: ''
+          text_alignment: ''
+          advanced:
+            css_id: ''
+            css_classes: ''
       column_name: ''
       column_width: ''
       responsive_column_widths:
@@ -455,6 +524,59 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+        heading:
+          title: ''
+          element: ''
+          font_size: ''
+          text_alignment: ''
+          appearance:
+            typography:
+              font_family: ''
+              font_weight: ''
+              transform: ''
+              line_height: ''
+              letter_spacing: ''
+            text_color: ''
+            bg_image: ''
+            bg_properties:
+              attachment: ''
+              position: ''
+              background_opacity: ''
+              repeat: ''
+              size: ''
+            bg_color: ''
+            bg_color_custom: ''
+          advanced:
+            css_id: ''
+            css_classes: ''
+        content:
+          text: ''
+          font_size: ''
+          text_alignment: ''
+          appearance:
+            text_color: ''
+            bg_image: ''
+            bg_properties:
+              attachment: ''
+              position: ''
+              background_opacity: ''
+              repeat: ''
+              size: ''
+            bg_color: ''
+            bg_color_custom: ''
+          advanced:
+            css_id: ''
+            css_classes: ''
+        button:
+          text: ''
+          url: ''
+          type: ''
+          style: ''
+          size: ''
+          text_alignment: ''
+          advanced:
+            css_id: ''
+            css_classes: ''
       responsive_column_widths:
         small: ''
         medium: ''
