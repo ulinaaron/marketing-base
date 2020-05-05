@@ -441,7 +441,7 @@ blocks:
             size: []
           text_color: ''
           bg_image: ''
-          bg_color: ''
+          bg_color: light
           bg_color_custom: ''
         advanced:
           css_id: ''
