@@ -24,6 +24,7 @@ fields:
   - component-menu
   - component-logo
   - component-articles
+  - component-card
   config:
     min: 
     max: 
