@@ -2,6 +2,35 @@
 label: Component - Card
 hide_body: true
 fields:
+- name: heading
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: include
+    config: {}
+    template: component-heading
+    label: Heading
+  label: Heading
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: button
+    type: include
+    config: {}
+    template: component-button
+    label: Button
+  label: Button
 - name: appearance
   type: field_group
   config: {}
