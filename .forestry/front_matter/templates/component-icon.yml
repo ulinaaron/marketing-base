@@ -32,5 +32,5 @@ fields:
       type: documents
       section: editor-defaults
       file: data/editor.json
-      path: 
+      path: linecons
   label: Icon
