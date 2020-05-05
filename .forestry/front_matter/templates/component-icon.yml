@@ -2,6 +2,18 @@
 label: Component - Icon
 hide_body: true
 fields:
+- name: icon
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: linecons
+  label: Icon
 - name: appearance
   type: field_group
   config: {}
@@ -22,15 +34,3 @@ fields:
     template: utility-advanced
     label: Advanced Settings
   label: Advanced
-- name: icon
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: editor-defaults
-      file: data/editor.json
-      path: linecons
-  label: Icon
