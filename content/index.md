@@ -417,7 +417,7 @@ blocks:
     - column_width: full
       column_name: ''
       components:
-      - template: component-articles
+      - template: component-card
         appearance:
           bg_properties:
             attachment: []
@@ -432,13 +432,6 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
-        column_width: full
-        responsive_column_widths:
-          small: ''
-          medium: 1/2
-          large: ''
-          xl: ''
-        source: articles
       responsive_column_widths:
         small: ''
         medium: ''
