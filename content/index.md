@@ -409,7 +409,7 @@ blocks:
       size: []
     text_color: ''
     bg_image: ''
-    bg_color: scale-200
+    bg_color: success-light
     bg_color_custom: ''
   rows:
   - horizontal_padding: true
