@@ -414,6 +414,29 @@ blocks:
   rows:
   - horizontal_padding: true
     columns:
+    - components:
+      - template: component-card
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      column_name: ''
+      column_width: ''
+      responsive_column_widths:
+        small: ''
+        medium: ''
+        large: ''
+        xl: ''
     - column_width: full
       column_name: ''
       components:
