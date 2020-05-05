@@ -85,10 +85,10 @@ module.exports = eleventyConfig => {
 
     // Include our static assets
     eleventyConfig.addPassthroughCopy("static/css")
+    eleventyConfig.addPassthroughCopy("static/fonts")
     eleventyConfig.addPassthroughCopy("static/js")
     eleventyConfig.addPassthroughCopy("static/images")
     eleventyConfig.addPassthroughCopy("static/robots.txt")
-    eleventyConfig.addPassthroughCopy("static/estimate.json")
     eleventyConfig.addPassthroughCopy("static/_redirects")
 
     return {
