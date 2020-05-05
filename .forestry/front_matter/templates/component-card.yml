@@ -13,13 +13,14 @@ fields:
     label: Heading
   label: Heading
 - name: content
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
+  type: field_group
+  config: {}
+  fields:
+  - name: content
+    type: include
+    config: {}
+    template: component-text-block
+    label: Content
   label: Content
 - name: button
   type: field_group
