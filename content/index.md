@@ -415,22 +415,6 @@ blocks:
   - horizontal_padding: true
     columns:
     - components:
-      - template: component-icon
-        appearance:
-          bg_properties:
-            attachment: []
-            position: []
-            background_opacity: []
-            repeat: []
-            size: []
-          text_color: light
-          bg_image: ''
-          bg_color: ''
-          bg_color_custom: ''
-        icon: Like
-        advanced:
-          css_id: ''
-          css_classes: ''
       - template: component-card
         appearance:
           bg_properties:
