@@ -472,7 +472,8 @@ blocks:
             css_id: ''
             css_classes: ''
         content:
-          text: ''
+          text: This is a sample of the card content. There is not a whole lot to
+            see here but there is enough to give an example of how it may look. Cheers!
           font_size: ''
           text_alignment: ''
           appearance:
