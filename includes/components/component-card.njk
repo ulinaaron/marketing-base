@@ -1,23 +1,21 @@
 {% import "macros.njk" as macro %}
+{% import "components/component-image.njk" as image %}
+{% import "components/component-icon.njk" as icon %}
+{% import "components/component-heading.njk" as heading %}
+{% import "components/component-text-block.njk" as textblock %}
+{% import "components/component-button.njk" as button %}
 
-{% set advanced = macro.advanced(component.advanced) %}
-{% set appearance = macro.appearance(component.appearance, editor) %}
+{% macro base(token='', group='') %}
+    {% set advanced = macro.advanced(token.advanced) %}
+    {% set appearance = macro.appearance(token.appearance, group) %}
 
-<div class="ui-component ui-component--card {{ advanced }} {{ appearance }}">
+    <div class="ui-component ui-component--card {{ advanced }} {{ appearance }} p-10">
+        {{ icon.base(token.feature, group) if token.feature.type === "icon" }}
+        {{ image.base(token.feature, group) if token.feature.type === "image"  }}
+        {{ heading.base(token.heading, group) }}
+        {{ textblock.base(token.content, group) }}
+        {{ button.base(token.button, group) }}
+    </div>
+{% endmacro %}
 
-    {# {% include "components/component-icon.njk" %}
-    {% include "components/component-image.njk" %} #}
-    {# {{ macro.getComponent('components/component-heading.njk', component.heading) }} #}
-
-    {% for name,val in component %}
-        {% if 'heading' === name %}
-            {# {% set component = val %}
-            {{ component }}
-            {% include "components/component-heading.njk" %} #}
-        {% endif %}
-        
-    {% endfor %}
-    {# {% include "components/component-heading.njk" %} #}
-    {# {% include "components/component-text-block.njk" %} #}
-    {# {% include "components/component-button.njk" %} #}
-</div>
+{{ base(component, editor) }}

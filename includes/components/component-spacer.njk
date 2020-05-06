@@ -1,10 +1,16 @@
 {% import "macros.njk" as macro %}
 
-{# Defaults #}
-{% set defaults = "spacer block" %}
+{% macro base(token='', group='') %}
+    {# Defaults #}
+    {% set defaults = "spacer block" %}
 
-{% set styles =  macro.styles(component.height, editor.spacer) %}
+    {% set advanced = macro.advanced(token.advanced) %} 
+    {% set appearance = macro.appearance(token.appearance) %}
+    {% set styles =  macro.styles(token.height, group.spacer) %}
 
-<div class="ui-component ui-component--spacer {{ advanced }}">
-    <div class="{{ defaults }} {{ styles }}"></div>
-</div>
+    <div class="ui-component ui-component--spacer {{ advanced }} {{ appearance }}">
+        <div class="{{ defaults }} {{ styles }}"></div>
+    </div>
+{% endmacro %}
+
+{{ base(component, editor) }}

@@ -1,18 +1,22 @@
 {% import "macros.njk" as macro %}
 
-{# Defaults #}
-{% set defaults = "inline-block font-bold rounded" %}
+{% macro base(token='', group='') %}
+    {# Defaults #}
+    {% set defaults = "inline-block font-bold rounded" %}
 
-{% set advanced = macro.advanced(component.advanced) %}
-{% set appearance = macro.appearance(component.appearance, editor) %}
-{% if component.type == "fill" %}
-    {% set styles =  macro.styles(component.style, editor.button_styles) %}
-{% elif component.type == "outline" %}
-    {% set styles =  macro.styles(component.style, editor.button_outline_styles) %}
-{% endif %}
-{% set sizes =  macro.styles(component.size, editor.button_sizes) %}
-{% set text_alignment =  macro.styles(component.text_alignment, editor.text_alignment ) %}
+    {% set advanced = macro.advanced(token.advanced) %}
+    {% set appearance = macro.appearance(token.appearance, group) %}
+    {% if token.type == "fill" %}
+        {% set styles =  macro.styles(token.style, group.button_styles) %}
+    {% elif token.type == "outline" %}
+        {% set styles =  macro.styles(token.style, group.button_outline_styles) %}
+    {% endif %}
+    {% set sizes =  macro.styles(token.size, group.button_sizes) %}
+    {% set text_alignment =  macro.styles(token.text_alignment, group.text_alignment ) %}
 
-<div class="ui-component ui-component--button {{ advanced }} {{ appearance }} {{ text_alignment }}">
-    <a href="{{ component.url }}" class="button {{ defaults }} {{ styles }} {{ sizes }}">{{ component.text }}</a>
-</div>
+    <div class="ui-component ui-component--button {{ advanced }} {{ appearance }} {{ text_alignment }}">
+        <a href="{{ token.url }}" class="button {{ defaults }} {{ styles }} {{ sizes }}">{{ token.text }}</a>
+    </div>
+{% endmacro %}
+
+{{ base(component, editor) }}

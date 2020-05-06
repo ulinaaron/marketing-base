@@ -1,8 +1,12 @@
 {% import "macros.njk" as macro %}
 
-{% set advanced = macro.advanced(component.advanced) %}
-{% set appearance = macro.appearance(component.appearance, editor) %}
+{% macro base(token='', group='') %}
+    {% set advanced = macro.advanced(token.advanced) %}
+    {% set appearance = macro.appearance(token.appearance, group) %}
 
-<div class="ui-component ui-component--list {{ advanced }} {{ appearance }}">
-    
-</div>
+    <div class="ui-component ui-component--list {{ advanced }} {{ appearance }}">
+        
+    </div>
+{% endmacro %}
+
+{{ base(component, editor) }}

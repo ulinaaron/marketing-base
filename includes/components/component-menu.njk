@@ -1,20 +1,27 @@
-{% set justify = macro.styles(component.justify, editor.row_justify) if component.justify else ""%}
+{% import "macros.njk" as macro %}
 
-<div class="ui-component ui-component--menu {{ advanced }} {{ appearance }}">
-    <nav id="nav" class="flex {{ justify }}">
-        <ul class="menu">
+{% macro base(token='', group='') %}
+    {% set justify = macro.styles(token.justify, editor.row_justify) if token.justify else ""%}
 
-            {% for item in navigation.main %}
+    <div class="ui-component ui-component--menu {{ advanced }} {{ appearance }}">
+        <nav id="nav" class="flex {{ justify }}">
+            <ul class="menu">
 
-            <li class="menu__item">
+                {% for item in navigation.main %}
 
-                <a href="{{ item.url | safe }}" class="menu__item__link {% if page.url == item.url %}active text-pref-linkHover{% endif %}
-                "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+                <li class="menu__item">
 
-            </li>
+                    <a href="{{ item.url | safe }}" class="menu__item__link {% if page.url == item.url %}active text-pref-linkHover{% endif %}
+                    "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
 
-            {% endfor %}
+                </li>
 
-        </ul>
-    </nav>
-</div>
+                {% endfor %}
+
+            </ul>
+        </nav>
+    </div>
+
+{% endmacro %}
+
+{{ base(component, editor) }}

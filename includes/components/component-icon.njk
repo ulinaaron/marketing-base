@@ -1,9 +1,14 @@
 {% import "macros.njk" as macro %}
 
-{% set advanced = macro.advanced(component.advanced) %}
-{% set appearance = macro.appearance(component.appearance, editor) %}
-{% set icon =  macro.styles(component.icon, editor.linecons) if component.icon %}
+{% macro base(token='', group='') %}
+    {% set advanced = macro.advanced(token.advanced) %}
+    {% set appearance = macro.appearance(token.appearance, group) %}
+    {% set icon =  macro.styles(token.icon, group.linecons) if token.icon %}
 
-<div class="ui-component ui-component--icon {{ advanced }} {{ appearance }}">
-    <span aria-hidden="true" class="{{ icon }} text-6xl"></span>
-</div>
+    <div class="ui-component ui-component--icon {{ advanced }} {{ appearance }}">
+        <span aria-hidden="true" class="{{ icon }} text-6xl"></span>
+    </div>
+
+{% endmacro %}
+
+{{ base(component, editor) }}

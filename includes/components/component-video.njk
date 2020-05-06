@@ -1,7 +1,12 @@
 {% import "macros.njk" as macro %}
 
-{% set advanced = macro.advanced(component.advanced) %}
+{% macro base(token='', group='') %}
+    {% set advanced = macro.advanced(token.advanced) %}
+    {% set appearance = macro.appearance(token.appearance, group) %}
 
-<div class="ui-component ui-component--video {{ advanced }}">
+    <div class="ui-component ui-component--video {{ advanced }} {{ appearance }} ">
 
-</div>
+    </div>
+{% endmacro %}
+
+{{ base(component, editor) }}
