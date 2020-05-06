@@ -528,7 +528,7 @@ blocks:
           css_id: ''
           css_classes: ''
         heading:
-          title: ''
+          title: Card Feature
           element: ''
           font_size: ''
           text_alignment: ''
