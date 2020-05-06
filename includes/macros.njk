@@ -53,11 +53,11 @@
 
     @return class string
  #}
-{% macro advanced(component='') %}
+{% macro advanced(component='', group='') %}
     {% set class = '' %}
     {% set class = class + ' ' +  component.css_id if component.css_id %}
     {% set class = class + ' ' + component.css_classes if component.css_classes %}
-    
+
     {{ class }}
 {% endmacro %}
 
@@ -66,5 +66,21 @@
 
     {% set class = class + ' ' +  styles(component.text_color, group.appearance_text_color) %}
 
+    {% if component.bg_color !== "custom" %}
+        {% set class = class + ' ' + styles(component.bg_color, group.appearance_bg_color) %}
+    {% endif %}
+
     {{ class }}
+{% endmacro %}
+
+{% macro getComponent(file='', setting='') %}
+    {% set store %}
+        {% include file %}
+    {% endset %}
+
+    {% set component = setting %}
+
+    {{ component }}
+
+    {{ store }}
 {% endmacro %}

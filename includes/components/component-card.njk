@@ -4,5 +4,20 @@
 {% set appearance = macro.appearance(component.appearance, editor) %}
 
 <div class="ui-component ui-component--card {{ advanced }} {{ appearance }}">
-    lol
+
+    {# {% include "components/component-icon.njk" %}
+    {% include "components/component-image.njk" %} #}
+    {# {{ macro.getComponent('components/component-heading.njk', component.heading) }} #}
+
+    {% for name,val in component %}
+        {% if 'heading' === name %}
+            {# {% set component = val %}
+            {{ component }}
+            {% include "components/component-heading.njk" %} #}
+        {% endif %}
+        
+    {% endfor %}
+    {# {% include "components/component-heading.njk" %} #}
+    {# {% include "components/component-text-block.njk" %} #}
+    {# {% include "components/component-button.njk" %} #}
 </div>

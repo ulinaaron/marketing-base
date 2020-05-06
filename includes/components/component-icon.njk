@@ -1,0 +1,9 @@
+{% import "macros.njk" as macro %}
+
+{% set advanced = macro.advanced(component.advanced) %}
+{% set appearance = macro.appearance(component.appearance, editor) %}
+{% set icon =  macro.styles(component.icon, editor.linecons) if component.icon %}
+
+<div class="ui-component ui-component--icon {{ advanced }} {{ appearance }}">
+    <span aria-hidden="true" class="{{ icon }} text-6xl"></span>
+</div>
