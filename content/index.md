@@ -503,13 +503,13 @@ blocks:
             css_classes: ''
           icon: Food
       column_name: ''
-      column_width: ''
+      column_width: 1/2
       responsive_column_widths:
         small: ''
         medium: ''
         large: ''
         xl: ''
-    - column_width: full
+    - column_width: 1/2
       column_name: ''
       components:
       - template: component-card
@@ -571,8 +571,8 @@ blocks:
             css_id: ''
             css_classes: ''
         button:
-          text: ''
-          url: ''
+          text: Read More
+          url: "#"
           type: ''
           style: ''
           size: ''
