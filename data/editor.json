@@ -140,6 +140,14 @@
         "large": "lg",
         "xl": "xl"
     },
+    "card_spacing": {
+        "none": "p-0",
+        "tight": "p-6",
+        "snug": "p-12",
+        "normal": "p-20",
+        "relaxed": "p-32",
+        "loose": "p-40"
+    },
     "columns_widths": {
         "full": "w-full",
         "1/2": "w-1/2", 
