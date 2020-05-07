@@ -69,6 +69,20 @@ fields:
     template: component-button
     label: Button
   label: Button
+- name: spacing
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Spacing
+  description: Controls the horizontal and vertical spacing around the card's contents.
+    Useful when using a background on the card.
 - name: appearance
   type: field_group
   config: {}
