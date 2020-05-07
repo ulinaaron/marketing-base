@@ -604,7 +604,7 @@ blocks:
         large: ''
         xl: ''
     row_name: ''
-    gutters: ''
+    gutters: normal
     align_content: ''
     align_items: ''
     justify_content: ''
