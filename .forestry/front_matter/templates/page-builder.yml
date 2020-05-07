@@ -48,6 +48,7 @@ fields:
 pages:
 - content/about.md
 - content/articles.md
+- content/careers.md
 - content/contact.md
 - content/index.md
 - content/landing-1.md
