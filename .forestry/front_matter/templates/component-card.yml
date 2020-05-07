@@ -76,10 +76,10 @@ fields:
     required: false
     options: []
     source:
-      type: simple
-      section: 
-      file: 
-      path: 
+      type: documents
+      section: editor-defaults
+      file: data/editor.json
+      path: card_spacing
   label: Spacing
   description: Controls the horizontal and vertical spacing around the card's contents.
     Useful when using a background on the card.
