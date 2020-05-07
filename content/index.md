@@ -502,6 +502,7 @@ blocks:
             css_id: ''
             css_classes: ''
           icon: Food
+        spacing: normal
       column_name: ''
       column_width: 1/2
       responsive_column_widths:
@@ -598,6 +599,7 @@ blocks:
             css_id: ''
             css_classes: ''
           icon: ''
+        spacing: ''
       responsive_column_widths:
         small: ''
         medium: ''
