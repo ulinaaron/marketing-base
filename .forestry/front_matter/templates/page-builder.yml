@@ -47,6 +47,7 @@ fields:
   label: SEO Settings
 pages:
 - content/about.md
+- content/articles.md
 - content/contact.md
 - content/index.md
 - content/landing-1.md
