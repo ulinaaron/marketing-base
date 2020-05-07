@@ -488,7 +488,7 @@ blocks:
           type: icon
           image: ''
           appearance:
-            text_color: info-light
+            text_color: scale-400
             bg_image: ''
             bg_properties:
               attachment: ''
