@@ -520,18 +520,18 @@ blocks:
             background_opacity: []
             repeat: []
             size: []
-          text_color: ''
+          text_color: scale-800
           bg_image: ''
-          bg_color: ''
+          bg_color: light
           bg_color_custom: ''
         advanced:
           css_id: ''
           css_classes: ''
         heading:
           title: Card Feature
-          element: ''
-          font_size: ''
-          text_alignment: ''
+          element: h3
+          font_size: lg
+          text_alignment: center
           appearance:
             typography:
               font_family: ''
