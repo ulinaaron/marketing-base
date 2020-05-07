@@ -432,9 +432,9 @@ blocks:
           css_classes: ''
         heading:
           title: A card
-          element: ''
-          font_size: ''
-          text_alignment: ''
+          element: h3
+          font_size: lg
+          text_alignment: center
           appearance:
             typography:
               font_family: ''
