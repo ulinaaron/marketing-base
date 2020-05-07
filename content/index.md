@@ -606,7 +606,7 @@ blocks:
     row_name: ''
     gutters: normal
     align_content: ''
-    align_items: ''
+    align_items: Center
     justify_content: ''
   advanced:
     css_id: ''
