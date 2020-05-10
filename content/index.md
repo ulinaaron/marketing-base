@@ -600,6 +600,32 @@ blocks:
             css_classes: ''
           icon: ''
         spacing: ''
+      - template: component-modal
+        modal_button:
+          type: fill
+          style: primary
+          size: base
+          text: Open Modal
+          text_alignment: ''
+          advanced:
+            css_id: ''
+            css_classes: ''
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        modal_content:
+          content: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
       responsive_column_widths:
         small: ''
         medium: ''
