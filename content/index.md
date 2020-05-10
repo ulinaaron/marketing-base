@@ -622,7 +622,7 @@ blocks:
           bg_color: ''
           bg_color_custom: ''
         modal_content:
-          content: ''
+          content: here is some content
         advanced:
           css_id: ''
           css_classes: ''
