@@ -602,11 +602,11 @@ blocks:
         spacing: ''
       - template: component-modal
         modal_button:
-          type: fill
-          style: primary
-          size: base
+          type: outline
+          style: dark
+          size: large
           text: Open Modal
-          text_alignment: ''
+          text_alignment: center
           advanced:
             css_id: ''
             css_classes: ''
