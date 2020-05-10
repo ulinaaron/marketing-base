@@ -11,11 +11,6 @@ fields:
     config:
       required: false
     label: Text
-  - name: url
-    type: text
-    config:
-      required: false
-    label: URL
   - name: type
     type: select
     default: fill
