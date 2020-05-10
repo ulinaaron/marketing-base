@@ -1,0 +1,62 @@
+{% import "macros.njk" as macro %}
+
+{% macro base(token='', nav='', group='') %}
+    <div x-data="{ mobile: false }" class="">
+        <button id="mobile-nav-toggle" @click="mobile = ! mobile" class="flex items-center justify-center block w-full h-16 font-bold border-none mobile-nav-toggle text-scale-700 focus:outline-none md:hidden" aria-label="Mobile menu toggle" x-bind:aria-expanded="mobile" aria-expanded="false" aria-controls="mobile-nav">
+
+            <span class="mr-2 mobile-nav-icon" aria-hidden="true">
+                <span class="block w-6 mb-1 transition-all duration-200 ease-out bg-scale-700 mobile-nav-icon-line"></span>
+                <span class="block w-6 mb-1 transition-all duration-200 ease-out bg-scale-700 mobile-nav-icon-line"></span>
+                <span class="block w-6 transition-all duration-200 ease-out bg-scale-700 mobile-nav-icon-line"></span>
+            </span>
+
+            <span class="font-bold mobile-nav-label">Menu</span>
+
+        </button>
+
+
+        <nav id="mobile-nav" :class="{ 'menu-visible': mobile === true }" class="fixed top-0 left-0 z-40 w-full h-screen overflow-y-auto text-right mobile-nav text-scale-800 bg-light md:hidden">
+            <button id="mobile-nav-toggle" @click="mobile = false" class="inline-block h-16 p-10 font-bold border-none mobile-nav-toggle menu-toggle-active text-scale-800 focus:outline-none" aria-label="Mobile menu toggle" x-bind:aria-expanded="mobile" aria-expanded="false" aria-controls="mobile-nav">
+
+                <span class="mobile-nav-icon">
+                    <span class="block w-6 mb-1 transition-all duration-200 ease-out bg-scale-700 mobile-nav-icon-line"></span>
+                    <span class="block w-6 mb-1 transition-all duration-200 ease-out bg-scale-700 mobile-nav-icon-line"></span>
+                    <span class="block w-6 transition-all duration-200 ease-out bg-scale-700 mobile-nav-icon-line"></span>
+                </span>
+
+                <span class="font-bold sr-only mobile-nav-label">Close</span>
+
+            </button>
+
+            <ul class="text-center">
+
+                {% for item in nav[token.navigation_menu] %}
+
+                {% if item.submenu %}
+
+                    <li class="relative opacity-0 item">
+
+                        <a href="{{ item.url | safe }}" class="link block font-bold py-2 px-5 text-scale-800 text-xl hover:text-pref-menuHover {% if page.url == item.url %}active text-pink-500{% endif %}" {% if page.url == item.url %} aria-current="page"{% endif %}>
+                            <span>{{ item.label }}</span>
+                            <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </a>
+
+                    </li>
+                {% else %}
+                    <li class="relative opacity-0 item">
+                        <a href="{{ item.url | safe }}" class="link block font-bold py-2 px-5 text-scale-800 text-xl hover:text-pref-menuHover {% if page.url == item.url %}active text-pink-500{% endif %}" {% if page.url == item.url %} aria-current="page"{% endif %}>
+                            <span>{{ item.label }}</span>
+                        </a>
+                    </li>
+                {% endif %}
+
+                {% endfor %}
+
+            </ul>
+
+        </nav>
+    </div>
+
+{% endmacro %}
+
+{{ base(component, navigation, editor) }}

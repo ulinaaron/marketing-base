@@ -1012,7 +1012,8 @@ a:not([class]):hover {
 
 @media (min-width: 768px) {
   .menu__item {
-    margin-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-bottom: 0;
   }
 }
@@ -1024,6 +1025,23 @@ a:not([class]):hover {
 }
 
 .menu__item__link:hover {
+  color: #6E00FF;
+}
+
+.submenu__item {
+  display: block;
+}
+
+.submenu__item__link {
+  color: #718096;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+}
+
+.submenu__item__link:hover {
   color: #008aff;
 }
 

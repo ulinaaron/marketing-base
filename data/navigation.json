@@ -1,12 +1,40 @@
 {
     "main": [
         {
-            "label": "About",
-            "url": "/about/"
+            "label": "Home",
+            "url": "/",
+            "submenu": [
+                {
+                    "label": "Landing Page 1",
+                    "url": "/landing-1/"
+                },
+                {
+                    "label": "Landing Page 2",
+                    "url": "/landing-2/"
+                },
+                {
+                    "label": "Landing Page 3",
+                    "url": "/landing-3/"
+                }
+            ]
         },
         {
-            "label": "Contact",
-            "url": "/contact/"
+            "label": "Pages",
+            "url": "#",
+            "submenu": [
+                {
+                    "label": "About",
+                    "url": "/about/"
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact/"
+                },
+                {
+                    "label": "Careers",
+                    "url": "/careers/"
+                }
+            ]
         },
         {
             "label": "Style Guide",

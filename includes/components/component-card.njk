@@ -8,8 +8,9 @@
 {% macro base(token='', group='') %}
     {% set advanced = macro.advanced(token.advanced) %}
     {% set appearance = macro.appearance(token.appearance, group) %}
+    {% set spacing = macro.styles(token.spacing, group.card_spacing) %}
 
-    <div class="ui-component ui-component--card {{ advanced }} {{ appearance }} p-10">
+    <div class="ui-component ui-component--card {{ advanced }} {{ appearance }} {{ spacing }}">
         {{ icon.base(token.feature, group) if token.feature.type === "icon" }}
         {{ image.base(token.feature, group) if token.feature.type === "image"  }}
         {{ heading.base(token.heading, group) }}

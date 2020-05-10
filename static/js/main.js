@@ -96,12 +96,33 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_lazyload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @modules/lazyload */ "./assets/js/modules/lazyload/index.js");
-/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
-/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(alpinejs__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_component_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @modules/component-menu */ "./assets/js/modules/component-menu/index.js");
+/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
+/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(alpinejs__WEBPACK_IMPORTED_MODULE_2__);
 // Import local modules
+
  // Import from node
 
 
+
+/***/ }),
+
+/***/ "./assets/js/modules/component-menu/index.js":
+/*!***************************************************!*\
+  !*** ./assets/js/modules/component-menu/index.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var menuBase = function () {
+  window.menu = function () {
+    return {};
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (menuBase);
 
 /***/ }),
 

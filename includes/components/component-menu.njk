@@ -1,20 +1,43 @@
 {% import "macros.njk" as macro %}
+{% import "components/component-menu-full.njk" as fullMenu %}
 
-{% macro base(token='', group='') %}
-    {% set justify = macro.styles(token.justify, editor.row_justify) if token.justify else ""%}
+{% macro base(token='', nav='', group='') %}
+    {% set justify = macro.styles(token.justify, group.row_justify) if token.justify else ""%}
 
     <div class="ui-component ui-component--menu {{ advanced }} {{ appearance }}">
-        <nav id="nav" class="flex {{ justify }}">
+        <nav id="nav" class="hidden nav md:flex {{ justify }}">
+
             <ul class="menu">
 
-                {% for item in navigation.main %}
+                {% for item in nav[token.navigation_menu] %}
+                    {% if item.submenu %}
+                        <li class="relative menu__item" x-data="{ open: false }" @click.away="open = false">
+                            <a href="{{ item.url | safe }}" class="menu__item__link {% if page.url == item.url %}active text-secondary-base{% endif %}" {% if page.url == item.url %} aria-current="page"{% endif %} @click.prevent="open = !open">
+                                <span>{{ item.label }}</span>
+                                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </a>
 
-                <li class="menu__item">
-
-                    <a href="{{ item.url | safe }}" class="menu__item__link {% if page.url == item.url %}active text-pref-linkHover{% endif %}
-                    "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
-
-                </li>
+                            
+                            <div class="absolute left-0 w-48 mt-2 origin-top-left border-t-2 rounded-md shadow-lg border-secondary-base" x-show="open" @mouseleave="open = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" >
+                                <ul class="p-1 rounded shadow-xs submenu bg-light" role="menu" aria-orientation="vertical">
+                                    {% for subitem in item.submenu %}
+                                        <li class="submenu__item">
+                                            <a href="{{ subitem.url | safe }}" class="submenu__item__link {% if page.url == subitem.url %}active text-primary-base{% endif %}" {% if page.url == subitem.url %} aria-current="page"{% endif %}>
+                                        {{ subitem.label }}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </li>
+                    {% else %}
+                        <li class="menu__item">
+                            <a href="{{ item.url | safe }}" class="menu__item__link {% if page.url == item.url %}active text-secondary-base{% endif %}" {% if page.url == item.url %} aria-current="page"{% endif %} @click="open = !open">
+                                <span>{{ item.label }}</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                
 
                 {% endfor %}
 
@@ -22,6 +45,8 @@
         </nav>
     </div>
 
+    {{ fullMenu.base(token, nav, group)}}
+
 {% endmacro %}
 
-{{ base(component, editor) }}
+{{ base(component, navigation, editor) }}

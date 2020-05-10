@@ -9,12 +9,27 @@
         @apply mb-4;
 
         @screen md {
-            @apply mr-6 mb-0;
+            @apply px-4 mb-0;
         }
     }
 
     &__item__link {
         @apply font-bold font-secondary text-scale-800;
+
+        &:hover {
+            @apply text-secondary-base;
+        }
+    }
+
+}
+
+.submenu {
+    &__item {
+        @apply block;
+    }
+
+    &__item__link {
+        @apply text-scale-600 py-2 px-4 block;
 
         &:hover {
             @apply text-primary-base;

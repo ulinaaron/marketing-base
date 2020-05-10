@@ -6,11 +6,79 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: title
+  - name: text
     type: text
     config:
       required: false
-    label: Title
+    label: Text
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: type
+    type: select
+    default: fill
+    config:
+      required: false
+      options:
+      - fill
+      - outline
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
+  - name: style
+    type: select
+    default: primary
+    config:
+      required: false
+      options:
+      - Primary
+      - Secondary
+      - Tertiary
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: button_styles
+    label: Style
+  - name: size
+    type: select
+    default: base
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: button_sizes
+    label: Size
+  - name: text_alignment
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: editor-defaults
+        file: data/editor.json
+        path: text_alignment
+    label: Text Alignment
+  - name: advanced
+    type: field_group
+    config: {}
+    fields:
+    - name: advanced_settings
+      type: include
+      config: {}
+      template: utility-advanced
+      label: Advanced Settings
+    label: Advanced
   label: Modal Button
 - name: modal_content
   type: field_group
