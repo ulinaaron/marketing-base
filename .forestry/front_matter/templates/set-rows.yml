@@ -18,7 +18,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: column_name
   label: Columns
 - name: horizontal_padding
   type: boolean
