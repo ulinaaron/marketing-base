@@ -13,7 +13,8 @@ fields:
   - name: blocks
     type: blocks
     label: Blocks
-    template_types: []
+    template_types:
+    - block-section
     config:
       min: 
       max: 
