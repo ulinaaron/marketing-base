@@ -626,6 +626,84 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+        blocks:
+        - template: block-section
+          spacing: normal
+          section_width: true
+          content_width: true
+          appearance:
+            bg_properties:
+              attachment: []
+              position: []
+              background_opacity: []
+              repeat: []
+              size: []
+            text_color: ''
+            bg_image: ''
+            bg_color: ''
+            bg_color_custom: ''
+          rows:
+          - columns:
+            - components:
+              - template: component-heading
+                element: h3
+                appearance:
+                  typography:
+                    font_family: []
+                    font_weight: []
+                    transform: []
+                    line_height: []
+                    letter_spacing: []
+                  bg_properties:
+                    attachment: []
+                    position: []
+                    background_opacity: []
+                    repeat: []
+                    size: []
+                  text_color: secondary-light
+                  bg_image: ''
+                  bg_color: ''
+                  bg_color_custom: ''
+                title: Hello
+                font_size: ''
+                text_alignment: ''
+                advanced:
+                  css_id: ''
+                  css_classes: ''
+              - template: component-text-block
+                appearance:
+                  bg_properties:
+                    attachment: []
+                    position: []
+                    background_opacity: []
+                    repeat: []
+                    size: []
+                  text_color: ''
+                  bg_image: ''
+                  bg_color: ''
+                  bg_color_custom: ''
+                text: Here is some content
+                font_size: lg
+                text_alignment: center
+                advanced:
+                  css_id: ''
+                  css_classes: ''
+              column_name: ''
+              column_width: ''
+              responsive_column_widths:
+                small: ''
+                medium: ''
+                large: ''
+                xl: ''
+            row_name: ''
+            horizontal_padding: false
+            gutters: ''
+            align_content: ''
+            align_items: ''
+            justify_content: ''
+          advanced:
+            css_id: ''
+            css_classes: ''
       responsive_column_widths:
         small: ''
         medium: ''
