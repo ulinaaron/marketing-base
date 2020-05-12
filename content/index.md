@@ -768,7 +768,7 @@ blocks:
         medium: ''
         large: ''
         xl: ''
-    row_name: ''
+    row_name: Tab Set
     horizontal_padding: false
     gutters: ''
     align_content: ''
