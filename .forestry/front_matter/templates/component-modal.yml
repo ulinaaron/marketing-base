@@ -2,7 +2,7 @@
 label: Component - Modal
 hide_body: true
 fields:
-- name: content_blocks
+- name: blocks
   type: blocks
   label: Content Blocks
   template_types:
