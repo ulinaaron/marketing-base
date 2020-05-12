@@ -78,16 +78,6 @@ fields:
 - name: modal_content
   type: field_group
   config: {}
-  fields:
-  - name: content
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Content
   label: Modal Content
 - name: appearance
   type: field_group
