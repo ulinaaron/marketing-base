@@ -2,6 +2,32 @@
 label: Component - Tabs
 hide_body: true
 fields:
+- name: tabs
+  type: field_group_list
+  fields:
+  - name: tab
+    type: field_group
+    config: {}
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+      description: The name that shows up on the tab.
+    - name: blocks
+      type: blocks
+      label: Blocks
+      template_types: []
+      config:
+        min: 
+        max: 
+    label: Tab
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Tabs
 - name: appearance
   type: field_group
   config: {}
