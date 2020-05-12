@@ -752,12 +752,116 @@ blocks:
             title: ''
             blocks: []
           title: Tab 1
-          blocks: []
+          blocks:
+          - template: block-section
+            spacing: normal
+            section_width: true
+            content_width: true
+            appearance:
+              bg_properties:
+                attachment: []
+                position: []
+                background_opacity: []
+                repeat: []
+                size: []
+              text_color: ''
+              bg_image: ''
+              bg_color: ''
+              bg_color_custom: ''
+            rows:
+            - columns:
+              - components:
+                - template: component-text-block
+                  appearance:
+                    bg_properties:
+                      attachment: []
+                      position: []
+                      background_opacity: []
+                      repeat: []
+                      size: []
+                    text_color: ''
+                    bg_image: ''
+                    bg_color: ''
+                    bg_color_custom: ''
+                  text: This is the content of tab 1.
+                  font_size: ''
+                  text_alignment: ''
+                  advanced:
+                    css_id: ''
+                    css_classes: ''
+                column_name: ''
+                column_width: ''
+                responsive_column_widths:
+                  small: ''
+                  medium: ''
+                  large: ''
+                  xl: ''
+              row_name: ''
+              horizontal_padding: false
+              gutters: ''
+              align_content: ''
+              align_items: ''
+              justify_content: ''
+            advanced:
+              css_id: ''
+              css_classes: ''
         - tab:
             title: ''
             blocks: []
           title: Tab 2
-          blocks: []
+          blocks:
+          - template: block-section
+            spacing: normal
+            section_width: true
+            content_width: true
+            appearance:
+              bg_properties:
+                attachment: []
+                position: []
+                background_opacity: []
+                repeat: []
+                size: []
+              text_color: ''
+              bg_image: ''
+              bg_color: ''
+              bg_color_custom: ''
+            rows:
+            - columns:
+              - components:
+                - template: component-text-block
+                  appearance:
+                    bg_properties:
+                      attachment: []
+                      position: []
+                      background_opacity: []
+                      repeat: []
+                      size: []
+                    text_color: ''
+                    bg_image: ''
+                    bg_color: ''
+                    bg_color_custom: ''
+                  text: This is tab set 2.
+                  font_size: ''
+                  text_alignment: ''
+                  advanced:
+                    css_id: ''
+                    css_classes: ''
+                column_name: ''
+                column_width: ''
+                responsive_column_widths:
+                  small: ''
+                  medium: ''
+                  large: ''
+                  xl: ''
+              row_name: ''
+              horizontal_padding: false
+              gutters: ''
+              align_content: ''
+              align_items: ''
+              justify_content: ''
+            advanced:
+              css_id: ''
+              css_classes: ''
         advanced:
           css_id: ''
           css_classes: ''
