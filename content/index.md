@@ -751,9 +751,13 @@ blocks:
         - tab:
             title: ''
             blocks: []
+          title: Tab 1
+          blocks: []
         - tab:
             title: ''
             blocks: []
+          title: Tab 2
+          blocks: []
         advanced:
           css_id: ''
           css_classes: ''
