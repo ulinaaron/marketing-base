@@ -155,7 +155,7 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
-      column_name: ''
+      column_name: Group A
       column_width: full
       responsive_column_widths:
         small: ''
