@@ -628,7 +628,7 @@ blocks:
           css_classes: ''
         blocks:
         - template: block-section
-          spacing: normal
+          spacing: none
           section_width: true
           content_width: true
           appearance:
