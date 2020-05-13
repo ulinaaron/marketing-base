@@ -751,10 +751,10 @@ blocks:
         - tab:
             title: ''
             blocks: []
-          title: Tab 1
+          title: Description
           blocks:
           - template: block-section
-            spacing: normal
+            spacing: tight
             section_width: true
             content_width: true
             appearance:
@@ -808,10 +808,10 @@ blocks:
         - tab:
             title: ''
             blocks: []
-          title: Tab 2
+          title: Specifications
           blocks:
           - template: block-section
-            spacing: normal
+            spacing: tight
             section_width: true
             content_width: true
             appearance:
