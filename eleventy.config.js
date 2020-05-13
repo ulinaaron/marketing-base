@@ -77,10 +77,29 @@ module.exports = eleventyConfig => {
 
     })
 
+    eleventyConfig.addCollection('product', collection => {
+
+        const products = collection.getFilteredByTag('product')
+
+        for( let i = 0; i < products.length; i++ ) {
+
+            const prevPost = products[i - 1]
+            const nextPost = products[i + 1]
+
+            products[i].data["prevPost"] = prevPost
+            products[i].data["nextPost"] = nextPost
+
+        }
+
+        return products.reverse()
+
+    })
+
     // Layout aliases
     eleventyConfig.addLayoutAlias('default', '../layouts/default.njk')
     eleventyConfig.addLayoutAlias('post', '../layouts/post.njk')
     eleventyConfig.addLayoutAlias('page', '../layouts/page.njk')
+    eleventyConfig.addLayoutAlias('product', '../layouts/product.njk')
     eleventyConfig.addLayoutAlias('master', '../layouts/master.njk')
 
     // Include our static assets

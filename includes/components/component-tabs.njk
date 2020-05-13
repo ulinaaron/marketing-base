@@ -4,7 +4,28 @@
     {% set advanced = macro.advanced(token.advanced) %}
     {% set appearance = macro.appearance(token.appearance) %}
 
-    <div class="ui-component ui-component--tabs {{ advanced }} {{ appearance }}">
+    <div class="ui-component ui-component--tabs {{ advanced }} {{ appearance }}" x-data="{ tab: '{{token.tabs[0].title}}' }">
+        <ul class="flex border-b border-scale-500">
+            {% for tab in token.tabs %} 
+                <li class="mr-2 -mb-px">
+                    <button type="button" class="inline-block px-4 py-2 font-semibold border-t border-l border-r rounded-t border-scale-500" :class="{ 'bg-light text-color-primary border-scale-500': tab === '{{ tab.title }}', 'text-scale-500': tab !==  '{{ tab.title }}' }"  x-on:click.prevent="tab = '{{ tab.title }}'">
+                        {{ tab.title }}
+                    </button>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <ul class="w-full p-4 text-sm border-b border-l border-r bg-light border-scale-500">
+        {% for tab in token.tabs %} 
+            <li x-show="tab === '{{ tab.title }}'" id="tab-{{ tab.title | urlencode }}">
+                {% for block in tab.blocks %}
+                    {% if block.template == 'block-section' %}
+                        {% include "blocks/section.njk" %}
+                    {% endif %}
+                {% endfor %}
+            </li>
+        {% endfor %}
+        </ul>
     </div>
 
 {% endmacro %}
