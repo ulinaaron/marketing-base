@@ -23,7 +23,11 @@
                                     {% for subitem in item.submenu %}
                                         <li class="submenu__item">
                                             <a href="{{ subitem.url | safe }}" class="submenu__item__link {% if page.url == subitem.url %}active text-primary-base{% endif %}" {% if page.url == subitem.url %} aria-current="page"{% endif %}>
-                                        {{ subitem.label }}
+                                                {{ subitem.label }}
+                                                
+                                                {# Badge Status #}
+                                                {{ macro.menuStatus(subitem.status) }}
+                                        
                                             </a>
                                         </li>
                                     {% endfor %}

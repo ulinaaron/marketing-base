@@ -37,8 +37,94 @@
             ]
         },
         {
-            "label": "Style Guide",
-            "url": "/styleguide/"
+            "label": "Articles",
+            "url": "/articles/"
+        },
+        {
+            "label": "Shop",
+            "url": "/shop/"
+        },
+        {
+            "label": "Blocks",
+            "url": "#",
+            "submenu": [
+                {
+                    "label": "Calls To Actions",
+                    "url": "/blocks/cta/"
+                },
+                {
+                    "label": "Contact Form",
+                    "url": "/blocks/contact-form/"
+                },
+                {
+                    "label": "Heros",
+                    "url": "/blocks/heroes/"
+                },
+                {
+                    "label": "Headers",
+                    "url": "/blocks/headers/"
+                },
+                {
+                    "label": "Pricing",
+                    "url": "/blocks/pricing/"
+                },
+                {
+                    "label": "Footers",
+                    "url": "/blocks/footers/"
+                }
+            ]
+        },
+        {
+            "label": "Components",
+            "url": "#",
+            "type": "two column",
+            "submenu": [
+                {
+                    "label": "Accordions",
+                    "url": "/components/accordions/",
+                    "status": "soon"
+                },
+                {
+                    "label": "Alerts",
+                    "url": "/components/alerts/",
+                    "status": "soon"
+                },
+                {
+                    "label": "Buttons",
+                    "url": "/components/buttons/",
+                    "status": "beta"
+                },
+                {
+                    "label": "Cards",
+                    "url": "/components/cards/",
+                    "status": "alpha"
+                },
+                {
+                    "label": "Lightbox",
+                    "url": "/components/lightbox/",
+                    "status": "soon"
+                },
+                {
+                    "label": "Menu",
+                    "url": "/components/menu/",
+                    "status": "alpha"
+                },
+                {
+                    "label": "Modals",
+                    "url": "/components/modals/",
+                    "status": "alpha"
+                },
+                {
+                    "label": "Notifications",
+                    "url": "/components/notifications/",
+                    "status": "soon"
+                },
+                {
+                    "label": "Tabs",
+                    "url": "/components/tabs/",
+                    "status": "alpha"
+                }
+            ]
         }
     ]
 }

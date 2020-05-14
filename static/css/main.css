@@ -632,7 +632,7 @@ pre code {
 
 @media (min-width: 768px) {
   pre code {
-    font-size: 0.875rem;
+    font-size: 0.675rem;
   }
 }
 
@@ -4129,7 +4129,7 @@ a:not([class]):hover {
 }
 
 .text-xs{
-  font-size: 0.875rem;
+  font-size: 0.675rem;
 }
 
 .text-sm{
@@ -13581,7 +13581,7 @@ a:not([class]):hover {
   }
 
   .sm\:text-xs{
-    font-size: 0.875rem;
+    font-size: 0.675rem;
   }
 
   .sm\:text-sm{
@@ -23034,7 +23034,7 @@ a:not([class]):hover {
   }
 
   .md\:text-xs{
-    font-size: 0.875rem;
+    font-size: 0.675rem;
   }
 
   .md\:text-sm{
@@ -32487,7 +32487,7 @@ a:not([class]):hover {
   }
 
   .lg\:text-xs{
-    font-size: 0.875rem;
+    font-size: 0.675rem;
   }
 
   .lg\:text-sm{
@@ -41940,7 +41940,7 @@ a:not([class]):hover {
   }
 
   .xl\:text-xs{
-    font-size: 0.875rem;
+    font-size: 0.675rem;
   }
 
   .xl\:text-sm{

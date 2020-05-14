@@ -84,3 +84,21 @@
 
     {{ store }}
 {% endmacro %}
+
+{% macro menuStatus(item='') %}
+    {% set default = 'p-1 rounded leading-none font-bold text-xs' %}
+
+    {% if item == 'soon' %}
+        {% set default = default + ' bg-info-base text-light'%}
+    {% endif %}
+    {% if item == 'alpha' %}
+        {% set default = default + ' bg-danger-base text-light'%}
+    {% endif %}
+    {% if item == 'beta' %}
+        {% set default = default + ' bg-warning-base text-light'%}
+    {% endif %}
+
+    <span class="{{ default }}">
+    {{ item }}
+    </span>
+{% endmacro %}

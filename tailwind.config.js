@@ -179,7 +179,7 @@ module.exports = {
       ],
     },
     fontSize: {
-      xs: '0.875rem',
+      xs: '0.675rem',
       sm: '1rem',
       base: '1.25rem',
       lg: '1.5rem',
