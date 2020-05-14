@@ -3,6 +3,7 @@
         {
             "label": "Home",
             "url": "/",
+            "columns": "1",
             "submenu": [
                 {
                     "label": "Landing Page 1",
@@ -21,6 +22,7 @@
         {
             "label": "Pages",
             "url": "#",
+            "columns": "1",
             "submenu": [
                 {
                     "label": "About",
@@ -38,16 +40,18 @@
         },
         {
             "label": "Articles",
-            "url": "/articles/"
+            "url": "/articles/",
+            "columns": "1"
         },
         {
             "label": "Shop",
-            "url": "/shop/"
+            "url": "/shop/",
+            "columns": "1"
         },
         {
             "label": "Blocks",
-            "menu_type": "2",
             "url": "#",
+            "columns": "2",
             "submenu": [
                 {
                     "label": "Calls To Actions",
@@ -77,8 +81,8 @@
         },
         {
             "label": "Components",
-            "menu_type": "3",
             "url": "#",
+            "columns": "3",
             "submenu": [
                 {
                     "label": "Accordions",
