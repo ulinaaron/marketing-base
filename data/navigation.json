@@ -46,7 +46,7 @@
         },
         {
             "label": "Blocks",
-            "type": "2",
+            "menu_type": "2",
             "url": "#",
             "submenu": [
                 {
@@ -77,7 +77,7 @@
         },
         {
             "label": "Components",
-            "type": "3",
+            "menu_type": "3",
             "url": "#",
             "submenu": [
                 {
