@@ -46,8 +46,8 @@
         },
         {
             "label": "Blocks",
+            "type": "2",
             "url": "#",
-            "type": "three column",
             "submenu": [
                 {
                     "label": "Calls To Actions",
@@ -77,8 +77,8 @@
         },
         {
             "label": "Components",
+            "type": "3",
             "url": "#",
-            "type": "three column",
             "submenu": [
                 {
                     "label": "Accordions",
