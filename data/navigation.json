@@ -105,6 +105,16 @@
                     "status": "alpha"
                 },
                 {
+                    "label": "Divider",
+                    "url": "/components/divider/",
+                    "status": ""
+                },
+                {
+                    "label": "Images",
+                    "url": "/components/images/",
+                    "status": ""
+                },
+                {
                     "label": "Lightbox",
                     "url": "/components/lightbox/",
                     "status": "soon"
@@ -123,6 +133,11 @@
                     "label": "Notifications",
                     "url": "/components/notifications/",
                     "status": "soon"
+                },
+                {
+                    "label": "Spacer",
+                    "url": "/components/spacer/",
+                    "status": "beta"
                 },
                 {
                     "label": "Tabs",

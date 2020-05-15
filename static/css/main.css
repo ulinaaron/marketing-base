@@ -1028,6 +1028,11 @@ a:not([class]):hover {
   color: #6E00FF;
 }
 
+.submenu-container:before {
+  content: "";
+  display: block;
+}
+
 .submenu__item {
   display: block;
 }
