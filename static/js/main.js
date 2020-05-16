@@ -434,7 +434,7 @@ var $$ = {
 
       modifiers = settingBothSidesOfTransition ? modifiers.filter((i, index) => index < modifiers.indexOf('out')) : modifiers;
       transitionHelperIn(el, modifiers, show); // Otherwise, we can assume x-transition:enter.
-    } else if (attrs.length > 0) {
+    } else if (attrs.filter(attr => ['enter', 'enter-start', 'enter-end'].includes(attr.value)).length > 0) {
       transitionClassesIn(el, attrs, show);
     } else {
       // If neither, just show that damn thing.
@@ -452,7 +452,7 @@ var $$ = {
       const settingBothSidesOfTransition = modifiers.includes('in') && modifiers.includes('out');
       modifiers = settingBothSidesOfTransition ? modifiers.filter((i, index) => index > modifiers.indexOf('out')) : modifiers;
       transitionHelperOut(el, modifiers, settingBothSidesOfTransition, hide);
-    } else if (attrs.length > 0) {
+    } else if (attrs.filter(attr => ['leave', 'leave-start', 'leave-end'].includes(attr.value)).length > 0) {
       transitionClassesOut(el, attrs, hide);
     } else {
       hide();
@@ -665,22 +665,16 @@ var $$ = {
     items.forEach((item, index) => {
       let iterationScopeVariables = getIterationScopeVariables(iteratorNames, item, index, items, extraVars());
       let currentKey = generateKeyForIteration(component, templateEl, index, iterationScopeVariables);
-      let nextEl = currentEl.nextElementSibling; // If there's no previously x-for processed element ahead, add one.
+      let nextEl = lookAheadForMatchingKeyedElementAndMoveItIfFound(currentEl.nextElementSibling, currentKey); // If we haven't found a matching key, insert the element at the current position.
 
-      if (!nextEl || nextEl.__x_for_key === undefined) {
+      if (!nextEl) {
         nextEl = addElementInLoopAfterCurrentEl(templateEl, currentEl); // And transition it in if it's not the first page load.
 
         transitionIn(nextEl, () => {}, initialUpdate);
         nextEl.__x_for = iterationScopeVariables;
-        component.initializeElements(nextEl, () => nextEl.__x_for);
+        component.initializeElements(nextEl, () => nextEl.__x_for); // Otherwise update the element we found.
       } else {
-        nextEl = lookAheadForMatchingKeyedElementAndMoveItIfFound(nextEl, currentKey); // If we haven't found a matching key, just insert the element at the current position
-
-        if (!nextEl) {
-          nextEl = addElementInLoopAfterCurrentEl(templateEl, currentEl);
-        } // Temporarily remove the key indicator to allow the normal "updateElements" to work
-
-
+        // Temporarily remove the key indicator to allow the normal "updateElements" to work.
         delete nextEl.__x_for_key;
         nextEl.__x_for = iterationScopeVariables;
         component.updateElements(nextEl, () => nextEl.__x_for);
@@ -755,7 +749,8 @@ var $$ = {
   }
 
   function lookAheadForMatchingKeyedElementAndMoveItIfFound(nextEl, currentKey) {
-    // If the the key's DO match, no need to look ahead.
+    if (!nextEl) return; // If the the key's DO match, no need to look ahead.
+
     if (nextEl.__x_for_key === currentKey) return nextEl; // If they don't, we'll look ahead for a match.
     // If we find it, we'll move it to the current position in the loop.
 
@@ -826,13 +821,8 @@ var $$ = {
       } else if (el.tagName === 'SELECT') {
         updateSelect(el, value);
       } else {
-        // Cursor position should be restored back to origin due to a safari bug
-        const cursorPosition = el.selectionStart;
+        if (el.value === value) return;
         el.value = value;
-
-        if (el === document.activeElement) {
-          el.setSelectionRange(cursorPosition, cursorPosition);
-        }
       }
     } else if (attrName === 'class') {
       if (Array.isArray(value)) {
@@ -844,25 +834,23 @@ var $$ = {
         const keysSortedByBooleanValue = Object.keys(value).sort((a, b) => value[a] - value[b]);
         keysSortedByBooleanValue.forEach(classNames => {
           if (value[classNames]) {
-            classNames.split(' ').forEach(className => el.classList.add(className));
+            classNames.split(' ').filter(Boolean).forEach(className => el.classList.add(className));
           } else {
-            classNames.split(' ').forEach(className => el.classList.remove(className));
+            classNames.split(' ').filter(Boolean).forEach(className => el.classList.remove(className));
           }
         });
       } else {
         const originalClasses = el.__x_original_classes || [];
-        const newClasses = value.split(' ');
+        const newClasses = value.split(' ').filter(Boolean);
         el.setAttribute('class', arrayUnique(originalClasses.concat(newClasses)).join(' '));
       }
-    } else if (isBooleanAttr(attrName)) {
-      // Boolean attributes have to be explicitly added and removed, not just set.
-      if (!!value) {
-        el.setAttribute(attrName, '');
-      } else {
-        el.removeAttribute(attrName);
-      }
     } else {
-      el.setAttribute(attrName, value);
+      // If an attribute's bound value is null, undefined or false, remove the attribute
+      if ([null, undefined, false].includes(value)) {
+        el.removeAttribute(attrName);
+      } else {
+        isBooleanAttr(attrName) ? el.setAttribute(attrName, attrName) : el.setAttribute(attrName, value);
+      }
     }
   }
 
@@ -1844,7 +1832,7 @@ var $$ = {
         for (let i = 0; i < mutations.length; i++) {
           // Filter out mutations triggered from child components.
           const closestParentComponent = mutations[i].target.closest('[x-data]');
-          if (!(closestParentComponent && closestParentComponent.isSameNode(this.$el))) return;
+          if (!(closestParentComponent && closestParentComponent.isSameNode(this.$el))) continue;
 
           if (mutations[i].type === 'attributes' && mutations[i].attributeName === 'x-data') {
             const rawData = saferEval(mutations[i].target.getAttribute('x-data'), {});
@@ -1900,6 +1888,7 @@ var $$ = {
   }
 
   const Alpine = {
+    version: "2.3.5",
     start: async function start() {
       if (!isTesting()) {
         await domReady();
@@ -1994,8 +1983,8 @@ var $$ = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/aaronmazade/Documents/Projects/11ty/marketing-base/assets/js/main.js */"./assets/js/main.js");
-module.exports = __webpack_require__(/*! /Users/aaronmazade/Documents/Projects/11ty/marketing-base/assets/sass/main.scss */"./assets/sass/main.scss");
+__webpack_require__(/*! /mnt/c/Users/ulina/Documents/GitHub/marketing-base/assets/js/main.js */"./assets/js/main.js");
+module.exports = __webpack_require__(/*! /mnt/c/Users/ulina/Documents/GitHub/marketing-base/assets/sass/main.scss */"./assets/sass/main.scss");
 
 
 /***/ })
