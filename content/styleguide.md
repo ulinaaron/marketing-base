@@ -242,6 +242,29 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+      - template: component-text-block
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        text: |-
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.
+
+          > “Creativity is allowing yourself to make mistakes. Design is knowing which ones to keep.”
+
+          Nunc a lorem tellus. Aenean eu auctor purus. Cras pulvinar, nunc at sagittis dignissim, orci elit auctor leo, et consectetur est turpis a nunc. Vivamus in faucibus felis. Aenean rutrum magna at ex auctor, congue efficitur ligula feugiat. Proin a egestas arcu.
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
       column_name: ''
       responsive_column_widths:
         small: ''
