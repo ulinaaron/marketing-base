@@ -12,7 +12,7 @@ blocks:
       components:
       - template: component-heading
         element: h3
-        font_size: base
+        font_size: 6xl
         text_alignment: center
         appearance:
           typography:
