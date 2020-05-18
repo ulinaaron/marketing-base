@@ -194,6 +194,31 @@ blocks:
         advanced:
           css_id: ''
           css_classes: ''
+      - template: component-heading
+        element: h6
+        appearance:
+          typography:
+            font_family: []
+            font_weight: []
+            transform: []
+            line_height: []
+            letter_spacing: []
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        title: This is an H6
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
       column_name: ''
       responsive_column_widths:
         small: ''
