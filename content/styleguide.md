@@ -222,7 +222,7 @@ blocks:
       column_name: ''
       responsive_column_widths:
         small: ''
-        medium: ''
+        medium: 2/3
         large: ''
         xl: ''
     row_name: ''
@@ -230,7 +230,7 @@ blocks:
     gutters: ''
     align_content: ''
     align_items: ''
-    justify_content: ''
+    justify_content: Center
   spacing: loose
   advanced:
     css_id: ''
