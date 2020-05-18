@@ -58,14 +58,14 @@ blocks:
       column_name: ''
       responsive_column_widths:
         small: ''
-        medium: ''
+        medium: 2/3
         large: ''
         xl: ''
     horizontal_padding: false
     gutters: ''
     align_content: ''
     align_items: ''
-    justify_content: ''
+    justify_content: Center
   - columns:
     - column_width: full
       components:
