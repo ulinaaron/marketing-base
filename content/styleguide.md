@@ -161,8 +161,8 @@ blocks:
     css_id: ''
     css_classes: ''
   appearance:
-    bg_image: static/images/casey-horner--mzP7tz2mmo-unsplash.jpg
-    bg_color: custom
+    bg_image: ''
+    bg_color: ''
     bg_color_custom: "#7ED321"
     text_color: ''
     bg_properties:
