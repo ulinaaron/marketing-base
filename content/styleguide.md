@@ -69,6 +69,29 @@ blocks:
   - columns:
     - column_width: full
       components:
+      - template: component-text-block
+        font_size: ''
+        text_alignment: ''
+        appearance:
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        text: "**This is a paragraph** . Pellentesque habitant morbi _tristique senectus
+          et netus et malesuada_ fames ac turpis egestas. Vestibulum [tortor quam](https://www.google.com/)
+          , feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+          sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+          eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+          erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi."
+        advanced:
+          css_id: ''
+          css_classes: ''
       - template: component-heading
         element: h1
         appearance:
