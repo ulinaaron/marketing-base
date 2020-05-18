@@ -13,7 +13,7 @@ blocks:
       - template: component-heading
         element: h3
         font_size: 6xl
-        text_alignment: center
+        text_alignment: ''
         appearance:
           typography:
             font_family: []
@@ -37,7 +37,7 @@ blocks:
           css_classes: ''
       - template: component-text-block
         font_size: lg
-        text_alignment: center
+        text_alignment: ''
         appearance:
           bg_properties:
             attachment: []
