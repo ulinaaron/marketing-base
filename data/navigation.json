@@ -105,8 +105,8 @@
                     "status": "alpha"
                 },
                 {
-                    "label": "Divider",
-                    "url": "/components/divider/",
+                    "label": "Dividers",
+                    "url": "/components/dividers/",
                     "status": ""
                 },
                 {
@@ -120,8 +120,8 @@
                     "status": "soon"
                 },
                 {
-                    "label": "Menu",
-                    "url": "/components/menu/",
+                    "label": "Menus",
+                    "url": "/components/menusz/",
                     "status": "alpha"
                 },
                 {

@@ -24,6 +24,23 @@
 }
 
 .submenu-container {
+    right: 0;
+
+
+    &--1col {
+        left: -140px;
+    }
+
+    &--2col {
+        left: -440px;
+    }
+
+
+    &--3col {
+        left: -740px;
+    }
+
+
     &:before {
         content: '';
         display: block;

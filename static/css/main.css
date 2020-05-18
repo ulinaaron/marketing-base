@@ -1056,6 +1056,22 @@ a:not([class]):hover {
   color: rgba(110, 0, 255, var(--text-opacity));
 }
 
+.submenu-container {
+  right: 0;
+}
+
+.submenu-container--1col {
+  left: -140px;
+}
+
+.submenu-container--2col {
+  left: -440px;
+}
+
+.submenu-container--3col {
+  left: -740px;
+}
+
 .submenu-container:before {
   content: "";
   display: block;

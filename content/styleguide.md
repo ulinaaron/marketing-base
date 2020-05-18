@@ -163,7 +163,7 @@ blocks:
   appearance:
     bg_image: ''
     bg_color: ''
-    bg_color_custom: "#7ED321"
+    bg_color_custom: ''
     text_color: ''
     bg_properties:
       position: Bottom
