@@ -12,7 +12,7 @@ blocks:
       components:
       - template: component-heading
         element: h3
-        font_size: base
+        font_size: 6xl
         text_alignment: center
         appearance:
           typography:
@@ -139,6 +139,81 @@ blocks:
           bg_color: ''
           bg_color_custom: ''
         title: This is an H3
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      - template: component-heading
+        element: h4
+        appearance:
+          typography:
+            font_family: []
+            font_weight: []
+            transform: []
+            line_height: []
+            letter_spacing: []
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        title: This is an H4
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      - template: component-heading
+        element: h5
+        appearance:
+          typography:
+            font_family: []
+            font_weight: []
+            transform: []
+            line_height: []
+            letter_spacing: []
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        title: This is an H5
+        font_size: ''
+        text_alignment: ''
+        advanced:
+          css_id: ''
+          css_classes: ''
+      - template: component-heading
+        element: h6
+        appearance:
+          typography:
+            font_family: []
+            font_weight: []
+            transform: []
+            line_height: []
+            letter_spacing: []
+          bg_properties:
+            attachment: []
+            position: []
+            background_opacity: []
+            repeat: []
+            size: []
+          text_color: ''
+          bg_image: ''
+          bg_color: ''
+          bg_color_custom: ''
+        title: This is an H6
         font_size: ''
         text_alignment: ''
         advanced:
