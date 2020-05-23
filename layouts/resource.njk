@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{# a post layout #}
+<main id="main" class="focus:outline-none" tabindex="-1">
+
+    {% if title_visibility %}
+
+        <div class="mb-12 md:mb-20">
+
+            <header>
+                <h1 class="text-3xl page-title md:text-center md:text-5xl lg:text-6xl">{{ title }}</h1>
+            </header>
+        
+        </div>
+
+    {% endif %}
+
+    {% for block in blocks %}
+        {% if block.template == 'block-section' %}
+            {% include "blocks/section.njk" %}
+        {% endif %}
+    {% endfor %}
+
+</main>

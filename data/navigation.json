@@ -70,6 +70,10 @@
                     "url": "/blocks/headers/"
                 },
                 {
+                    "label": "Modals",
+                    "url": "/blocks/modals/"
+                },
+                {
                     "label": "Pricing",
                     "url": "/blocks/pricing/"
                 },
@@ -133,6 +137,11 @@
                     "label": "Notifications",
                     "url": "/components/notifications/",
                     "status": "soon"
+                },
+                {
+                    "label": "Pricing",
+                    "url": "/components/pricing/",
+                    "status": "beta"
                 },
                 {
                     "label": "Spacer",

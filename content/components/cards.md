@@ -1,7 +1,7 @@
 ---
 title_visibility: true
-layout: page
 title: Cards
+tags: components
 body_class: ''
 blocks: []
 seo:

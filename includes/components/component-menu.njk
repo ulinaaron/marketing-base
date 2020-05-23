@@ -34,7 +34,7 @@
                                         <div class="flex flex-row">
                                     {% endif %}
 
-                                    {% for subitem in item.submenu | batch(column_length) %}
+                                    {% for subitem in item.submenu | batch(column_length | round(0, "ceil")) %}
                                         {% if item.columns == '2' %}
                                             {% set column_width = "w-1/2" %}
                                         {% elif item.columns == '3' %}

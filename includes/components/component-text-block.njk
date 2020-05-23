@@ -5,7 +5,7 @@
     {% set appearance = macro.appearance(token.appearance, group) %}
     {% set size =  macro.styles(token.font_size, group.text_sizes) %}
     {% set text_alignment =  macro.styles(token.text_alignment, group.text_alignment ) %}
-
+    
     <div class="ui-component ui-component--text-block {{ advanced }} {{ appearance }} {{ size }} {{ text_alignment }}">
         {{ token.text | safe }}
     </div>

@@ -1,7 +1,7 @@
 ---
 title_visibility: true
-layout: page
 title: Alerts
+tags: components
 body_class: ''
 blocks: []
 seo:
