@@ -47,13 +47,17 @@ fields:
   label: SEO Settings
 pages:
 - content/about.md
+- content/about.md
 - content/articles.md
 - content/careers.md
 - content/contact.md
+- content/contact.md
+- content/index.md
 - content/index.md
 - content/landing-1.md
 - content/landing-2.md
 - content/landing-3.md
 - content/pricing.md
+- content/styleguide.md
 - content/styleguide.md
 - content/team.md
