@@ -25,7 +25,8 @@ sections:
   label: All Pages
   create: all
   match: "**/*.md"
-  exclude: articles/*.md, masters/*.md, products/*.md
+  exclude: articles/**/*, masters/**/*, products/**/*
+  new_doc_ext: ".md"
   templates:
   - page-builder
 - type: directory
